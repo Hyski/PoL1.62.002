@@ -1,0 +1,56 @@
+import sys
+sys.path = ['tools'] + sys.path
+import autocons
+
+libconf = dict(
+	stlport			= 'dll',
+	mll_core		= 'dll',
+	mll_fs			= 'dll',
+	zlib			= 'dll',
+	boost_regex		= 'dll',
+	storage			= 'dll',
+	vis				= 'dll',
+	vis_mesh		= 'dll',
+	)
+
+outLibconf = dict(
+	antlr			= 'lib',
+	stlport			= 'lib',
+	mll_core		= 'lib',
+	mll_fs			= 'lib',
+	zlib			= 'lib',
+	boost_regex		= 'lib',
+	storage			= 'lib',
+	vis				= 'lib',
+	vis_mesh		= 'lib',
+	)
+
+commonGlobalDefines = ['BOOST_ALL_NO_LIB']
+homeGlobalDefines = commonGlobalDefines + ['_HOME_VERSION']
+outReleaseGlobalDefines = commonGlobalDefines + ['NDEBUG']
+outReleaseOnlineGlobalDefines = outReleaseGlobalDefines + ['ML_ONLINE_DISTRIBUTION']
+
+configs = dict(
+	debug = dict(
+		libconf = libconf,
+		globalDefinesInclude = homeGlobalDefines
+		),
+	release = dict(
+		libconf = libconf,
+		globalDefinesInclude = homeGlobalDefines
+		),
+	outrelease = dict(
+		copyFrom = 'release',
+		libconf = outLibconf,
+		globalDefinesInclude = outReleaseGlobalDefines,
+		globalDefinesExclude = ['_HOME_VERSION']
+		),
+	online_outrelease = dict(
+		copyFrom = 'release',
+		libconf = outLibconf,
+		globalDefinesInclude = outReleaseOnlineGlobalDefines,
+		globalDefinesExclude = ['_HOME_VERSION']
+		)
+	)
+
+autocons.build('pol_missions.sln',Environment(),configs)

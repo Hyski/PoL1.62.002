@@ -1,0 +1,4 @@
+#ifndef _STACKGUARD_HEADER_
+#define _STACKGUARD_HEADER_
+
+#endif

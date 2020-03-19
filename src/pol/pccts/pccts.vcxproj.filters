@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="headers">
+      <UniqueIdentifier>{b6a56d5f-cfdf-4923-a147-83dd7d7341e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="build">
+      <UniqueIdentifier>{7b1330e5-8417-46a2-8bdd-4c444879da56}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AParser.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="ASTBase.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="AToken.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="ATokenBuffer.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="ATokenStream.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="ATokPtr.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="BufFileInput.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="DLexerBase.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="DLG_stream_input.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="pccts_stdio.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="PCCTSAST.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="pcctscfg.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="SList.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pccts.sconscript">
+      <Filter>build</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AParser.cpp" />
+    <ClCompile Include="ASTBase.cpp" />
+    <ClCompile Include="ATokenBuffer.cpp" />
+    <ClCompile Include="BufFileInput.cpp" />
+    <ClCompile Include="DLexerBase.cpp" />
+    <ClCompile Include="PCCTSAST.cpp" />
+    <ClCompile Include="slist.cpp" />
+  </ItemGroup>
+</Project>

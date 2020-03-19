@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="windll">
+      <UniqueIdentifier>{f49c5d45-a810-49b9-b789-eb19590c7e38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="win32">
+      <UniqueIdentifier>{9d9741b2-a729-4deb-9415-60eb96b485df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="build">
+      <UniqueIdentifier>{99422b73-61ac-4fcc-868b-292bebc208a3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="WinDll\decs.h">
+      <Filter>windll</Filter>
+    </ClInclude>
+    <ClInclude Include="WinDll\structs.h">
+      <Filter>windll</Filter>
+    </ClInclude>
+    <ClInclude Include="WinDll\unzver.h">
+      <Filter>windll</Filter>
+    </ClInclude>
+    <ClInclude Include="WinDll\version.h">
+      <Filter>windll</Filter>
+    </ClInclude>
+    <ClInclude Include="WinDll\windll.h">
+      <Filter>windll</Filter>
+    </ClInclude>
+    <ClInclude Include="win32\nt.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="win32\w32cfg.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="consts.h" />
+    <ClInclude Include="crypt.h" />
+    <ClInclude Include="ebcdic.h" />
+    <ClInclude Include="globals.h" />
+    <ClInclude Include="inflate.h" />
+    <ClInclude Include="ttyio.h" />
+    <ClInclude Include="unzip.h" />
+    <ClInclude Include="unzpriv.h" />
+    <ClInclude Include="version.h" />
+    <ClInclude Include="zip.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="WinDll\windll.c">
+      <Filter>windll</Filter>
+    </ClCompile>
+    <ClCompile Include="win32\nt.c">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="win32\win32.c">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="api.c" />
+    <ClCompile Include="crc32.c" />
+    <ClCompile Include="crctab.c" />
+    <ClCompile Include="crypt.c" />
+    <ClCompile Include="explode.c" />
+    <ClCompile Include="extract.c" />
+    <ClCompile Include="fileio.c" />
+    <ClCompile Include="globals.c" />
+    <ClCompile Include="inflate.c" />
+    <ClCompile Include="list.c" />
+    <ClCompile Include="match.c" />
+    <ClCompile Include="process.c" />
+    <ClCompile Include="ttyio.c" />
+    <ClCompile Include="unreduce.c" />
+    <ClCompile Include="unshrink.c" />
+    <ClCompile Include="zipinfo.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="unzip.sconscript">
+      <Filter>build</Filter>
+    </None>
+  </ItemGroup>
+</Project>

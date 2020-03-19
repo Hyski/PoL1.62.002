@@ -1,0 +1,1 @@
+tools\python\python.exe tools\scons\scons.py --sconstruct pol_missions.sconstruct online_outrelease

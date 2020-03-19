@@ -1,0 +1,308 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3281A6DF-067D-43C6-9214-5D2D7CD5B198}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.50727.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)lib/debug\</OutDir>
+    <IntDir>$(SolutionDir)temp/$(ProjectName)/$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)lib/release\</OutDir>
+    <IntDir>$(SolutionDir)temp/$(ProjectName)/$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)src/external/boost;$(SolutionDir)src/external/stlport/stlport;$(SolutionDir)src/external/directx/include;$(SolutionDir)src/external/psdk/include;$(SolutionDir)src/external/vscrt/include;$(SolutionDir)src/external/atlmfc/include;$(SolutionDir)src/shared/mll/include;$(SolutionDir)src/shared/mutual/include;$(SolutionDir)src/shared/muffle/include;$(SolutionDir)src/pol;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_HOME_VERSION;MLL_USE_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>logicdefs.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)precomp.pch</PrecompiledHeaderOutputFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4251;4275;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)src/external/boost;$(SolutionDir)src/external/stlport/stlport;$(SolutionDir)src/external/directx/include;$(SolutionDir)src/external/psdk/include;$(SolutionDir)src/external/vscrt/include;$(SolutionDir)src/external/atlmfc/include;$(SolutionDir)src/shared/mll/include;$(SolutionDir)src/shared/mutual/include;$(SolutionDir)src/shared/muffle/include;$(SolutionDir)src/pol;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_HOME_VERSION;MLL_USE_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>logicdefs.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)precomp.pch</PrecompiledHeaderOutputFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4251;4275;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="GameId.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="entity.cpp" />
+    <ClCompile Include="RankTable.cpp" />
+    <ClCompile Include="Spawn.cpp" />
+    <ClCompile Include="Strategy.cpp" />
+    <ClCompile Include="TraderInfo.cpp" />
+    <ClCompile Include="form.cpp" />
+    <ClCompile Include="GameForm.cpp" />
+    <ClCompile Include="InventoryFormImp3.cpp" />
+    <ClCompile Include="ShopFormImp.cpp" />
+    <ClCompile Include="JournalFormImp3.cpp" />
+    <ClCompile Include="DragDropManager.cpp" />
+    <ClCompile Include="DirtyLinks.cpp" />
+    <ClCompile Include="InfoUtils.cpp" />
+    <ClCompile Include="PathUtils.cpp" />
+    <ClCompile Include="Phrase.cpp" />
+    <ClCompile Include="TraceUtils.cpp" />
+    <ClCompile Include="SndUtils.cpp" />
+    <ClCompile Include="HexGrid.cpp" />
+    <ClCompile Include="hexutils.cpp" />
+    <ClCompile Include="GraphHexGrid.cpp" />
+    <ClCompile Include="Graphic.cpp" />
+    <ClCompile Include="Activity.cpp" />
+    <ClCompile Include="ActivityStatusSender.cpp" />
+    <ClCompile Include="CameraShieldThrowManager.cpp" />
+    <ClCompile Include="GrenadeThrowManager.cpp" />
+    <ClCompile Include="ShootManager.cpp" />
+    <ClCompile Include="ShootNotifier.cpp" />
+    <ClCompile Include="TargetManager.cpp" />
+    <ClCompile Include="TracingLOFCheck.cpp" />
+    <ClCompile Include="DecAccuracyDrv.cpp" />
+    <ClCompile Include="MPLimitDrv.cpp" />
+    <ClCompile Include="OpponentViewDrv.cpp" />
+    <ClCompile Include="PassDrv.cpp" />
+    <ClCompile Include="PathShowDrv.cpp" />
+    <ClCompile Include="ReactionDrv.cpp" />
+    <ClCompile Include="StanceChangeDrv.cpp" />
+    <ClCompile Include="StepLimitDrv.cpp" />
+    <ClCompile Include="UpdateMPDrv.cpp" />
+    <ClCompile Include="UpdateVisMapDrv.cpp" />
+    <ClCompile Include="LandingActivity.cpp" />
+    <ClCompile Include="MoveActivity.cpp" />
+    <ClCompile Include="MultiMoveActivity.cpp" />
+    <ClCompile Include="MultiMoveUtils.cpp" />
+    <ClCompile Include="ParMoveActivity.cpp" />
+    <ClCompile Include="RotateActivity.cpp" />
+    <ClCompile Include="ShipmentActivity.cpp" />
+    <ClCompile Include="ShootActivity.cpp" />
+    <ClCompile Include="ThrowActivity.cpp" />
+    <ClCompile Include="UseActivity.cpp" />
+    <ClCompile Include="SSceneMgrImp.cpp" />
+    <ClCompile Include="CheatParser.cpp" />
+    <ClCompile Include="Marker.cpp" />
+    <ClCompile Include="Relation.cpp" />
+    <ClCompile Include="Spectator.cpp" />
+    <ClCompile Include="VisMap.cpp" />
+    <ClCompile Include="VisParams.cpp" />
+    <ClCompile Include="AIAPI.cpp" />
+    <ClCompile Include="AIBase.cpp" />
+    <ClCompile Include="AIDefs.cpp" />
+    <ClCompile Include="AIUtils.cpp" />
+    <ClCompile Include="CivilianAI.cpp" />
+    <ClCompile Include="EnemyDetection.cpp" />
+    <ClCompile Include="EntityDamagerImp.cpp" />
+    <ClCompile Include="PanicBehaviour.cpp" />
+    <ClCompile Include="PanicPlayer.cpp" />
+    <ClCompile Include="PlayerTeamSpectator.cpp" />
+    <ClCompile Include="SubteamNode.cpp" />
+    <ClCompile Include="AlarmistNode.cpp" />
+    <ClCompile Include="AssaultEnemyNode.cpp" />
+    <ClCompile Include="AssaultTechEnemyNode.cpp" />
+    <ClCompile Include="CommonEnemyNode.cpp" />
+    <ClCompile Include="FixedEnemyNode.cpp" />
+    <ClCompile Include="FixedTechEnemyNode.cpp" />
+    <ClCompile Include="PatrolEnemyNode.cpp" />
+    <ClCompile Include="PatrolTechEnemyNode.cpp" />
+    <ClCompile Include="Thing.cpp" />
+    <ClCompile Include="BaseBox.cpp" />
+    <ClCompile Include="Bureau.cpp" />
+    <ClCompile Include="DataBox.cpp" />
+    <ClCompile Include="DeadList.cpp" />
+    <ClCompile Include="GameObjectsMgr.cpp" />
+    <ClCompile Include="StoreBox.cpp" />
+    <ClCompile Include="ExperienceSaver.cpp" />
+    <ClCompile Include="GameLogic.cpp" />
+    <ClCompile Include="Invariants.cpp" />
+    <ClCompile Include="logicdefs.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GameId.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="AIContext.h" />
+    <ClInclude Include="entity.h" />
+    <ClInclude Include="entityaux.h" />
+    <ClInclude Include="EntityFactory.h" />
+    <ClInclude Include="RankTable.h" />
+    <ClInclude Include="Spawn.h" />
+    <ClInclude Include="Strategy.h" />
+    <ClInclude Include="Form.h" />
+    <ClInclude Include="GameFormImp.h" />
+    <ClInclude Include="InventoryFormImp3.h" />
+    <ClInclude Include="ShopFormImp.h" />
+    <ClInclude Include="JournalFormImp3.h" />
+    <ClInclude Include="DragDropManager.h" />
+    <ClInclude Include="Damager.h" />
+    <ClInclude Include="DirtyLinks.h" />
+    <ClInclude Include="DynUtils.h" />
+    <ClInclude Include="InfoUtils.h" />
+    <ClInclude Include="Observer.h" />
+    <ClInclude Include="PathUtils.h" />
+    <ClInclude Include="Phrase.h" />
+    <ClInclude Include="TraceUtils.h" />
+    <ClInclude Include="XlsReader.h" />
+    <ClInclude Include="SndUtils.h" />
+    <ClInclude Include="HexGrid.h" />
+    <ClInclude Include="hexutils.h" />
+    <ClInclude Include="GraphHexGrid.h" />
+    <ClInclude Include="Graphic.h" />
+    <ClInclude Include="Activity.h" />
+    <ClInclude Include="ActivityCommand.h" />
+    <ClInclude Include="ActivityFactory.h" />
+    <ClInclude Include="ActivityStatusSender.h" />
+    <ClInclude Include="CameraShieldThrowManager.h" />
+    <ClInclude Include="GrenadeThrowManager.h" />
+    <ClInclude Include="ShootManager.h" />
+    <ClInclude Include="ShootNotifier.h" />
+    <ClInclude Include="SScene.h" />
+    <ClInclude Include="TargetManager.h" />
+    <ClInclude Include="ThrowManager.h" />
+    <ClInclude Include="TracingLOFCheck.h" />
+    <ClInclude Include="DecAccuracyDrv.h" />
+    <ClInclude Include="DecoratorDrv.h" />
+    <ClInclude Include="Driver.h" />
+    <ClInclude Include="MPLimitDrv.h" />
+    <ClInclude Include="OpponentViewDrv.h" />
+    <ClInclude Include="PassDrv.h" />
+    <ClInclude Include="PathShowDrv.h" />
+    <ClInclude Include="ReactionDrv.h" />
+    <ClInclude Include="StanceChangeDrv.h" />
+    <ClInclude Include="StepLimitDrv.h" />
+    <ClInclude Include="UpdateMPDrv.h" />
+    <ClInclude Include="UpdateVisMapDrv.h" />
+    <ClInclude Include="BaseActivity.h" />
+    <ClInclude Include="LandingActivity.h" />
+    <ClInclude Include="MoveActivity.h" />
+    <ClInclude Include="MultiMoveActivity.h" />
+    <ClInclude Include="MultiMoveUtils.h" />
+    <ClInclude Include="ParMoveActivity.h" />
+    <ClInclude Include="RotateActivity.h" />
+    <ClInclude Include="ShipmentActivity.h" />
+    <ClInclude Include="ShootActivity.h" />
+    <ClInclude Include="ThrowActivity.h" />
+    <ClInclude Include="UseActivity.h" />
+    <ClInclude Include="SSceneMgrImp.h" />
+    <ClInclude Include="GameObserver.h" />
+    <ClInclude Include="CheatParser.h" />
+    <ClInclude Include="profiler.h" />
+    <ClInclude Include="Marker.h" />
+    <ClInclude Include="MarkerObserver.h" />
+    <ClInclude Include="Relation.h" />
+    <ClInclude Include="Spectator.h" />
+    <ClInclude Include="SpectatorObserver.h" />
+    <ClInclude Include="VisMap.h" />
+    <ClInclude Include="VisParams.h" />
+    <ClInclude Include="AIAPI.h" />
+    <ClInclude Include="AIBase.h" />
+    <ClInclude Include="AIDefs.h" />
+    <ClInclude Include="AIEnemyNode.h" />
+    <ClInclude Include="AINode.h" />
+    <ClInclude Include="AIUtils.h" />
+    <ClInclude Include="Cameraman.h" />
+    <ClInclude Include="CivilianAI.h" />
+    <ClInclude Include="CompoundNode.h" />
+    <ClInclude Include="EnemyActivityObserver.h" />
+    <ClInclude Include="EnemyDetection.h" />
+    <ClInclude Include="PanicBehaviour.h" />
+    <ClInclude Include="PanicPlayer.h" />
+    <ClInclude Include="PlayerTeamSpectator.h" />
+    <ClInclude Include="SubteamNode.h" />
+    <ClInclude Include="AlarmistNode.h" />
+    <ClInclude Include="AssaultEnemyNode.h" />
+    <ClInclude Include="AssaultTechEnemyNode.h" />
+    <ClInclude Include="CommonEnemyNode.h" />
+    <ClInclude Include="FixedEnemyNode.h" />
+    <ClInclude Include="FixedTechEnemyNode.h" />
+    <ClInclude Include="PatrolEnemyNode.h" />
+    <ClInclude Include="PatrolTechEnemyNode.h" />
+    <ClInclude Include="Thing.h" />
+    <ClInclude Include="ThingFactory.h" />
+    <ClInclude Include="BaseBox.h" />
+    <ClInclude Include="BoxVisitor.h" />
+    <ClInclude Include="Bureau.h" />
+    <ClInclude Include="DataBox.h" />
+    <ClInclude Include="DeadList.h" />
+    <ClInclude Include="GameObjectsMgr.h" />
+    <ClInclude Include="StoreBox.h" />
+    <ClInclude Include="EntityRef.h" />
+    <ClInclude Include="ExperienceSaver.h" />
+    <ClInclude Include="GameLogic.h" />
+    <ClInclude Include="Invariants.h" />
+    <ClInclude Include="logicdefs.h" />
+    <ClInclude Include="logictypes.h" />
+    <ClInclude Include="Multiplayer.h" />
+    <ClInclude Include="TableUtils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="logic2.sconscript" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\common\common.vcxproj">
+      <Project>{d4980ef7-0e42-4ef6-a3e3-6cf047ee1c19}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

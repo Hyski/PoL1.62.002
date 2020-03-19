@@ -1,0 +1,335 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{24E32E31-23CB-4FE4-8B0A-731E88FB6AC7}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.50727.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)lib/debug\</OutDir>
+    <IntDir>$(SolutionDir)temp/$(ProjectName)/$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)lib/release\</OutDir>
+    <IntDir>$(SolutionDir)temp/$(ProjectName)/$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)src/external/boost;$(SolutionDir)src/external/antlr/include;$(SolutionDir)src/external/stlport/stlport;$(SolutionDir)src/external/directx/include;$(SolutionDir)src/external/psdk/include;$(SolutionDir)src/external/vscrt/include;$(SolutionDir)src/external/atlmfc/include;$(SolutionDir)src/shared/mll/include;$(SolutionDir)src/shared/mutual/include;$(SolutionDir)src/shared/muffle/include;$(SolutionDir)src/pol;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_HOME_VERSION;MLL_USE_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>precomp.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)precomp.pch</PrecompiledHeaderOutputFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4251;4275;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(ProjectName).lib</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib/debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)src/external/boost;$(SolutionDir)src/external/antlr/include;$(SolutionDir)src/external/stlport/stlport;$(SolutionDir)src/external/directx/include;$(SolutionDir)src/external/psdk/include;$(SolutionDir)src/external/vscrt/include;$(SolutionDir)src/external/atlmfc/include;$(SolutionDir)src/shared/mll/include;$(SolutionDir)src/shared/mutual/include;$(SolutionDir)src/shared/muffle/include;$(SolutionDir)src/pol;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_HOME_VERSION;MLL_USE_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>precomp.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)precomp.pch</PrecompiledHeaderOutputFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4251;4275;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="FileSystemFront.cpp" />
+    <ClCompile Include="precomp.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Utils.cpp" />
+    <ClCompile Include="ActFactory.cpp" />
+    <ClCompile Include="ActMgr.cpp" />
+    <ClCompile Include="ActTemplate.cpp" />
+    <ClCompile Include="ActWorkshop.cpp" />
+    <ClCompile Include="DullSizer.cpp" />
+    <ClCompile Include="JournalMgr.cpp" />
+    <ClCompile Include="LocTextMgr.cpp" />
+    <ClCompile Include="SavedData.cpp" />
+    <ClCompile Include="Test.cpp" />
+    <ClCompile Include="ActTreeParserImpl.cpp" />
+    <ClCompile Include="ActScriptLexer.cpp" />
+    <ClCompile Include="ActScriptParser.cpp" />
+    <ClCompile Include="ActTreeParser.cpp" />
+    <ClCompile Include="Quest.cpp" />
+    <ClCompile Include="QuestContext.cpp" />
+    <ClCompile Include="QuestRef.cpp" />
+    <ClCompile Include="QuestReporter.cpp" />
+    <ClCompile Include="ParallelAct.cpp" />
+    <ClCompile Include="RefAct.cpp" />
+    <ClCompile Include="SequentialAct.cpp" />
+    <ClCompile Include="CameraFocusAct.cpp" />
+    <ClCompile Include="CamFollowAct.cpp" />
+    <ClCompile Include="CamSplineAct.cpp" />
+    <ClCompile Include="ChangeLevelAct.cpp" />
+    <ClCompile Include="DoorAct.cpp" />
+    <ClCompile Include="LooseGameAct.cpp" />
+    <ClCompile Include="MovePersonAct.cpp" />
+    <ClCompile Include="MovieAct.cpp" />
+    <ClCompile Include="QuestContextAct.cpp" />
+    <ClCompile Include="QuestReportAct.cpp" />
+    <ClCompile Include="ScriptSceneAct.cpp" />
+    <ClCompile Include="ShootDieAct.cpp" />
+    <ClCompile Include="WaitAct.cpp" />
+    <ClCompile Include="WinGameAct.cpp" />
+    <ClCompile Include="AddNewsAct.cpp" />
+    <ClCompile Include="AddRankAct.cpp" />
+    <ClCompile Include="AddToCounterAct.cpp" />
+    <ClCompile Include="AlignmentAct.cpp" />
+    <ClCompile Include="DestructAct.cpp" />
+    <ClCompile Include="DisappearAct.cpp" />
+    <ClCompile Include="EnableLevelAct.cpp" />
+    <ClCompile Include="GiveExpAct.cpp" />
+    <ClCompile Include="GiveItemsAct.cpp" />
+    <ClCompile Include="GiveMoneyAct.cpp" />
+    <ClCompile Include="HeroAct.cpp" />
+    <ClCompile Include="JournalAct.cpp" />
+    <ClCompile Include="PhaseAct.cpp" />
+    <ClCompile Include="PrintAct.cpp" />
+    <ClCompile Include="PulseAct.cpp" />
+    <ClCompile Include="ResetCounterAct.cpp" />
+    <ClCompile Include="SayAct.cpp" />
+    <ClCompile Include="SendQuestMessageAct.cpp" />
+    <ClCompile Include="SpawnAct.cpp" />
+    <ClCompile Include="BringTask.cpp" />
+    <ClCompile Include="EliminateTask.cpp" />
+    <ClCompile Include="KillTask.cpp" />
+    <ClCompile Include="StubTask.cpp" />
+    <ClCompile Include="TalkTask.cpp" />
+    <ClCompile Include="Task.cpp" />
+    <ClCompile Include="TaskDatabase.cpp" />
+    <ClCompile Include="TaskList.cpp" />
+    <ClCompile Include="AliveCondition.cpp" />
+    <ClCompile Include="AndCondition.cpp" />
+    <ClCompile Include="CompareCondition.cpp" />
+    <ClCompile Include="Condition.cpp" />
+    <ClCompile Include="ContextCondition.cpp" />
+    <ClCompile Include="EpisodeCondition.cpp" />
+    <ClCompile Include="HeroCondition.cpp" />
+    <ClCompile Include="OrCondition.cpp" />
+    <ClCompile Include="QuestCondition.cpp" />
+    <ClCompile Include="TaskCondition.cpp" />
+    <ClCompile Include="Persistent.cpp" />
+    <ClCompile Include="LeaveLevelSignal.cpp" />
+    <ClCompile Include="OnSmbUseSignal.cpp" />
+    <ClCompile Include="OnTaskDbSignal.cpp" />
+    <ClCompile Include="Counter.cpp" />
+    <ClCompile Include="RefCounter.cpp" />
+    <ClCompile Include="UsualCounter.cpp" />
+    <ClCompile Include="Trigger.cpp" />
+    <ClCompile Include="Bureau2.cpp" />
+    <ClCompile Include="LocRes.cpp" />
+    <ClCompile Include="StoreBox2.cpp" />
+    <ClCompile Include="UnlimitedMovesMgr.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FileSystemFront.h" />
+    <ClInclude Include="precomp.h" />
+    <ClInclude Include="Utils.h" />
+    <ClInclude Include="ActFactory.h" />
+    <ClInclude Include="ActMgr.h" />
+    <ClInclude Include="ActTemplate.h" />
+    <ClInclude Include="ActWorkshop.h" />
+    <ClInclude Include="DullSizer.h" />
+    <ClInclude Include="FlexibleSSForward.h" />
+    <ClInclude Include="JournalMgr.h" />
+    <ClInclude Include="LocTextMgr.h" />
+    <ClInclude Include="PreciousSizer.h" />
+    <ClInclude Include="SavedData.h" />
+    <ClInclude Include="Sizer.h" />
+    <ClInclude Include="ActScriptLexer.hpp" />
+    <ClInclude Include="ActScriptParser.hpp" />
+    <ClInclude Include="ActScriptParserTokenTypes.hpp" />
+    <ClInclude Include="ActTreeParser.hpp" />
+    <ClInclude Include="Quest.h" />
+    <ClInclude Include="QuestContext.h" />
+    <ClInclude Include="QuestMessage.h" />
+    <ClInclude Include="QuestParams.h" />
+    <ClInclude Include="QuestRef.h" />
+    <ClInclude Include="QuestReporter.h" />
+    <ClInclude Include="QuestsForward.h" />
+    <ClInclude Include="QuestState.h" />
+    <ClInclude Include="Act.h" />
+    <ClInclude Include="ComplexAct.h" />
+    <ClInclude Include="ParallelAct.h" />
+    <ClInclude Include="RefAct.h" />
+    <ClInclude Include="SequentialAct.h" />
+    <ClInclude Include="CameraFocusAct.h" />
+    <ClInclude Include="CamFollowAct.h" />
+    <ClInclude Include="CamSplineAct.h" />
+    <ClInclude Include="ChangeLevelAct.h" />
+    <ClInclude Include="DoorAct.h" />
+    <ClInclude Include="LooseGameAct.h" />
+    <ClInclude Include="MovePersonAct.h" />
+    <ClInclude Include="MovieAct.h" />
+    <ClInclude Include="QuestContextAct.h" />
+    <ClInclude Include="QuestReportAct.h" />
+    <ClInclude Include="ScriptSceneAct.h" />
+    <ClInclude Include="ShootDieAct.h" />
+    <ClInclude Include="WaitAct.h" />
+    <ClInclude Include="WinGameAct.h" />
+    <ClInclude Include="AddNewsAct.h" />
+    <ClInclude Include="AddRankAct.h" />
+    <ClInclude Include="AddToCounterAct.h" />
+    <ClInclude Include="AlignmentAct.h" />
+    <ClInclude Include="DestructAct.h" />
+    <ClInclude Include="DisappearAct.h" />
+    <ClInclude Include="EnableLevelAct.h" />
+    <ClInclude Include="GiveExpAct.h" />
+    <ClInclude Include="GiveItemsAct.h" />
+    <ClInclude Include="GiveMoneyAct.h" />
+    <ClInclude Include="HeroAct.h" />
+    <ClInclude Include="JournalAct.h" />
+    <ClInclude Include="PhaseAct.h" />
+    <ClInclude Include="PrintAct.h" />
+    <ClInclude Include="PulseAct.h" />
+    <ClInclude Include="ResetCounterAct.h" />
+    <ClInclude Include="SayAct.h" />
+    <ClInclude Include="SendQuestMessageAct.h" />
+    <ClInclude Include="SpawnAct.h" />
+    <ClInclude Include="BringTask.h" />
+    <ClInclude Include="EliminateTask.h" />
+    <ClInclude Include="KillTask.h" />
+    <ClInclude Include="StubTask.h" />
+    <ClInclude Include="TalkTask.h" />
+    <ClInclude Include="Task.h" />
+    <ClInclude Include="TaskDatabase.h" />
+    <ClInclude Include="TaskList.h" />
+    <ClInclude Include="TasksForward.h" />
+    <ClInclude Include="TaskState.h" />
+    <ClInclude Include="AliveCondition.h" />
+    <ClInclude Include="AndCondition.h" />
+    <ClInclude Include="CompareCondition.h" />
+    <ClInclude Include="Condition.h" />
+    <ClInclude Include="ConditionsForward.h" />
+    <ClInclude Include="ContextCondition.h" />
+    <ClInclude Include="EpisodeCondition.h" />
+    <ClInclude Include="HeroCondition.h" />
+    <ClInclude Include="LogicalCondition.h" />
+    <ClInclude Include="OrCondition.h" />
+    <ClInclude Include="QuestCondition.h" />
+    <ClInclude Include="QuestConditionState.h" />
+    <ClInclude Include="TaskCondition.h" />
+    <ClInclude Include="NotifyFn.h" />
+    <ClInclude Include="Persistent.h" />
+    <ClInclude Include="LeaveLevelSignal.h" />
+    <ClInclude Include="OnSmbUseSignal.h" />
+    <ClInclude Include="OnTaskDbSignal.h" />
+    <ClInclude Include="Signal.h" />
+    <ClInclude Include="SignalsForward.h" />
+    <ClInclude Include="Counter.h" />
+    <ClInclude Include="CountersForward.h" />
+    <ClInclude Include="RefCounter.h" />
+    <ClInclude Include="UsualCounter.h" />
+    <ClInclude Include="Trigger.h" />
+    <ClInclude Include="TriggersForward.h" />
+    <ClInclude Include="Bureau2.h" />
+    <ClInclude Include="LocRes.h" />
+    <ClInclude Include="StoreBox2.h" />
+    <ClInclude Include="UnlimitedMovesMgr.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="act.g">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">del ActScriptLexer.hpp
+del ActScriptLexer.cpp
+del ActScriptParser.hpp
+del ActScriptParser.cpp
+del ActScriptParserTokenTypes.hpp
+del ActScriptParserTokenTypes.txt
+del ActTreeParser.hpp
+del ActTreeParser.cpp
+$(SolutionDir)src/external/antlr/tool/cantlr.exe Act.g
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ActScriptLexer.hpp;ActScriptLexer.cpp;ActScriptParser.hpp;ActScriptParser.cpp;ActScriptParserTokenTypes.hpp;ActScriptParserTokenTypes.txt;ActTreeParser.hpp;ActTreeParser.cpp;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">del ActScriptLexer.hpp
+del ActScriptLexer.cpp
+del ActScriptParser.hpp
+del ActScriptParser.cpp
+del ActScriptParserTokenTypes.hpp
+del ActScriptParserTokenTypes.txt
+del ActTreeParser.hpp
+del ActTreeParser.cpp
+$(SolutionDir)src/external/antlr/tool/cantlr.exe Act.g
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ActScriptLexer.hpp;ActScriptLexer.cpp;ActScriptParser.hpp;ActScriptParser.cpp;ActScriptParserTokenTypes.hpp;ActScriptParserTokenTypes.txt;ActTreeParser.hpp;ActTreeParser.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <None Include="logic_ex.sconscript" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ActScriptParserTokenTypes.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\external\antlr\antlr.vcxproj">
+      <Project>{30ff0c9a-08ec-4832-8f20-196543f9198b}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\external\stlport\stlport.vcxproj">
+      <Project>{d6d2d28c-1d25-4d6e-b0da-f374eed4befa}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\shared\mll_core\mll_core.vcxproj">
+      <Project>{b4f4c07d-7063-411c-aa82-2d260cdbd7cf}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\shared\mutual\mutual.vcxproj">
+      <Project>{8d4058e5-11b3-4002-8426-c62402fe8ca0}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,396 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>polmis</ProjectName>
+    <ProjectGuid>{20D9E77D-68B3-4A5C-B723-994A359FC3C8}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.50727.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)executable/bin/debug\</OutDir>
+    <IntDir>$(SolutionDir)temp/$(ProjectName)/$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)executable/bin/release\</OutDir>
+    <IntDir>$(SolutionDir)temp/$(ProjectName)/$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)src/external/boost;$(SolutionDir)src/external/stlport/stlport;$(SolutionDir)src/external/directx/include;$(SolutionDir)src/external/psdk/include;$(SolutionDir)src/external/vscrt/include;$(SolutionDir)src/external/atlmfc/include;$(SolutionDir)src/external/bink;$(SolutionDir)src/shared/mll/include;$(SolutionDir)src/shared/mutual/include;$(SolutionDir)src/shared/storage/include;$(SolutionDir)src/shared/muffle/include;$(SolutionDir)src/shared;$(SolutionDir)src/pol;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_HOME_VERSION;MLL_USE_DLL;FS_USE_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>precomp.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)precomp.pch</PrecompiledHeaderOutputFile>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4251;4275;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>common.lib;stlport.lib;pccts.lib;unzip.lib;logic2.lib;muffle.lib;logic_ex.lib;vis.lib;vis_mesh.lib;antlr.lib;dinput.lib;dxguid.lib;d3dx.lib;ddraw.lib;shlwapi.lib;winmm.lib;mll_core.lib;binkw32.lib;ijl.lib;mutual.lib;storage.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)src/external/directx/lib;$(SolutionDir)src/external/psdk/lib;$(SolutionDir)src/external/vscrt/lib;$(SolutionDir)src/external/bink;$(SolutionDir)src/external/ijl;$(SolutionDir)lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)undercover.pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)src/external/psdk/include;$(SolutionDir)src/external/vscrt/include;$(SolutionDir)src/external/atlmfc/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)src/external/boost;$(SolutionDir)src/external/stlport/stlport;$(SolutionDir)src/external/directx/include;$(SolutionDir)src/external/psdk/include;$(SolutionDir)src/external/vscrt/include;$(SolutionDir)src/external/atlmfc/include;$(SolutionDir)src/external/bink;$(SolutionDir)src/shared/mll/include;$(SolutionDir)src/shared/mutual/include;$(SolutionDir)src/shared/storage/include;$(SolutionDir)src/shared/muffle/include;$(SolutionDir)src/shared;$(SolutionDir)src/pol;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_HOME_VERSION;MLL_USE_DLL;FS_USE_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>precomp.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)precomp.pch</PrecompiledHeaderOutputFile>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4251;4275;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>common.lib;stlport.lib;pccts.lib;unzip.lib;logic2.lib;muffle.lib;logic_ex.lib;vis.lib;vis_mesh.lib;antlr.lib;dinput.lib;dxguid.lib;d3dx.lib;ddraw.lib;shlwapi.lib;winmm.lib;mll_core.lib;binkw32.lib;ijl.lib;mutual.lib;storage.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)src/external/directx/lib;$(SolutionDir)src/external/psdk/lib;$(SolutionDir)src/external/vscrt/lib;$(SolutionDir)src/external/bink;$(SolutionDir)src/external/ijl;$(SolutionDir)lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateMapFile>true</GenerateMapFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)src/external/psdk/include;$(SolutionDir)src/external/vscrt/include;$(SolutionDir)src/external/atlmfc/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="character.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="globals.cpp" />
+    <ClCompile Include="HmStatusTracker.cpp" />
+    <ClCompile Include="IWorld.cpp" />
+    <ClCompile Include="MemoryDump.cpp" />
+    <ClCompile Include="ModMgr.cpp" />
+    <ClCompile Include="ParadiseWorld.cpp" />
+    <ClCompile Include="PlayedVideoMgr.cpp" />
+    <ClCompile Include="SaveVersion.cpp" />
+    <ClCompile Include="SceneGraph.cpp" />
+    <ClCompile Include="VisObjMgr.cpp" />
+    <ClCompile Include="VolumeHelper.cpp" />
+    <ClCompile Include="WinMain.cpp" />
+    <ClCompile Include="World.cpp" />
+    <ClCompile Include="precomp.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="gamelevel\chop.cpp" />
+    <ClCompile Include="gamelevel\ExplosionManager.cpp" />
+    <ClCompile Include="gamelevel\GrenadeTracer2.cpp" />
+    <ClCompile Include="gamelevel\Grid.cpp" />
+    <ClCompile Include="gamelevel\LevelToLogic.cpp" />
+    <ClCompile Include="gamelevel\ParseUtils.cpp" />
+    <ClCompile Include="gamelevel\poly.cpp" />
+    <ClCompile Include="gamelevel\ProgrBar.cpp" />
+    <ClCompile Include="gamelevel\ScatteredItems.cpp" />
+    <ClCompile Include="gamelevel\SndAuto.cpp" />
+    <ClCompile Include="gamelevel\ALDMgr.cpp" />
+    <ClCompile Include="gamelevel\GameLevel.cpp" />
+    <ClCompile Include="gamelevel\IntersectionCache.cpp" />
+    <ClCompile Include="gamelevel\LongShot.cpp" />
+    <ClCompile Include="gamelevel\Mark.cpp" />
+    <ClCompile Include="gamelevel\oct_tree_cull_stub.cpp" />
+    <ClCompile Include="gamelevel\oct_tree_drawer.cpp" />
+    <ClCompile Include="gamelevel\oct_tree_idx.cpp" />
+    <ClCompile Include="gamelevel\PoLGameLevel.cpp" />
+    <ClCompile Include="gamelevel\PoLLevelUtils.cpp" />
+    <ClCompile Include="gamelevel\DestructibleProperty.cpp" />
+    <ClCompile Include="gamelevel\DoorProperty.cpp" />
+    <ClCompile Include="gamelevel\DynObject.cpp" />
+    <ClCompile Include="gamelevel\DynObjectInfo.cpp" />
+    <ClCompile Include="gamelevel\DynObjectOldData.cpp" />
+    <ClCompile Include="gamelevel\DynObjectPool.cpp" />
+    <ClCompile Include="gamelevel\DynObjectSet.cpp" />
+    <ClCompile Include="gamelevel\DynObjectSetInfo.cpp" />
+    <ClCompile Include="gamelevel\ElevatorProperty.cpp" />
+    <ClCompile Include="gamelevel\LevelCase.cpp" />
+    <ClCompile Include="gamelevel\LevelObjects.cpp" />
+    <ClCompile Include="gamelevel\ObjectProperty.cpp" />
+    <ClCompile Include="gamelevel\Shape.cpp" />
+    <ClCompile Include="gamelevel\ShapePool.cpp" />
+    <ClCompile Include="gamelevel\TrainProperty.cpp" />
+    <ClCompile Include="gamelevel\UsableProperty.cpp" />
+    <ClCompile Include="skin\AnimaLibrary.cpp" />
+    <ClCompile Include="skin\BaseShadow.cpp" />
+    <ClCompile Include="skin\Bone.cpp" />
+    <ClCompile Include="skin\ComplexShadow.cpp" />
+    <ClCompile Include="skin\KeyAnimation.cpp" />
+    <ClCompile Include="skin\Person.cpp" />
+    <ClCompile Include="skin\RealEntityMover.cpp" />
+    <ClCompile Include="skin\ShadowAccum.cpp" />
+    <ClCompile Include="skin\ShadowBuffer.cpp" />
+    <ClCompile Include="skin\ShadowUtility.cpp" />
+    <ClCompile Include="skin\SimpleShadow.cpp" />
+    <ClCompile Include="skin\skanim.cpp" />
+    <ClCompile Include="skin\skeleton.cpp" />
+    <ClCompile Include="skin\Skin.cpp" />
+    <ClCompile Include="interface\Banner.cpp" />
+    <ClCompile Include="interface\BannerMgr.cpp" />
+    <ClCompile Include="interface\Console.cpp" />
+    <ClCompile Include="interface\DescriptionScreen.cpp" />
+    <ClCompile Include="interface\Dialog.cpp" />
+    <ClCompile Include="interface\DialogScreen.cpp" />
+    <ClCompile Include="interface\DXImageMgr.cpp" />
+    <ClCompile Include="interface\Edit.cpp" />
+    <ClCompile Include="interface\GameScreen.cpp" />
+    <ClCompile Include="interface\GraphMgr.cpp" />
+    <ClCompile Include="interface\Interface.cpp" />
+    <ClCompile Include="interface\InventoryScreen.cpp" />
+    <ClCompile Include="interface\JournalScreen.cpp" />
+    <ClCompile Include="interface\Lagoon.cpp" />
+    <ClCompile Include="interface\LoadingScreen.cpp" />
+    <ClCompile Include="interface\MainMenu.cpp" />
+    <ClCompile Include="interface\MenuMgr.cpp" />
+    <ClCompile Include="interface\MouseCursor.cpp" />
+    <ClCompile Include="interface\MultiEdit.cpp" />
+    <ClCompile Include="interface\OptionsScreen.cpp" />
+    <ClCompile Include="interface\Screens.cpp" />
+    <ClCompile Include="interface\ScreenShot.cpp" />
+    <ClCompile Include="interface\SlotsEngine.cpp" />
+    <ClCompile Include="interface\Text.cpp" />
+    <ClCompile Include="interface\TextBox.cpp" />
+    <ClCompile Include="interface\Tip.cpp" />
+    <ClCompile Include="interface\TradeScreen.cpp" />
+    <ClCompile Include="interface\WidgetFactory.cpp" />
+    <ClCompile Include="interface\WidgetSoundMgr.cpp" />
+    <ClCompile Include="interface\els\elText.cpp" />
+    <ClCompile Include="ddframe\DDFrame.cpp" />
+    <ClCompile Include="ddframe\DDMainWnd.cpp" />
+    <ClCompile Include="options\Options.cpp" />
+    <ClCompile Include="options\PCOptions.cpp" />
+    <ClCompile Include="options\XRegistry.cpp" />
+    <ClCompile Include="version.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="character.h" />
+    <ClInclude Include="CommonTrace.h" />
+    <ClInclude Include="DataFromFile.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="globals.h" />
+    <ClInclude Include="HmStatusTracker.h" />
+    <ClInclude Include="IWorld.h" />
+    <ClInclude Include="MasterPtr.h" />
+    <ClInclude Include="MlVersion.h" />
+    <ClInclude Include="ModMgr.h" />
+    <ClInclude Include="ParadiseWorld.h" />
+    <ClInclude Include="PlayedVideoMgr.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="SceneGraph.h" />
+    <ClInclude Include="VisObj.h" />
+    <ClInclude Include="VisObjMgr.h" />
+    <ClInclude Include="VolumeHelper.h" />
+    <ClInclude Include="VTuneAttach.h" />
+    <ClInclude Include="World.h" />
+    <ClInclude Include="precomp.h" />
+    <ClInclude Include="gamelevel\chop.h" />
+    <ClInclude Include="gamelevel\ExplosionManager.h" />
+    <ClInclude Include="gamelevel\GrenadeTracer2.h" />
+    <ClInclude Include="gamelevel\Grid.h" />
+    <ClInclude Include="gamelevel\LevelToLogic.h" />
+    <ClInclude Include="gamelevel\ParseUtils.h" />
+    <ClInclude Include="gamelevel\poly.h" />
+    <ClInclude Include="gamelevel\ProgrBar.h" />
+    <ClInclude Include="gamelevel\ScatteredItems.h" />
+    <ClInclude Include="gamelevel\SndAuto.h" />
+    <ClInclude Include="gamelevel\SoundInfo.h" />
+    <ClInclude Include="gamelevel\ALDMgr.h" />
+    <ClInclude Include="gamelevel\GameLevel.h" />
+    <ClInclude Include="gamelevel\IntersectionCache.h" />
+    <ClInclude Include="gamelevel\LongShot.h" />
+    <ClInclude Include="gamelevel\Mark.h" />
+    <ClInclude Include="gamelevel\oct_tree_cull.h" />
+    <ClInclude Include="gamelevel\oct_tree_drawer.h" />
+    <ClInclude Include="gamelevel\oct_tree_idx.h" />
+    <ClInclude Include="gamelevel\PoLGameLevel.h" />
+    <ClInclude Include="gamelevel\PoLLevelUtils.h" />
+    <ClInclude Include="gamelevel\DestructibleInfo.h" />
+    <ClInclude Include="gamelevel\DestructibleProperty.h" />
+    <ClInclude Include="gamelevel\DoorProperty.h" />
+    <ClInclude Include="gamelevel\DynObject.h" />
+    <ClInclude Include="gamelevel\DynObjectInfo.h" />
+    <ClInclude Include="gamelevel\DynObjectOldData.h" />
+    <ClInclude Include="gamelevel\DynObjectPool.h" />
+    <ClInclude Include="gamelevel\DynObjectSet.h" />
+    <ClInclude Include="gamelevel\DynObjectSetInfo.h" />
+    <ClInclude Include="gamelevel\ElevatorProperty.h" />
+    <ClInclude Include="gamelevel\LevelCase.h" />
+    <ClInclude Include="gamelevel\LevelCaseInfo.h" />
+    <ClInclude Include="gamelevel\LevelObjects.h" />
+    <ClInclude Include="gamelevel\ObjectProperty.h" />
+    <ClInclude Include="gamelevel\objectsNG.h" />
+    <ClInclude Include="gamelevel\Shape.h" />
+    <ClInclude Include="gamelevel\ShapePool.h" />
+    <ClInclude Include="gamelevel\Station.h" />
+    <ClInclude Include="gamelevel\TrainInfo.h" />
+    <ClInclude Include="gamelevel\TrainProperty.h" />
+    <ClInclude Include="gamelevel\UsableProperty.h" />
+    <ClInclude Include="gamelevel\UseInfo.h" />
+    <ClInclude Include="skin\AnimaLibrary.h" />
+    <ClInclude Include="skin\Bone.h" />
+    <ClInclude Include="skin\BSpline.h" />
+    <ClInclude Include="skin\ComplexShadow.h" />
+    <ClInclude Include="skin\iSlicer.h" />
+    <ClInclude Include="skin\KeyAnimation.h" />
+    <ClInclude Include="skin\Person.h" />
+    <ClInclude Include="skin\RealEntityMover.h" />
+    <ClInclude Include="skin\Shadow.h" />
+    <ClInclude Include="skin\ShadowAccum.h" />
+    <ClInclude Include="skin\skanim.h" />
+    <ClInclude Include="skin\skeleton.h" />
+    <ClInclude Include="skin\Skin.h" />
+    <ClInclude Include="skin\slicer.h" />
+    <ClInclude Include="interface\Banner.h" />
+    <ClInclude Include="interface\BannerMgr.h" />
+    <ClInclude Include="interface\Console.h" />
+    <ClInclude Include="interface\DescriptionScreen.h" />
+    <ClInclude Include="interface\Dialog.h" />
+    <ClInclude Include="interface\DialogScreen.h" />
+    <ClInclude Include="interface\DXImageMgr.h" />
+    <ClInclude Include="interface\Edit.h" />
+    <ClInclude Include="interface\GameScreen.h" />
+    <ClInclude Include="interface\GraphMgr.h" />
+    <ClInclude Include="interface\Interface.h" />
+    <ClInclude Include="interface\InventoryScreen.h" />
+    <ClInclude Include="interface\JournalScreen.h" />
+    <ClInclude Include="interface\Lagoon.h" />
+    <ClInclude Include="interface\LoadingScreen.h" />
+    <ClInclude Include="interface\MainMenu.h" />
+    <ClInclude Include="interface\MenuMgr.h" />
+    <ClInclude Include="interface\MouseCursor.h" />
+    <ClInclude Include="interface\MultiEdit.h" />
+    <ClInclude Include="interface\OptionsScreen.h" />
+    <ClInclude Include="interface\Screens.h" />
+    <ClInclude Include="interface\ScreenShot.h" />
+    <ClInclude Include="interface\SlotsEngine.h" />
+    <ClInclude Include="interface\Text.h" />
+    <ClInclude Include="interface\TextBox.h" />
+    <ClInclude Include="interface\Tip.h" />
+    <ClInclude Include="interface\TradeScreen.h" />
+    <ClInclude Include="interface\WidgetFactory.h" />
+    <ClInclude Include="interface\WidgetSoundMgr.h" />
+    <ClInclude Include="interface\els\elText.h" />
+    <ClInclude Include="ddframe\DDFrame.h" />
+    <ClInclude Include="ddframe\DDMainWnd.h" />
+    <ClInclude Include="options\Options.h" />
+    <ClInclude Include="options\PCOptions.h" />
+    <ClInclude Include="options\XRegistry.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon1.ico" />
+    <Image Include="uninst.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="undercover.sconscript" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\external\antlr\antlr.vcxproj">
+      <Project>{30ff0c9a-08ec-4832-8f20-196543f9198b}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\external\stlport\stlport.vcxproj">
+      <Project>{d6d2d28c-1d25-4d6e-b0da-f374eed4befa}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\shared\mll_core\mll_core.vcxproj">
+      <Project>{b4f4c07d-7063-411c-aa82-2d260cdbd7cf}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\shared\muffle\muffle.vcxproj">
+      <Project>{1048c450-2165-4591-b9c3-2575e4b30300}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\shared\mutual\mutual.vcxproj">
+      <Project>{8d4058e5-11b3-4002-8426-c62402fe8ca0}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\shared\storage\Storage.vcxproj">
+      <Project>{308ff35e-614d-436d-a1ef-f72b4d35e90b}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\shared\vis\vis.vcxproj">
+      <Project>{62a038dc-a2a7-4f1c-8565-0817cba71fd5}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\shared\vis\vis_mesh.vcxproj">
+      <Project>{1527bf68-7a11-40fe-996d-5e025378471c}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\common\common.vcxproj">
+      <Project>{d4980ef7-0e42-4ef6-a3e3-6cf047ee1c19}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\logic2\logic2.vcxproj">
+      <Project>{3281a6df-067d-43c6-9214-5d2d7cd5b198}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\logic_ex\logic_ex.vcxproj">
+      <Project>{24e32e31-23cb-4fe4-8b0a-731e88fb6ac7}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\pccts\pccts.vcxproj">
+      <Project>{6e041db8-d93e-4893-9fd6-024e9747a09f}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\unzip\unzip.vcxproj">
+      <Project>{7d81d670-7e0a-459c-a1fa-b5b1f3a6603a}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,56 @@
+4DOM    <http://Fourthought.com/4Suite/4DOM>
+
+Copyright (C) 2000 Fourthought Inc, USA
+
+http://www.python.org/sigs/xml-sig/
+http://lists.fourthought.com/mailman/listinfo/4suite
+
+
+Description
+===========
+
+4DOM is an implementation of the World-Wide Web Consortium recommended
+standard document object model for Python.  4DOM implements
+DOM Core level 2, HTML level 2 and Level 2 Document Traversal.
+
+4DOM should work on all platforms supported by Python.  If you have
+any problems with a particular platform, please e-mail the authors.
+
+
+Installation
+============
+
+Simply copy to a directory in your PYTHONPATH.  GenerateHtml.py is no longer
+needed.
+
+
+License/Copyright
+=================
+
+4DOM is copyrighted by Fourthought Inc (http://Fourthought.com).
+Please read the file COPYRIGHT for the complete copyright and
+terms of license.
+
+
+Documentation
+=============
+
+Please see the file docs/4DOM.html for general documentation
+
+The DOM API is specified at
+
+http://www.w3.org/TR/DOM-Level-2/
+
+
+Contact and Support
+===================
+
+Please consider joining the 4Suite users and support mailing list
+
+http://lists.fourthought.com/mailman/listinfo/4suite
+
+You can send comments, bug-reports and support requests to one or both of the
+following addresses:
+
+xml-sig@python.org
+4Suite@lists.fourthought.com

@@ -1,0 +1,24 @@
+﻿Построение начато 10.08.2019 2:45:16.
+     1>Проект "E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\shared\mutual\mutual.vcxproj" в узле 2 (целевые объекты Build).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\shared\mutual\include/" /I"E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src/external/stlport/stlport" /I"E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src/external/boost" /I"E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src/external/vscrt/include" /I"E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src/external/psdk/include" /I"E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src/shared/mll/include" /Zi /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _WINDLL /D _MBCS /Gm /EHsc /RTC1 /MDd /GS- /fp:precise /Zc:wchar_t /Zc:forScope /Fo"E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\temp/mutual/Debug\\" /Fd"E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\temp/mutual/Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt resourcemgr.cpp rtti.cpp
+         rtti.cpp
+         Unknown compiler version - please run the configure tests and report the results
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\boost\boost/type_traits/type_with_alignment.hpp(204): warning C4018: >=: несоответствие типов со знаком и без знака
+                 E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\boost\boost/type_traits/type_with_alignment.hpp(209): см. ссылку на создание экземпляров класса шаблон при компиляции "boost::type_with_alignment<Align>"
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(46): error C2757: __std_alias: символ с этим именем уже существует, поэтому оно не может быть использовано в качестве имени пространства имен
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2039: vsnprintf: не является членом "std"
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2873: vsnprintf: использование символа в "using"-объявлении не допускается
+         resourcemgr.cpp
+         Unknown compiler version - please run the configure tests and report the results
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\boost\boost/type_traits/type_with_alignment.hpp(204): warning C4018: >=: несоответствие типов со знаком и без знака
+                 E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\boost\boost/type_traits/type_with_alignment.hpp(209): см. ссылку на создание экземпляров класса шаблон при компиляции "boost::type_with_alignment<Align>"
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(46): error C2757: __std_alias: символ с этим именем уже существует, поэтому оно не может быть использовано в качестве имени пространства имен
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2039: vsnprintf: не является членом "std"
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2873: vsnprintf: использование символа в "using"-объявлении не допускается
+         Создание кода...
+     1>Построение проекта "E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\shared\mutual\mutual.vcxproj" завершено (целевые объекты Build) с ошибкой.
+
+Сбой построения.
+
+Затраченное время: 00:00:02.84

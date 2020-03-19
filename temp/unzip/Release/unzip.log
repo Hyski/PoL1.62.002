@@ -1,0 +1,50 @@
+﻿Построение начато 10.08.2019 2:50:51.
+     1>Проект "E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\pol\unzip\unzip.vcxproj" в узле 4 (целевые объекты Build).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src/external/stlport/stlport" /I"E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src/external/psdk/include" /I"E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src/external/vscrt/include" /Zi /nologo /W3 /WX- /O2 /Oy- /D WIN32 /D _WINDOWS /D WINDLL /D USE_EF_UT_TIME /D DLL /D UNZIPLIB /D REENTERANT /D _MBCS /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\temp/unzip/Release\\" /Fd"E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\temp/unzip/Release\vc110.pdb" /Gd /TC /analyze- /errorReport:prompt WinDll\windll.c win32\nt.c win32\win32.c api.c crc32.c crctab.c crypt.c explode.c extract.c fileio.c globals.c inflate.c list.c match.c process.c ttyio.c unreduce.c unshrink.c zipinfo.c
+         windll.c
+         nt.c
+         win32.c
+         api.c
+         crc32.c
+         crctab.c
+         crypt.c
+         explode.c
+         extract.c
+         fileio.c
+         globals.c
+         inflate.c
+         list.c
+         match.c
+         process.c
+         ttyio.c
+         unreduce.c
+         unshrink.c
+         zipinfo.c
+         Создание кода...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\Lib.exe /OUT:"E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\lib/release\unzip.lib" /NOLOGO "E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\temp/unzip/Release\windll.obj"
+         "E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\temp/unzip/Release\nt.obj"
+         "E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\temp/unzip/Release\win32.obj"
+         "E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\temp/unzip/Release\api.obj"
+         "E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\temp/unzip/Release\crc32.obj"
+         "E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\temp/unzip/Release\crctab.obj"
+         "E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\temp/unzip/Release\crypt.obj"
+         "E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\temp/unzip/Release\explode.obj"
+         "E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\temp/unzip/Release\extract.obj"
+         "E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\temp/unzip/Release\fileio.obj"
+         "E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\temp/unzip/Release\globals.obj"
+         "E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\temp/unzip/Release\inflate.obj"
+         "E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\temp/unzip/Release\list.obj"
+         "E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\temp/unzip/Release\match.obj"
+         "E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\temp/unzip/Release\process.obj"
+         "E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\temp/unzip/Release\ttyio.obj"
+         "E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\temp/unzip/Release\unreduce.obj"
+         "E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\temp/unzip/Release\unshrink.obj"
+         "E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\temp/unzip/Release\zipinfo.obj"
+         unzip.vcxproj -> E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\lib/release\unzip.lib
+     1>Построение проекта "E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\pol\unzip\unzip.vcxproj" завершено (целевые объекты Build).
+
+Построение успешно завершено.
+
+Затраченное время: 00:00:05.01

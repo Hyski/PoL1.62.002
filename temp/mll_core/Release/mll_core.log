@@ -1,0 +1,13 @@
+﻿Построение начато 10.08.2019 2:51:00.
+     1>Проект "E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\shared\mll_core\mll_core.vcxproj" в узле 5 (целевые объекты Build).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\shared\mll_core\../../external/stlport/stlport" /I"E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\shared\mll_core\../../external/vscrt/include" /I"E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\shared\mll_core\../../external/psdk/include" /I"E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\shared\mll_core\../../external/boost" /I"E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\shared\mll_core\../mll/include" /Zi /nologo /W3 /WX- /O2 /Oy- /D WIN32 /D _WINDOWS /D MLL_USE_DLL /D _WINDLL /D _MBCS /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"precomp.h" /Fp"E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\temp/mll_core/Release\precomp.pch" /Fo"E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\temp/mll_core/Release\\" /Fd"E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\temp/mll_core/Release\vc110.pdb" /Gd /TP /wd4251 /analyze- /errorReport:prompt src\precomp.cpp
+         precomp.cpp
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(46): error C2757: __std_alias: символ с этим именем уже существует, поэтому оно не может быть использовано в качестве имени пространства имен
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2039: vsnprintf: не является членом "std"
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2873: vsnprintf: использование символа в "using"-объявлении не допускается
+     1>Построение проекта "E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\shared\mll_core\mll_core.vcxproj" завершено (целевые объекты Build) с ошибкой.
+
+Сбой построения.
+
+Затраченное время: 00:00:00.76

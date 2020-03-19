@@ -1,0 +1,645 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="maintain">
+      <UniqueIdentifier>{b5f18fc7-8adf-4353-9d29-c0b645e06f31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FlexibleSS">
+      <UniqueIdentifier>{d963e359-7c91-4b18-b25d-b354d8b906dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FlexibleSS\grammar">
+      <UniqueIdentifier>{d01914e1-9dcf-46d4-abf6-88072b644001}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FlexibleSS\grammar\generated">
+      <UniqueIdentifier>{b1009784-f862-4d8f-b92a-494c31934c19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BuildBlocks">
+      <UniqueIdentifier>{17d11a2a-b630-4fd0-8a90-6c44a85a8c86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BuildBlocks\Quests">
+      <UniqueIdentifier>{8efaf44f-46a4-4142-afce-df1a5e91dcfa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BuildBlocks\Acts">
+      <UniqueIdentifier>{d64c4c77-d3f7-4a91-bb54-e44877b84aa3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BuildBlocks\Acts\LongActs">
+      <UniqueIdentifier>{57bf28d4-f646-42c4-ad0a-c61fdd546e87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BuildBlocks\Acts\OneFrameActs">
+      <UniqueIdentifier>{c6961456-72cb-4bb4-bcd5-cad20fe81f7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BuildBlocks\Tasks">
+      <UniqueIdentifier>{0aa665a3-0415-4064-b831-caeb7984e23d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BuildBlocks\Conditions">
+      <UniqueIdentifier>{14543d91-cbd7-4e5a-b68d-ce452a253d5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BuildBlocks\Common">
+      <UniqueIdentifier>{7fbf7041-ca4a-4953-914f-a90af20f28c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BuildBlocks\Signals">
+      <UniqueIdentifier>{5503ae18-dc46-47cf-9114-c5427af83e2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BuildBlocks\Counters">
+      <UniqueIdentifier>{f96ed1a1-2f43-4e16-9494-6cf38efad7a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BuildBlocks\Triggers">
+      <UniqueIdentifier>{e4a57ab1-8449-431c-a9e9-177f03278e47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LogicExtensions">
+      <UniqueIdentifier>{99971005-d048-4f87-b00c-03eab87f69c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="build">
+      <UniqueIdentifier>{5f69c22e-1279-46ef-991e-941e9c3b76e4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="FileSystemFront.cpp">
+      <Filter>maintain</Filter>
+    </ClCompile>
+    <ClCompile Include="precomp.cpp">
+      <Filter>maintain</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils.cpp">
+      <Filter>maintain</Filter>
+    </ClCompile>
+    <ClCompile Include="ActFactory.cpp">
+      <Filter>FlexibleSS</Filter>
+    </ClCompile>
+    <ClCompile Include="ActMgr.cpp">
+      <Filter>FlexibleSS</Filter>
+    </ClCompile>
+    <ClCompile Include="ActTemplate.cpp">
+      <Filter>FlexibleSS</Filter>
+    </ClCompile>
+    <ClCompile Include="ActWorkshop.cpp">
+      <Filter>FlexibleSS</Filter>
+    </ClCompile>
+    <ClCompile Include="DullSizer.cpp">
+      <Filter>FlexibleSS</Filter>
+    </ClCompile>
+    <ClCompile Include="JournalMgr.cpp">
+      <Filter>FlexibleSS</Filter>
+    </ClCompile>
+    <ClCompile Include="LocTextMgr.cpp">
+      <Filter>FlexibleSS</Filter>
+    </ClCompile>
+    <ClCompile Include="SavedData.cpp">
+      <Filter>FlexibleSS</Filter>
+    </ClCompile>
+    <ClCompile Include="Test.cpp">
+      <Filter>FlexibleSS</Filter>
+    </ClCompile>
+    <ClCompile Include="ActTreeParserImpl.cpp">
+      <Filter>FlexibleSS\grammar</Filter>
+    </ClCompile>
+    <ClCompile Include="ActScriptLexer.cpp">
+      <Filter>FlexibleSS\grammar\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="ActScriptParser.cpp">
+      <Filter>FlexibleSS\grammar\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="ActTreeParser.cpp">
+      <Filter>FlexibleSS\grammar\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="Quest.cpp">
+      <Filter>BuildBlocks\Quests</Filter>
+    </ClCompile>
+    <ClCompile Include="QuestContext.cpp">
+      <Filter>BuildBlocks\Quests</Filter>
+    </ClCompile>
+    <ClCompile Include="QuestRef.cpp">
+      <Filter>BuildBlocks\Quests</Filter>
+    </ClCompile>
+    <ClCompile Include="QuestReporter.cpp">
+      <Filter>BuildBlocks\Quests</Filter>
+    </ClCompile>
+    <ClCompile Include="ParallelAct.cpp">
+      <Filter>BuildBlocks\Acts</Filter>
+    </ClCompile>
+    <ClCompile Include="RefAct.cpp">
+      <Filter>BuildBlocks\Acts</Filter>
+    </ClCompile>
+    <ClCompile Include="SequentialAct.cpp">
+      <Filter>BuildBlocks\Acts</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraFocusAct.cpp">
+      <Filter>BuildBlocks\Acts\LongActs</Filter>
+    </ClCompile>
+    <ClCompile Include="CamFollowAct.cpp">
+      <Filter>BuildBlocks\Acts\LongActs</Filter>
+    </ClCompile>
+    <ClCompile Include="CamSplineAct.cpp">
+      <Filter>BuildBlocks\Acts\LongActs</Filter>
+    </ClCompile>
+    <ClCompile Include="ChangeLevelAct.cpp">
+      <Filter>BuildBlocks\Acts\LongActs</Filter>
+    </ClCompile>
+    <ClCompile Include="DoorAct.cpp">
+      <Filter>BuildBlocks\Acts\LongActs</Filter>
+    </ClCompile>
+    <ClCompile Include="LooseGameAct.cpp">
+      <Filter>BuildBlocks\Acts\LongActs</Filter>
+    </ClCompile>
+    <ClCompile Include="MovePersonAct.cpp">
+      <Filter>BuildBlocks\Acts\LongActs</Filter>
+    </ClCompile>
+    <ClCompile Include="MovieAct.cpp">
+      <Filter>BuildBlocks\Acts\LongActs</Filter>
+    </ClCompile>
+    <ClCompile Include="QuestContextAct.cpp">
+      <Filter>BuildBlocks\Acts\LongActs</Filter>
+    </ClCompile>
+    <ClCompile Include="QuestReportAct.cpp">
+      <Filter>BuildBlocks\Acts\LongActs</Filter>
+    </ClCompile>
+    <ClCompile Include="ScriptSceneAct.cpp">
+      <Filter>BuildBlocks\Acts\LongActs</Filter>
+    </ClCompile>
+    <ClCompile Include="ShootDieAct.cpp">
+      <Filter>BuildBlocks\Acts\LongActs</Filter>
+    </ClCompile>
+    <ClCompile Include="WaitAct.cpp">
+      <Filter>BuildBlocks\Acts\LongActs</Filter>
+    </ClCompile>
+    <ClCompile Include="WinGameAct.cpp">
+      <Filter>BuildBlocks\Acts\LongActs</Filter>
+    </ClCompile>
+    <ClCompile Include="AddNewsAct.cpp">
+      <Filter>BuildBlocks\Acts\OneFrameActs</Filter>
+    </ClCompile>
+    <ClCompile Include="AddRankAct.cpp">
+      <Filter>BuildBlocks\Acts\OneFrameActs</Filter>
+    </ClCompile>
+    <ClCompile Include="AddToCounterAct.cpp">
+      <Filter>BuildBlocks\Acts\OneFrameActs</Filter>
+    </ClCompile>
+    <ClCompile Include="AlignmentAct.cpp">
+      <Filter>BuildBlocks\Acts\OneFrameActs</Filter>
+    </ClCompile>
+    <ClCompile Include="DestructAct.cpp">
+      <Filter>BuildBlocks\Acts\OneFrameActs</Filter>
+    </ClCompile>
+    <ClCompile Include="DisappearAct.cpp">
+      <Filter>BuildBlocks\Acts\OneFrameActs</Filter>
+    </ClCompile>
+    <ClCompile Include="EnableLevelAct.cpp">
+      <Filter>BuildBlocks\Acts\OneFrameActs</Filter>
+    </ClCompile>
+    <ClCompile Include="GiveExpAct.cpp">
+      <Filter>BuildBlocks\Acts\OneFrameActs</Filter>
+    </ClCompile>
+    <ClCompile Include="GiveItemsAct.cpp">
+      <Filter>BuildBlocks\Acts\OneFrameActs</Filter>
+    </ClCompile>
+    <ClCompile Include="GiveMoneyAct.cpp">
+      <Filter>BuildBlocks\Acts\OneFrameActs</Filter>
+    </ClCompile>
+    <ClCompile Include="HeroAct.cpp">
+      <Filter>BuildBlocks\Acts\OneFrameActs</Filter>
+    </ClCompile>
+    <ClCompile Include="JournalAct.cpp">
+      <Filter>BuildBlocks\Acts\OneFrameActs</Filter>
+    </ClCompile>
+    <ClCompile Include="PhaseAct.cpp">
+      <Filter>BuildBlocks\Acts\OneFrameActs</Filter>
+    </ClCompile>
+    <ClCompile Include="PrintAct.cpp">
+      <Filter>BuildBlocks\Acts\OneFrameActs</Filter>
+    </ClCompile>
+    <ClCompile Include="PulseAct.cpp">
+      <Filter>BuildBlocks\Acts\OneFrameActs</Filter>
+    </ClCompile>
+    <ClCompile Include="ResetCounterAct.cpp">
+      <Filter>BuildBlocks\Acts\OneFrameActs</Filter>
+    </ClCompile>
+    <ClCompile Include="SayAct.cpp">
+      <Filter>BuildBlocks\Acts\OneFrameActs</Filter>
+    </ClCompile>
+    <ClCompile Include="SendQuestMessageAct.cpp">
+      <Filter>BuildBlocks\Acts\OneFrameActs</Filter>
+    </ClCompile>
+    <ClCompile Include="SpawnAct.cpp">
+      <Filter>BuildBlocks\Acts\OneFrameActs</Filter>
+    </ClCompile>
+    <ClCompile Include="BringTask.cpp">
+      <Filter>BuildBlocks\Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="EliminateTask.cpp">
+      <Filter>BuildBlocks\Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="KillTask.cpp">
+      <Filter>BuildBlocks\Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="StubTask.cpp">
+      <Filter>BuildBlocks\Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="TalkTask.cpp">
+      <Filter>BuildBlocks\Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="Task.cpp">
+      <Filter>BuildBlocks\Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskDatabase.cpp">
+      <Filter>BuildBlocks\Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskList.cpp">
+      <Filter>BuildBlocks\Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="AliveCondition.cpp">
+      <Filter>BuildBlocks\Conditions</Filter>
+    </ClCompile>
+    <ClCompile Include="AndCondition.cpp">
+      <Filter>BuildBlocks\Conditions</Filter>
+    </ClCompile>
+    <ClCompile Include="CompareCondition.cpp">
+      <Filter>BuildBlocks\Conditions</Filter>
+    </ClCompile>
+    <ClCompile Include="Condition.cpp">
+      <Filter>BuildBlocks\Conditions</Filter>
+    </ClCompile>
+    <ClCompile Include="ContextCondition.cpp">
+      <Filter>BuildBlocks\Conditions</Filter>
+    </ClCompile>
+    <ClCompile Include="EpisodeCondition.cpp">
+      <Filter>BuildBlocks\Conditions</Filter>
+    </ClCompile>
+    <ClCompile Include="HeroCondition.cpp">
+      <Filter>BuildBlocks\Conditions</Filter>
+    </ClCompile>
+    <ClCompile Include="OrCondition.cpp">
+      <Filter>BuildBlocks\Conditions</Filter>
+    </ClCompile>
+    <ClCompile Include="QuestCondition.cpp">
+      <Filter>BuildBlocks\Conditions</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskCondition.cpp">
+      <Filter>BuildBlocks\Conditions</Filter>
+    </ClCompile>
+    <ClCompile Include="Persistent.cpp">
+      <Filter>BuildBlocks\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="LeaveLevelSignal.cpp">
+      <Filter>BuildBlocks\Signals</Filter>
+    </ClCompile>
+    <ClCompile Include="OnSmbUseSignal.cpp">
+      <Filter>BuildBlocks\Signals</Filter>
+    </ClCompile>
+    <ClCompile Include="OnTaskDbSignal.cpp">
+      <Filter>BuildBlocks\Signals</Filter>
+    </ClCompile>
+    <ClCompile Include="Counter.cpp">
+      <Filter>BuildBlocks\Counters</Filter>
+    </ClCompile>
+    <ClCompile Include="RefCounter.cpp">
+      <Filter>BuildBlocks\Counters</Filter>
+    </ClCompile>
+    <ClCompile Include="UsualCounter.cpp">
+      <Filter>BuildBlocks\Counters</Filter>
+    </ClCompile>
+    <ClCompile Include="Trigger.cpp">
+      <Filter>BuildBlocks\Triggers</Filter>
+    </ClCompile>
+    <ClCompile Include="Bureau2.cpp">
+      <Filter>LogicExtensions</Filter>
+    </ClCompile>
+    <ClCompile Include="LocRes.cpp">
+      <Filter>LogicExtensions</Filter>
+    </ClCompile>
+    <ClCompile Include="StoreBox2.cpp">
+      <Filter>LogicExtensions</Filter>
+    </ClCompile>
+    <ClCompile Include="UnlimitedMovesMgr.cpp">
+      <Filter>LogicExtensions</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FileSystemFront.h">
+      <Filter>maintain</Filter>
+    </ClInclude>
+    <ClInclude Include="precomp.h">
+      <Filter>maintain</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils.h">
+      <Filter>maintain</Filter>
+    </ClInclude>
+    <ClInclude Include="ActFactory.h">
+      <Filter>FlexibleSS</Filter>
+    </ClInclude>
+    <ClInclude Include="ActMgr.h">
+      <Filter>FlexibleSS</Filter>
+    </ClInclude>
+    <ClInclude Include="ActTemplate.h">
+      <Filter>FlexibleSS</Filter>
+    </ClInclude>
+    <ClInclude Include="ActWorkshop.h">
+      <Filter>FlexibleSS</Filter>
+    </ClInclude>
+    <ClInclude Include="DullSizer.h">
+      <Filter>FlexibleSS</Filter>
+    </ClInclude>
+    <ClInclude Include="FlexibleSSForward.h">
+      <Filter>FlexibleSS</Filter>
+    </ClInclude>
+    <ClInclude Include="JournalMgr.h">
+      <Filter>FlexibleSS</Filter>
+    </ClInclude>
+    <ClInclude Include="LocTextMgr.h">
+      <Filter>FlexibleSS</Filter>
+    </ClInclude>
+    <ClInclude Include="PreciousSizer.h">
+      <Filter>FlexibleSS</Filter>
+    </ClInclude>
+    <ClInclude Include="SavedData.h">
+      <Filter>FlexibleSS</Filter>
+    </ClInclude>
+    <ClInclude Include="Sizer.h">
+      <Filter>FlexibleSS</Filter>
+    </ClInclude>
+    <ClInclude Include="ActScriptLexer.hpp">
+      <Filter>FlexibleSS\grammar\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="ActScriptParser.hpp">
+      <Filter>FlexibleSS\grammar\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="ActScriptParserTokenTypes.hpp">
+      <Filter>FlexibleSS\grammar\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="ActTreeParser.hpp">
+      <Filter>FlexibleSS\grammar\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="Quest.h">
+      <Filter>BuildBlocks\Quests</Filter>
+    </ClInclude>
+    <ClInclude Include="QuestContext.h">
+      <Filter>BuildBlocks\Quests</Filter>
+    </ClInclude>
+    <ClInclude Include="QuestMessage.h">
+      <Filter>BuildBlocks\Quests</Filter>
+    </ClInclude>
+    <ClInclude Include="QuestParams.h">
+      <Filter>BuildBlocks\Quests</Filter>
+    </ClInclude>
+    <ClInclude Include="QuestRef.h">
+      <Filter>BuildBlocks\Quests</Filter>
+    </ClInclude>
+    <ClInclude Include="QuestReporter.h">
+      <Filter>BuildBlocks\Quests</Filter>
+    </ClInclude>
+    <ClInclude Include="QuestsForward.h">
+      <Filter>BuildBlocks\Quests</Filter>
+    </ClInclude>
+    <ClInclude Include="QuestState.h">
+      <Filter>BuildBlocks\Quests</Filter>
+    </ClInclude>
+    <ClInclude Include="Act.h">
+      <Filter>BuildBlocks\Acts</Filter>
+    </ClInclude>
+    <ClInclude Include="ComplexAct.h">
+      <Filter>BuildBlocks\Acts</Filter>
+    </ClInclude>
+    <ClInclude Include="ParallelAct.h">
+      <Filter>BuildBlocks\Acts</Filter>
+    </ClInclude>
+    <ClInclude Include="RefAct.h">
+      <Filter>BuildBlocks\Acts</Filter>
+    </ClInclude>
+    <ClInclude Include="SequentialAct.h">
+      <Filter>BuildBlocks\Acts</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraFocusAct.h">
+      <Filter>BuildBlocks\Acts\LongActs</Filter>
+    </ClInclude>
+    <ClInclude Include="CamFollowAct.h">
+      <Filter>BuildBlocks\Acts\LongActs</Filter>
+    </ClInclude>
+    <ClInclude Include="CamSplineAct.h">
+      <Filter>BuildBlocks\Acts\LongActs</Filter>
+    </ClInclude>
+    <ClInclude Include="ChangeLevelAct.h">
+      <Filter>BuildBlocks\Acts\LongActs</Filter>
+    </ClInclude>
+    <ClInclude Include="DoorAct.h">
+      <Filter>BuildBlocks\Acts\LongActs</Filter>
+    </ClInclude>
+    <ClInclude Include="LooseGameAct.h">
+      <Filter>BuildBlocks\Acts\LongActs</Filter>
+    </ClInclude>
+    <ClInclude Include="MovePersonAct.h">
+      <Filter>BuildBlocks\Acts\LongActs</Filter>
+    </ClInclude>
+    <ClInclude Include="MovieAct.h">
+      <Filter>BuildBlocks\Acts\LongActs</Filter>
+    </ClInclude>
+    <ClInclude Include="QuestContextAct.h">
+      <Filter>BuildBlocks\Acts\LongActs</Filter>
+    </ClInclude>
+    <ClInclude Include="QuestReportAct.h">
+      <Filter>BuildBlocks\Acts\LongActs</Filter>
+    </ClInclude>
+    <ClInclude Include="ScriptSceneAct.h">
+      <Filter>BuildBlocks\Acts\LongActs</Filter>
+    </ClInclude>
+    <ClInclude Include="ShootDieAct.h">
+      <Filter>BuildBlocks\Acts\LongActs</Filter>
+    </ClInclude>
+    <ClInclude Include="WaitAct.h">
+      <Filter>BuildBlocks\Acts\LongActs</Filter>
+    </ClInclude>
+    <ClInclude Include="WinGameAct.h">
+      <Filter>BuildBlocks\Acts\LongActs</Filter>
+    </ClInclude>
+    <ClInclude Include="AddNewsAct.h">
+      <Filter>BuildBlocks\Acts\OneFrameActs</Filter>
+    </ClInclude>
+    <ClInclude Include="AddRankAct.h">
+      <Filter>BuildBlocks\Acts\OneFrameActs</Filter>
+    </ClInclude>
+    <ClInclude Include="AddToCounterAct.h">
+      <Filter>BuildBlocks\Acts\OneFrameActs</Filter>
+    </ClInclude>
+    <ClInclude Include="AlignmentAct.h">
+      <Filter>BuildBlocks\Acts\OneFrameActs</Filter>
+    </ClInclude>
+    <ClInclude Include="DestructAct.h">
+      <Filter>BuildBlocks\Acts\OneFrameActs</Filter>
+    </ClInclude>
+    <ClInclude Include="DisappearAct.h">
+      <Filter>BuildBlocks\Acts\OneFrameActs</Filter>
+    </ClInclude>
+    <ClInclude Include="EnableLevelAct.h">
+      <Filter>BuildBlocks\Acts\OneFrameActs</Filter>
+    </ClInclude>
+    <ClInclude Include="GiveExpAct.h">
+      <Filter>BuildBlocks\Acts\OneFrameActs</Filter>
+    </ClInclude>
+    <ClInclude Include="GiveItemsAct.h">
+      <Filter>BuildBlocks\Acts\OneFrameActs</Filter>
+    </ClInclude>
+    <ClInclude Include="GiveMoneyAct.h">
+      <Filter>BuildBlocks\Acts\OneFrameActs</Filter>
+    </ClInclude>
+    <ClInclude Include="HeroAct.h">
+      <Filter>BuildBlocks\Acts\OneFrameActs</Filter>
+    </ClInclude>
+    <ClInclude Include="JournalAct.h">
+      <Filter>BuildBlocks\Acts\OneFrameActs</Filter>
+    </ClInclude>
+    <ClInclude Include="PhaseAct.h">
+      <Filter>BuildBlocks\Acts\OneFrameActs</Filter>
+    </ClInclude>
+    <ClInclude Include="PrintAct.h">
+      <Filter>BuildBlocks\Acts\OneFrameActs</Filter>
+    </ClInclude>
+    <ClInclude Include="PulseAct.h">
+      <Filter>BuildBlocks\Acts\OneFrameActs</Filter>
+    </ClInclude>
+    <ClInclude Include="ResetCounterAct.h">
+      <Filter>BuildBlocks\Acts\OneFrameActs</Filter>
+    </ClInclude>
+    <ClInclude Include="SayAct.h">
+      <Filter>BuildBlocks\Acts\OneFrameActs</Filter>
+    </ClInclude>
+    <ClInclude Include="SendQuestMessageAct.h">
+      <Filter>BuildBlocks\Acts\OneFrameActs</Filter>
+    </ClInclude>
+    <ClInclude Include="SpawnAct.h">
+      <Filter>BuildBlocks\Acts\OneFrameActs</Filter>
+    </ClInclude>
+    <ClInclude Include="BringTask.h">
+      <Filter>BuildBlocks\Tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="EliminateTask.h">
+      <Filter>BuildBlocks\Tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="KillTask.h">
+      <Filter>BuildBlocks\Tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="StubTask.h">
+      <Filter>BuildBlocks\Tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="TalkTask.h">
+      <Filter>BuildBlocks\Tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="Task.h">
+      <Filter>BuildBlocks\Tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="TaskDatabase.h">
+      <Filter>BuildBlocks\Tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="TaskList.h">
+      <Filter>BuildBlocks\Tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="TasksForward.h">
+      <Filter>BuildBlocks\Tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="TaskState.h">
+      <Filter>BuildBlocks\Tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="AliveCondition.h">
+      <Filter>BuildBlocks\Conditions</Filter>
+    </ClInclude>
+    <ClInclude Include="AndCondition.h">
+      <Filter>BuildBlocks\Conditions</Filter>
+    </ClInclude>
+    <ClInclude Include="CompareCondition.h">
+      <Filter>BuildBlocks\Conditions</Filter>
+    </ClInclude>
+    <ClInclude Include="Condition.h">
+      <Filter>BuildBlocks\Conditions</Filter>
+    </ClInclude>
+    <ClInclude Include="ConditionsForward.h">
+      <Filter>BuildBlocks\Conditions</Filter>
+    </ClInclude>
+    <ClInclude Include="ContextCondition.h">
+      <Filter>BuildBlocks\Conditions</Filter>
+    </ClInclude>
+    <ClInclude Include="EpisodeCondition.h">
+      <Filter>BuildBlocks\Conditions</Filter>
+    </ClInclude>
+    <ClInclude Include="HeroCondition.h">
+      <Filter>BuildBlocks\Conditions</Filter>
+    </ClInclude>
+    <ClInclude Include="LogicalCondition.h">
+      <Filter>BuildBlocks\Conditions</Filter>
+    </ClInclude>
+    <ClInclude Include="OrCondition.h">
+      <Filter>BuildBlocks\Conditions</Filter>
+    </ClInclude>
+    <ClInclude Include="QuestCondition.h">
+      <Filter>BuildBlocks\Conditions</Filter>
+    </ClInclude>
+    <ClInclude Include="QuestConditionState.h">
+      <Filter>BuildBlocks\Conditions</Filter>
+    </ClInclude>
+    <ClInclude Include="TaskCondition.h">
+      <Filter>BuildBlocks\Conditions</Filter>
+    </ClInclude>
+    <ClInclude Include="NotifyFn.h">
+      <Filter>BuildBlocks\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Persistent.h">
+      <Filter>BuildBlocks\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="LeaveLevelSignal.h">
+      <Filter>BuildBlocks\Signals</Filter>
+    </ClInclude>
+    <ClInclude Include="OnSmbUseSignal.h">
+      <Filter>BuildBlocks\Signals</Filter>
+    </ClInclude>
+    <ClInclude Include="OnTaskDbSignal.h">
+      <Filter>BuildBlocks\Signals</Filter>
+    </ClInclude>
+    <ClInclude Include="Signal.h">
+      <Filter>BuildBlocks\Signals</Filter>
+    </ClInclude>
+    <ClInclude Include="SignalsForward.h">
+      <Filter>BuildBlocks\Signals</Filter>
+    </ClInclude>
+    <ClInclude Include="Counter.h">
+      <Filter>BuildBlocks\Counters</Filter>
+    </ClInclude>
+    <ClInclude Include="CountersForward.h">
+      <Filter>BuildBlocks\Counters</Filter>
+    </ClInclude>
+    <ClInclude Include="RefCounter.h">
+      <Filter>BuildBlocks\Counters</Filter>
+    </ClInclude>
+    <ClInclude Include="UsualCounter.h">
+      <Filter>BuildBlocks\Counters</Filter>
+    </ClInclude>
+    <ClInclude Include="Trigger.h">
+      <Filter>BuildBlocks\Triggers</Filter>
+    </ClInclude>
+    <ClInclude Include="TriggersForward.h">
+      <Filter>BuildBlocks\Triggers</Filter>
+    </ClInclude>
+    <ClInclude Include="Bureau2.h">
+      <Filter>LogicExtensions</Filter>
+    </ClInclude>
+    <ClInclude Include="LocRes.h">
+      <Filter>LogicExtensions</Filter>
+    </ClInclude>
+    <ClInclude Include="StoreBox2.h">
+      <Filter>LogicExtensions</Filter>
+    </ClInclude>
+    <ClInclude Include="UnlimitedMovesMgr.h">
+      <Filter>LogicExtensions</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="logic_ex.sconscript">
+      <Filter>build</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ActScriptParserTokenTypes.txt">
+      <Filter>FlexibleSS\grammar\generated</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="act.g">
+      <Filter>FlexibleSS\grammar</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

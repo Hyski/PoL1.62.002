@@ -1,0 +1,121 @@
+﻿Построение начато 26.01.2020 13:59:06.
+     1>Проект "E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport.vcxproj" в узле 2 (целевые объекты Build).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\../stlport/stlport" /I"E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\../vscrt/include" /I"E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\../psdk/include" /Zi /nologo /W3 /WX- /O2 /Oy- /D WIN32 /D _WINDOWS /D _WINDLL /D _MBCS /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\temp/stlport/Release\\" /Fd"E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\temp/stlport/Release\vc110.pdb" /Gd /TC /FIvc_warning_disable.h /analyze- /errorReport:prompt src\c_locale.c
+         c_locale.c
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\../stlport/stlport" /I"E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\../vscrt/include" /I"E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\../psdk/include" /Zi /nologo /W3 /WX- /O2 /Oy- /D WIN32 /D _WINDOWS /D _WINDLL /D _MBCS /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\temp/stlport/Release\\" /Fd"E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\temp/stlport/Release\vc110.pdb" /Gd /TP /FIvc_warning_disable.h /analyze- /errorReport:prompt src\c_locale_stub.cpp src\codecvt.cpp src\collate.cpp src\complex.cpp src\complex_exp.cpp src\complex_io.cpp src\complex_io_w.cpp src\complex_trig.cpp src\ctype.cpp src\dll_main.cpp src\facets_byname.cpp src\fstream.cpp src\ios.cpp src\iostream.cpp src\istream.cpp src\locale.cpp src\locale_catalog.cpp src\locale_impl.cpp src\messages.cpp src\monetary.cpp src\num_get.cpp src\num_get_float.cpp src\num_put.cpp src\num_put_float.cpp src\numpunct.cpp src\ostream.cpp src\sstream.cpp src\stdio_streambuf.cpp src\streambuf.cpp src\string_w.cpp src\strstream.cpp src\time_facets.cpp
+         c_locale_stub.cpp
+         codecvt.cpp
+         collate.cpp
+         complex.cpp
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(46): error C2757: __std_alias: символ с этим именем уже существует, поэтому оно не может быть использовано в качестве имени пространства имен
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2039: vsnprintf: не является членом "std"
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2873: vsnprintf: использование символа в "using"-объявлении не допускается
+         complex_exp.cpp
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(46): error C2757: __std_alias: символ с этим именем уже существует, поэтому оно не может быть использовано в качестве имени пространства имен
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2039: vsnprintf: не является членом "std"
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2873: vsnprintf: использование символа в "using"-объявлении не допускается
+         complex_io.cpp
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(46): error C2757: __std_alias: символ с этим именем уже существует, поэтому оно не может быть использовано в качестве имени пространства имен
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2039: vsnprintf: не является членом "std"
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2873: vsnprintf: использование символа в "using"-объявлении не допускается
+         complex_io_w.cpp
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(46): error C2757: __std_alias: символ с этим именем уже существует, поэтому оно не может быть использовано в качестве имени пространства имен
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2039: vsnprintf: не является членом "std"
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2873: vsnprintf: использование символа в "using"-объявлении не допускается
+         complex_trig.cpp
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(46): error C2757: __std_alias: символ с этим именем уже существует, поэтому оно не может быть использовано в качестве имени пространства имен
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2039: vsnprintf: не является членом "std"
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2873: vsnprintf: использование символа в "using"-объявлении не допускается
+         ctype.cpp
+         dll_main.cpp
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(46): error C2757: __std_alias: символ с этим именем уже существует, поэтому оно не может быть использовано в качестве имени пространства имен
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2039: vsnprintf: не является членом "std"
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2873: vsnprintf: использование символа в "using"-объявлении не допускается
+         facets_byname.cpp
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(46): error C2757: __std_alias: символ с этим именем уже существует, поэтому оно не может быть использовано в качестве имени пространства имен
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2039: vsnprintf: не является членом "std"
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2873: vsnprintf: использование символа в "using"-объявлении не допускается
+         fstream.cpp
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(46): error C2757: __std_alias: символ с этим именем уже существует, поэтому оно не может быть использовано в качестве имени пространства имен
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2039: vsnprintf: не является членом "std"
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2873: vsnprintf: использование символа в "using"-объявлении не допускается
+         ios.cpp
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(46): error C2757: __std_alias: символ с этим именем уже существует, поэтому оно не может быть использовано в качестве имени пространства имен
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2039: vsnprintf: не является членом "std"
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2873: vsnprintf: использование символа в "using"-объявлении не допускается
+         iostream.cpp
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(46): error C2757: __std_alias: символ с этим именем уже существует, поэтому оно не может быть использовано в качестве имени пространства имен
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2039: vsnprintf: не является членом "std"
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2873: vsnprintf: использование символа в "using"-объявлении не допускается
+         istream.cpp
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(46): error C2757: __std_alias: символ с этим именем уже существует, поэтому оно не может быть использовано в качестве имени пространства имен
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2039: vsnprintf: не является членом "std"
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2873: vsnprintf: использование символа в "using"-объявлении не допускается
+         locale.cpp
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(46): error C2757: __std_alias: символ с этим именем уже существует, поэтому оно не может быть использовано в качестве имени пространства имен
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2039: vsnprintf: не является членом "std"
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2873: vsnprintf: использование символа в "using"-объявлении не допускается
+         locale_catalog.cpp
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(46): error C2757: __std_alias: символ с этим именем уже существует, поэтому оно не может быть использовано в качестве имени пространства имен
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2039: vsnprintf: не является членом "std"
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2873: vsnprintf: использование символа в "using"-объявлении не допускается
+         locale_impl.cpp
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(46): error C2757: __std_alias: символ с этим именем уже существует, поэтому оно не может быть использовано в качестве имени пространства имен
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2039: vsnprintf: не является членом "std"
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2873: vsnprintf: использование символа в "using"-объявлении не допускается
+         messages.cpp
+         monetary.cpp
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(46): error C2757: __std_alias: символ с этим именем уже существует, поэтому оно не может быть использовано в качестве имени пространства имен
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2039: vsnprintf: не является членом "std"
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2873: vsnprintf: использование символа в "using"-объявлении не допускается
+         Создание кода...
+         Компиляция...
+         num_get.cpp
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(46): error C2757: __std_alias: символ с этим именем уже существует, поэтому оно не может быть использовано в качестве имени пространства имен
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2039: vsnprintf: не является членом "std"
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2873: vsnprintf: использование символа в "using"-объявлении не допускается
+         num_get_float.cpp
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(46): error C2757: __std_alias: символ с этим именем уже существует, поэтому оно не может быть использовано в качестве имени пространства имен
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2039: vsnprintf: не является членом "std"
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2873: vsnprintf: использование символа в "using"-объявлении не допускается
+         num_put.cpp
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(46): error C2757: __std_alias: символ с этим именем уже существует, поэтому оно не может быть использовано в качестве имени пространства имен
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2039: vsnprintf: не является членом "std"
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2873: vsnprintf: использование символа в "using"-объявлении не допускается
+         num_put_float.cpp
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(46): error C2757: __std_alias: символ с этим именем уже существует, поэтому оно не может быть использовано в качестве имени пространства имен
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2039: vsnprintf: не является членом "std"
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2873: vsnprintf: использование символа в "using"-объявлении не допускается
+         numpunct.cpp
+         ostream.cpp
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(46): error C2757: __std_alias: символ с этим именем уже существует, поэтому оно не может быть использовано в качестве имени пространства имен
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2039: vsnprintf: не является членом "std"
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2873: vsnprintf: использование символа в "using"-объявлении не допускается
+         sstream.cpp
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(46): error C2757: __std_alias: символ с этим именем уже существует, поэтому оно не может быть использовано в качестве имени пространства имен
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2039: vsnprintf: не является членом "std"
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2873: vsnprintf: использование символа в "using"-объявлении не допускается
+         stdio_streambuf.cpp
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(46): error C2757: __std_alias: символ с этим именем уже существует, поэтому оно не может быть использовано в качестве имени пространства имен
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2039: vsnprintf: не является членом "std"
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2873: vsnprintf: использование символа в "using"-объявлении не допускается
+         streambuf.cpp
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(46): error C2757: __std_alias: символ с этим именем уже существует, поэтому оно не может быть использовано в качестве имени пространства имен
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2039: vsnprintf: не является членом "std"
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2873: vsnprintf: использование символа в "using"-объявлении не допускается
+         string_w.cpp
+         strstream.cpp
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(46): error C2757: __std_alias: символ с этим именем уже существует, поэтому оно не может быть использовано в качестве имени пространства имен
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2039: vsnprintf: не является членом "std"
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2873: vsnprintf: использование символа в "using"-объявлении не допускается
+         time_facets.cpp
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(46): error C2757: __std_alias: символ с этим именем уже существует, поэтому оно не может быть использовано в качестве имени пространства имен
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2039: vsnprintf: не является членом "std"
+     1>E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2873: vsnprintf: использование символа в "using"-объявлении не допускается
+         Создание кода...
+     1>Построение проекта "E:\Power of Law & Paradise Cracked\Version\polrebuild 1.62.002\trunk\src\external\stlport\stlport.vcxproj" завершено (целевые объекты Build) с ошибкой.
+
+Сбой построения.
+
+Затраченное время: 00:00:08.75

@@ -1,0 +1,335 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D4980EF7-0E42-4EF6-A3E3-6CF047EE1C19}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.50727.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)lib/debug\</OutDir>
+    <IntDir>$(SolutionDir)temp/$(ProjectName)/$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)lib/release\</OutDir>
+    <IntDir>$(SolutionDir)temp/$(ProjectName)/$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)src/external/boost;$(SolutionDir)src/external/stlport/stlport;$(SolutionDir)src/external/directx/include;$(SolutionDir)src/external/psdk/include;$(SolutionDir)src/external/vscrt/include;$(SolutionDir)src/external/atlmfc/include;$(SolutionDir)src/external/bink;$(SolutionDir)src/external/ijl;$(SolutionDir)src/shared/mll/include;$(SolutionDir)src/shared/mutual/include;$(SolutionDir)src/shared/muffle/include;$(SolutionDir)src/pol;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_HOME_VERSION;MLL_USE_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>precomp.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)precomp.pch</PrecompiledHeaderOutputFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4251; 4275;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)src/external/boost;$(SolutionDir)src/external/stlport/stlport;$(SolutionDir)src/external/directx/include;$(SolutionDir)src/external/psdk/include;$(SolutionDir)src/external/vscrt/include;$(SolutionDir)src/external/atlmfc/include;$(SolutionDir)src/external/bink;$(SolutionDir)src/external/ijl;$(SolutionDir)src/shared/mll/include;$(SolutionDir)src/shared/mutual/include;$(SolutionDir)src/shared/muffle/include;$(SolutionDir)src/pol;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_HOME_VERSION;MLL_USE_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>precomp.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)precomp.pch</PrecompiledHeaderOutputFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4251; 4275;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="3dEffects\BombEffect.cpp" />
+    <ClCompile Include="3dEffects\DestructEffect.cpp" />
+    <ClCompile Include="3dEffects\DirectExplosion.cpp" />
+    <ClCompile Include="3dEffects\DLightEffect.cpp" />
+    <ClCompile Include="3dEffects\Effect.cpp" />
+    <ClCompile Include="3dEffects\EffectInfo.cpp" />
+    <ClCompile Include="3dEffects\EffectManager.cpp" />
+    <ClCompile Include="3dEffects\ExplosionEffect.cpp" />
+    <ClCompile Include="3dEffects\FireEffect.cpp" />
+    <ClCompile Include="3dEffects\GrenadeTracer.cpp" />
+    <ClCompile Include="3dEffects\HaloEffect.cpp" />
+    <ClCompile Include="3dEffects\LensFlareEffect.cpp" />
+    <ClCompile Include="3dEffects\LineEffect.cpp" />
+    <ClCompile Include="3dEffects\MeatEffect.cpp" />
+    <ClCompile Include="3dEffects\ModelDestructEffect.cpp" />
+    <ClCompile Include="3dEffects\ModelManager.cpp" />
+    <ClCompile Include="3dEffects\particle.cpp" />
+    <ClCompile Include="3dEffects\SelectionEffect.cpp" />
+    <ClCompile Include="3dEffects\ShieldEffect.cpp" />
+    <ClCompile Include="3dEffects\ShootSmokeEffect.cpp" />
+    <ClCompile Include="3dEffects\SmokeEffect.cpp" />
+    <ClCompile Include="3dEffects\SpangleEffect.cpp" />
+    <ClCompile Include="3dEffects\SparkleEffect.cpp" />
+    <ClCompile Include="3dEffects\SpotEffect.cpp" />
+    <ClCompile Include="3dEffects\TailEffect.cpp" />
+    <ClCompile Include="3d\quat.cpp" />
+    <ClCompile Include="precomp.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="binkmgr\BinkMgr.cpp" />
+    <ClCompile Include="binkmgr\BinkSurface.cpp" />
+    <ClCompile Include="binkplayer\BinkPlayer.cpp" />
+    <ClCompile Include="cmdline\CmdLine.cpp" />
+    <ClCompile Include="d3dapp\D3DInfo\D3DInfo.cpp" />
+    <ClCompile Include="d3dapp\D3DKernel\D3DKernel.cpp" />
+    <ClCompile Include="d3dapp\GammaControl\GammaControl.cpp" />
+    <ClCompile Include="d3dapp\Input\CharKeySupport.cpp" />
+    <ClCompile Include="d3dapp\Input\DirectInput.cpp" />
+    <ClCompile Include="d3dapp\Input\DirectInputDevice.cpp" />
+    <ClCompile Include="d3dapp\Input\Input.cpp" />
+    <ClCompile Include="d3dapp\Input\Keyboard.cpp" />
+    <ClCompile Include="d3dapp\Input\Mouse.cpp" />
+    <ClCompile Include="d3dapp\Input\NhtThread.cpp" />
+    <ClCompile Include="d3dapp\Input\WorkingThread.cpp" />
+    <ClCompile Include="datamgr\DataMgr.cpp" />
+    <ClCompile Include="datamgr\TblFile.cpp" />
+    <ClCompile Include="datamgr\TxtFile.cpp" />
+    <ClCompile Include="datamgr\ZipInfo\ZipInfo.cpp" />
+    <ClCompile Include="debuginfo\DebugInfo.cpp" />
+    <ClCompile Include="exception\Exception.cpp" />
+    <ClCompile Include="fontmgr\FastFont.cpp" />
+    <ClCompile Include="fontmgr\Font.cpp" />
+    <ClCompile Include="fontmgr\Font2D.cpp" />
+    <ClCompile Include="fontmgr\FontMgr.cpp" />
+    <ClCompile Include="fontmgr\FormattedText.cpp" />
+    <ClCompile Include="fontmgr\GFont.cpp" />
+    <ClCompile Include="fontmgr\LogicalText.cpp" />
+    <ClCompile Include="fontmgr\VirtualTexture.cpp" />
+    <ClCompile Include="glayer\GLayer.cpp" />
+    <ClCompile Include="graphpipe\camera.cpp" />
+    <ClCompile Include="graphpipe\CameraStrategy.cpp" />
+    <ClCompile Include="graphpipe\culling.cpp" />
+    <ClCompile Include="graphpipe\FreeCameraStrategy.cpp" />
+    <ClCompile Include="graphpipe\graphpipe.cpp" />
+    <ClCompile Include="graphpipe\PersonBoneCameraStrategy.cpp" />
+    <ClCompile Include="graphpipe\SimpleTexturedObject.cpp" />
+    <ClCompile Include="graphpipe\SplineCameraStrategy.cpp" />
+    <ClCompile Include="graphpipe\StatesManager.cpp" />
+    <ClCompile Include="graphpipe\VShader.cpp" />
+    <ClCompile Include="gsound\FileSystem.cpp" />
+    <ClCompile Include="gsound\soundInit.cpp" />
+    <ClCompile Include="image\Bitmap.cpp" />
+    <ClCompile Include="image\DDS.cpp" />
+    <ClCompile Include="image\Image.cpp" />
+    <ClCompile Include="image\ImageFactory.cpp" />
+    <ClCompile Include="image\Jpeg.cpp" />
+    <ClCompile Include="image\Targa.cpp" />
+    <ClCompile Include="log\LConsole.cpp" />
+    <ClCompile Include="log\Log.cpp" />
+    <ClCompile Include="saveload\SaveLoad.cpp" />
+    <ClCompile Include="shader\shd_grammar.cpp" />
+    <ClCompile Include="shader\ShdCompiler.cpp" />
+    <ClCompile Include="shader\ShdGenerator.cpp" />
+    <ClCompile Include="shader\ShdLexer.cpp" />
+    <ClCompile Include="shader\ShdParser.cpp" />
+    <ClCompile Include="shader\ShdRecorder.cpp" />
+    <ClCompile Include="shell\CpuInfo.cpp" />
+    <ClCompile Include="shell\Shell.cpp" />
+    <ClCompile Include="shell\SystemInfo.cpp" />
+    <ClCompile Include="surfacemgr\DDSurface.cpp" />
+    <ClCompile Include="surfacemgr\SurfaceMgr.cpp" />
+    <ClCompile Include="texturemgr\D3DTexture.cpp" />
+    <ClCompile Include="texturemgr\DIBData.cpp" />
+    <ClCompile Include="texturemgr\NhtBitmap.cpp" />
+    <ClCompile Include="texturemgr\NhtTarga.cpp" />
+    <ClCompile Include="texturemgr\TextureFormatMgr.cpp" />
+    <ClCompile Include="texturemgr\TextureMgr.cpp" />
+    <ClCompile Include="timer\Timer.cpp" />
+    <ClCompile Include="ui\Button.cpp" />
+    <ClCompile Include="ui\Slide.cpp" />
+    <ClCompile Include="ui\Static.cpp" />
+    <ClCompile Include="ui\Widget.cpp" />
+    <ClCompile Include="utils\d3dutil.cpp" />
+    <ClCompile Include="utils\Dir.cpp" />
+    <ClCompile Include="utils\OptSlot.cpp" />
+    <ClCompile Include="utils\profiler.cpp" />
+    <ClCompile Include="utils\stackguard.cpp" />
+    <ClCompile Include="utils\utils.cpp" />
+    <ClCompile Include="utils\VFile.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="3dEffects\BombEffect.h" />
+    <ClInclude Include="3dEffects\DestructEffect.h" />
+    <ClInclude Include="3dEffects\DirectExplosion.h" />
+    <ClInclude Include="3dEffects\DLightEffect.h" />
+    <ClInclude Include="3dEffects\Effect.h" />
+    <ClInclude Include="3dEffects\EffectInfo.h" />
+    <ClInclude Include="3dEffects\EffectManager.h" />
+    <ClInclude Include="3dEffects\ExplosionEffect.h" />
+    <ClInclude Include="3dEffects\FireEffect.h" />
+    <ClInclude Include="3dEffects\GrenadeTracer.h" />
+    <ClInclude Include="3dEffects\HaloEffect.h" />
+    <ClInclude Include="3dEffects\LensFlareEffect.h" />
+    <ClInclude Include="3dEffects\LineEffect.h" />
+    <ClInclude Include="3dEffects\MeatEffect.h" />
+    <ClInclude Include="3dEffects\ModelDestructEffect.h" />
+    <ClInclude Include="3dEffects\ModelManager.h" />
+    <ClInclude Include="3dEffects\Particle.h" />
+    <ClInclude Include="3dEffects\SelectionEffect.h" />
+    <ClInclude Include="3dEffects\ShieldEffect.h" />
+    <ClInclude Include="3dEffects\ShootSmokeEffect.h" />
+    <ClInclude Include="3dEffects\SmokeEffect.h" />
+    <ClInclude Include="3dEffects\SpangleEffect.h" />
+    <ClInclude Include="3dEffects\SparkleEffect.h" />
+    <ClInclude Include="3dEffects\SpotEffect.h" />
+    <ClInclude Include="3dEffects\TailEffect.h" />
+    <ClInclude Include="3d\geometry.h" />
+    <ClInclude Include="3d\quat.h" />
+    <ClInclude Include="precomp.h" />
+    <ClInclude Include="Tree.h" />
+    <ClInclude Include="binkmgr\BinkMgr.h" />
+    <ClInclude Include="binkmgr\BinkSurface.h" />
+    <ClInclude Include="binkplayer\BinkPlayer.h" />
+    <ClInclude Include="cmdline\CmdLine.h" />
+    <ClInclude Include="d3dapp\D3DInfo\D3DInfo.h" />
+    <ClInclude Include="d3dapp\D3DKernel\D3DKernel.h" />
+    <ClInclude Include="d3dapp\GammaControl\GammaControl.h" />
+    <ClInclude Include="d3dapp\Input\CharKeySupport.h" />
+    <ClInclude Include="d3dapp\Input\DirectInput.h" />
+    <ClInclude Include="d3dapp\Input\DirectInputDevice.h" />
+    <ClInclude Include="d3dapp\Input\Input.h" />
+    <ClInclude Include="d3dapp\Input\Keyboard.h" />
+    <ClInclude Include="d3dapp\Input\Mouse.h" />
+    <ClInclude Include="d3dapp\Input\NhtThread.h" />
+    <ClInclude Include="d3dapp\Input\Worker.h" />
+    <ClInclude Include="d3dapp\Input\WorkingThread.h" />
+    <ClInclude Include="datamgr\DataMgr.h" />
+    <ClInclude Include="datamgr\TblFile.h" />
+    <ClInclude Include="datamgr\TxtFile.h" />
+    <ClInclude Include="datamgr\ZipInfo\decs.h" />
+    <ClInclude Include="datamgr\ZipInfo\structs.h" />
+    <ClInclude Include="datamgr\ZipInfo\unzip.h" />
+    <ClInclude Include="datamgr\ZipInfo\ZipInfo.h" />
+    <ClInclude Include="debuginfo\DebugInfo.h" />
+    <ClInclude Include="exception\Exception.h" />
+    <ClInclude Include="fontmgr\FastFont.h" />
+    <ClInclude Include="fontmgr\Font.h" />
+    <ClInclude Include="fontmgr\Font2D.h" />
+    <ClInclude Include="fontmgr\FontMgr.h" />
+    <ClInclude Include="fontmgr\FormattedText.h" />
+    <ClInclude Include="fontmgr\GFont.h" />
+    <ClInclude Include="fontmgr\LogicalText.h" />
+    <ClInclude Include="fontmgr\mlf.h" />
+    <ClInclude Include="fontmgr\mlff.h" />
+    <ClInclude Include="fontmgr\VirtualTexture.h" />
+    <ClInclude Include="glayer\GLayer.h" />
+    <ClInclude Include="graphpipe\camera.h" />
+    <ClInclude Include="graphpipe\CameraStrategy.h" />
+    <ClInclude Include="graphpipe\culling.h" />
+    <ClInclude Include="graphpipe\DynamicVB.h" />
+    <ClInclude Include="graphpipe\FreeCameraStrategy.h" />
+    <ClInclude Include="graphpipe\graphpipe.h" />
+    <ClInclude Include="graphpipe\PersonBoneCameraStrategy.h" />
+    <ClInclude Include="graphpipe\SimpleTexturedObject.h" />
+    <ClInclude Include="graphpipe\SplineCameraStrategy.h" />
+    <ClInclude Include="graphpipe\StatesManager.h" />
+    <ClInclude Include="graphpipe\VShader.h" />
+    <ClInclude Include="gsound\FileSystem.h" />
+    <ClInclude Include="image\Bitmap.h" />
+    <ClInclude Include="image\DDS.h" />
+    <ClInclude Include="image\Image.h" />
+    <ClInclude Include="image\ImageFactory.h" />
+    <ClInclude Include="image\Jpeg.h" />
+    <ClInclude Include="image\Targa.h" />
+    <ClInclude Include="log\LConsole.h" />
+    <ClInclude Include="log\Log.h" />
+    <ClInclude Include="saveload\SaveLoad.h" />
+    <ClInclude Include="shader\OutWrapper.h" />
+    <ClInclude Include="shader\shader.h" />
+    <ClInclude Include="shader\ShdCompiler.h" />
+    <ClInclude Include="shader\ShdGenerator.h" />
+    <ClInclude Include="shader\ShdLexer.h" />
+    <ClInclude Include="shader\ShdParser.h" />
+    <ClInclude Include="shader\ShdRecorder.h" />
+    <ClInclude Include="shader\tokens.h" />
+    <ClInclude Include="shell\CpuInfo.h" />
+    <ClInclude Include="shell\Shell.h" />
+    <ClInclude Include="shell\SystemInfo.h" />
+    <ClInclude Include="surfacemgr\DDSurface.h" />
+    <ClInclude Include="surfacemgr\SurfaceMgr.h" />
+    <ClInclude Include="texturemgr\D3DTexture.h" />
+    <ClInclude Include="texturemgr\DIBData.h" />
+    <ClInclude Include="texturemgr\NhtBitmap.h" />
+    <ClInclude Include="texturemgr\NhtTarga.h" />
+    <ClInclude Include="texturemgr\TextureFormatMgr.h" />
+    <ClInclude Include="texturemgr\TextureMgr.h" />
+    <ClInclude Include="timer\Timer.h" />
+    <ClInclude Include="ui\Button.h" />
+    <ClInclude Include="ui\Slide.h" />
+    <ClInclude Include="ui\Static.h" />
+    <ClInclude Include="ui\VData.h" />
+    <ClInclude Include="ui\Widget.h" />
+    <ClInclude Include="utils\d3dutil.h" />
+    <ClInclude Include="utils\Dir.h" />
+    <ClInclude Include="utils\OptSlot.h" />
+    <ClInclude Include="utils\profiler.h" />
+    <ClInclude Include="utils\stackguard.h" />
+    <ClInclude Include="utils\utils.h" />
+    <ClInclude Include="utils\VFile.h" />
+    <ClInclude Include="utils\VFileWpr.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="common.sconscript" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\external\stlport\stlport.vcxproj">
+      <Project>{d6d2d28c-1d25-4d6e-b0da-f374eed4befa}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\shared\mll_core\mll_core.vcxproj">
+      <Project>{b4f4c07d-7063-411c-aa82-2d260cdbd7cf}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

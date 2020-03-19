@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="headers">
+      <UniqueIdentifier>{b2c769d7-0f00-48f8-a06d-6ed89353f9fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="headers\config_place">
+      <UniqueIdentifier>{41a3d423-e3ac-48cd-93e1-d69c96fc7e03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sources">
+      <UniqueIdentifier>{2d5e1b4b-3b16-4596-b214-ae146a354744}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="build">
+      <UniqueIdentifier>{e4067545-aa69-4014-918a-34d31894f0f8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="VisAnimTrack.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="VisChannel.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="VisChannelBase.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="VisChannelHelper.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="VisChannelMerger.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="VisMaterial.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="VisNode.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="VisOption.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="VisOptionHelpers.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="VisOptionSet.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="VisParticles.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="VisPiece.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="VisPolyGroup.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="VisShape.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="config_place\config\mlconfig.h">
+      <Filter>headers\config_place</Filter>
+    </ClInclude>
+    <ClInclude Include="Vis.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="VisAnimTrack.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="VisChannel.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="VisChannelMerger.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="VisMaterial.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="VisNode.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="VisOption.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="VisOptionSet.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="VisParticles.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="VisPiece.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="VisPolyGroup.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="VisShape.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Vis.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="vis.sconscript">
+      <Filter>build</Filter>
+    </None>
+  </ItemGroup>
+</Project>

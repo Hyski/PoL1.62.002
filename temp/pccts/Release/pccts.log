@@ -1,0 +1,26 @@
+﻿Построение начато 10.08.2019 2:50:51.
+     1>Проект "E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\pol\pccts\pccts.vcxproj" в узле 3 (целевые объекты Build).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src/external/stlport/stlport" /I"E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src/external/psdk/include" /I"E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src/external/vscrt/include" /Zi /nologo /W3 /WX- /O2 /Oy- /D WIN32 /D _WINDOWS /D _MBCS /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\temp/pccts/Release\\" /Fd"E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\temp/pccts/Release\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt AParser.cpp ASTBase.cpp ATokenBuffer.cpp BufFileInput.cpp DLexerBase.cpp PCCTSAST.cpp slist.cpp
+         AParser.cpp
+         ASTBase.cpp
+         ATokenBuffer.cpp
+         BufFileInput.cpp
+         DLexerBase.cpp
+         PCCTSAST.cpp
+         slist.cpp
+         Создание кода...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\Lib.exe /OUT:"E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\lib/release\pccts.lib" /NOLOGO "E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\temp/pccts/Release\AParser.obj"
+         "E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\temp/pccts/Release\ASTBase.obj"
+         "E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\temp/pccts/Release\ATokenBuffer.obj"
+         "E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\temp/pccts/Release\BufFileInput.obj"
+         "E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\temp/pccts/Release\DLexerBase.obj"
+         "E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\temp/pccts/Release\PCCTSAST.obj"
+         "E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\temp/pccts/Release\slist.obj"
+         pccts.vcxproj -> E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\lib/release\pccts.lib
+     1>Построение проекта "E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\pol\pccts\pccts.vcxproj" завершено (целевые объекты Build).
+
+Построение успешно завершено.
+
+Затраченное время: 00:00:00.88

@@ -1,0 +1,703 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="root">
+      <UniqueIdentifier>{87d5ce6a-61c4-43a7-9cf4-f3e3cf9b5218}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resources">
+      <UniqueIdentifier>{8ee12108-4281-45ed-9c94-2ce8ea62ba4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mainten">
+      <UniqueIdentifier>{72e24986-aa94-40c5-8a5c-25aade005378}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gamelevel">
+      <UniqueIdentifier>{9704a0c9-4eab-4629-8bab-2dcb20ae2e85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gamelevel\level">
+      <UniqueIdentifier>{6f60cb06-514f-42b3-83a4-92b52b359b57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gamelevel\objects">
+      <UniqueIdentifier>{17652dd0-4959-430a-b363-c3f61daf46af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="skin">
+      <UniqueIdentifier>{fe5416d7-fb98-426d-9459-92e3d4826a39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="interface">
+      <UniqueIdentifier>{17529645-5fde-44de-9e5d-562cf637c324}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="interface\els">
+      <UniqueIdentifier>{cbf584f5-d9d4-463b-abbb-8c9b9a71d324}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ddframe">
+      <UniqueIdentifier>{17752438-cd5f-472e-860f-2ba9464be90b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="options">
+      <UniqueIdentifier>{1cbd769c-b661-4f4e-aa91-6e37b99fc5c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="build">
+      <UniqueIdentifier>{31df2fcf-4140-4241-8b52-15383bcabbcd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="character.cpp">
+      <Filter>root</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>root</Filter>
+    </ClCompile>
+    <ClCompile Include="globals.cpp">
+      <Filter>root</Filter>
+    </ClCompile>
+    <ClCompile Include="HmStatusTracker.cpp">
+      <Filter>root</Filter>
+    </ClCompile>
+    <ClCompile Include="IWorld.cpp">
+      <Filter>root</Filter>
+    </ClCompile>
+    <ClCompile Include="MemoryDump.cpp">
+      <Filter>root</Filter>
+    </ClCompile>
+    <ClCompile Include="ModMgr.cpp">
+      <Filter>root</Filter>
+    </ClCompile>
+    <ClCompile Include="ParadiseWorld.cpp">
+      <Filter>root</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayedVideoMgr.cpp">
+      <Filter>root</Filter>
+    </ClCompile>
+    <ClCompile Include="SaveVersion.cpp">
+      <Filter>root</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGraph.cpp">
+      <Filter>root</Filter>
+    </ClCompile>
+    <ClCompile Include="VisObjMgr.cpp">
+      <Filter>root</Filter>
+    </ClCompile>
+    <ClCompile Include="VolumeHelper.cpp">
+      <Filter>root</Filter>
+    </ClCompile>
+    <ClCompile Include="WinMain.cpp">
+      <Filter>root</Filter>
+    </ClCompile>
+    <ClCompile Include="World.cpp">
+      <Filter>root</Filter>
+    </ClCompile>
+    <ClCompile Include="precomp.cpp">
+      <Filter>mainten</Filter>
+    </ClCompile>
+    <ClCompile Include="gamelevel\chop.cpp">
+      <Filter>gamelevel</Filter>
+    </ClCompile>
+    <ClCompile Include="gamelevel\ExplosionManager.cpp">
+      <Filter>gamelevel</Filter>
+    </ClCompile>
+    <ClCompile Include="gamelevel\GrenadeTracer2.cpp">
+      <Filter>gamelevel</Filter>
+    </ClCompile>
+    <ClCompile Include="gamelevel\Grid.cpp">
+      <Filter>gamelevel</Filter>
+    </ClCompile>
+    <ClCompile Include="gamelevel\LevelToLogic.cpp">
+      <Filter>gamelevel</Filter>
+    </ClCompile>
+    <ClCompile Include="gamelevel\ParseUtils.cpp">
+      <Filter>gamelevel</Filter>
+    </ClCompile>
+    <ClCompile Include="gamelevel\poly.cpp">
+      <Filter>gamelevel</Filter>
+    </ClCompile>
+    <ClCompile Include="gamelevel\ProgrBar.cpp">
+      <Filter>gamelevel</Filter>
+    </ClCompile>
+    <ClCompile Include="gamelevel\ScatteredItems.cpp">
+      <Filter>gamelevel</Filter>
+    </ClCompile>
+    <ClCompile Include="gamelevel\SndAuto.cpp">
+      <Filter>gamelevel</Filter>
+    </ClCompile>
+    <ClCompile Include="gamelevel\ALDMgr.cpp">
+      <Filter>gamelevel\level</Filter>
+    </ClCompile>
+    <ClCompile Include="gamelevel\GameLevel.cpp">
+      <Filter>gamelevel\level</Filter>
+    </ClCompile>
+    <ClCompile Include="gamelevel\IntersectionCache.cpp">
+      <Filter>gamelevel\level</Filter>
+    </ClCompile>
+    <ClCompile Include="gamelevel\LongShot.cpp">
+      <Filter>gamelevel\level</Filter>
+    </ClCompile>
+    <ClCompile Include="gamelevel\Mark.cpp">
+      <Filter>gamelevel\level</Filter>
+    </ClCompile>
+    <ClCompile Include="gamelevel\oct_tree_cull_stub.cpp">
+      <Filter>gamelevel\level</Filter>
+    </ClCompile>
+    <ClCompile Include="gamelevel\oct_tree_drawer.cpp">
+      <Filter>gamelevel\level</Filter>
+    </ClCompile>
+    <ClCompile Include="gamelevel\oct_tree_idx.cpp">
+      <Filter>gamelevel\level</Filter>
+    </ClCompile>
+    <ClCompile Include="gamelevel\PoLGameLevel.cpp">
+      <Filter>gamelevel\level</Filter>
+    </ClCompile>
+    <ClCompile Include="gamelevel\PoLLevelUtils.cpp">
+      <Filter>gamelevel\level</Filter>
+    </ClCompile>
+    <ClCompile Include="gamelevel\DestructibleProperty.cpp">
+      <Filter>gamelevel\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="gamelevel\DoorProperty.cpp">
+      <Filter>gamelevel\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="gamelevel\DynObject.cpp">
+      <Filter>gamelevel\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="gamelevel\DynObjectInfo.cpp">
+      <Filter>gamelevel\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="gamelevel\DynObjectOldData.cpp">
+      <Filter>gamelevel\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="gamelevel\DynObjectPool.cpp">
+      <Filter>gamelevel\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="gamelevel\DynObjectSet.cpp">
+      <Filter>gamelevel\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="gamelevel\DynObjectSetInfo.cpp">
+      <Filter>gamelevel\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="gamelevel\ElevatorProperty.cpp">
+      <Filter>gamelevel\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="gamelevel\LevelCase.cpp">
+      <Filter>gamelevel\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="gamelevel\LevelObjects.cpp">
+      <Filter>gamelevel\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="gamelevel\ObjectProperty.cpp">
+      <Filter>gamelevel\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="gamelevel\Shape.cpp">
+      <Filter>gamelevel\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="gamelevel\ShapePool.cpp">
+      <Filter>gamelevel\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="gamelevel\TrainProperty.cpp">
+      <Filter>gamelevel\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="gamelevel\UsableProperty.cpp">
+      <Filter>gamelevel\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="skin\AnimaLibrary.cpp">
+      <Filter>skin</Filter>
+    </ClCompile>
+    <ClCompile Include="skin\BaseShadow.cpp">
+      <Filter>skin</Filter>
+    </ClCompile>
+    <ClCompile Include="skin\Bone.cpp">
+      <Filter>skin</Filter>
+    </ClCompile>
+    <ClCompile Include="skin\ComplexShadow.cpp">
+      <Filter>skin</Filter>
+    </ClCompile>
+    <ClCompile Include="skin\KeyAnimation.cpp">
+      <Filter>skin</Filter>
+    </ClCompile>
+    <ClCompile Include="skin\Person.cpp">
+      <Filter>skin</Filter>
+    </ClCompile>
+    <ClCompile Include="skin\RealEntityMover.cpp">
+      <Filter>skin</Filter>
+    </ClCompile>
+    <ClCompile Include="skin\ShadowAccum.cpp">
+      <Filter>skin</Filter>
+    </ClCompile>
+    <ClCompile Include="skin\ShadowBuffer.cpp">
+      <Filter>skin</Filter>
+    </ClCompile>
+    <ClCompile Include="skin\ShadowUtility.cpp">
+      <Filter>skin</Filter>
+    </ClCompile>
+    <ClCompile Include="skin\SimpleShadow.cpp">
+      <Filter>skin</Filter>
+    </ClCompile>
+    <ClCompile Include="skin\skanim.cpp">
+      <Filter>skin</Filter>
+    </ClCompile>
+    <ClCompile Include="skin\skeleton.cpp">
+      <Filter>skin</Filter>
+    </ClCompile>
+    <ClCompile Include="skin\Skin.cpp">
+      <Filter>skin</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\Banner.cpp">
+      <Filter>interface</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\BannerMgr.cpp">
+      <Filter>interface</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\Console.cpp">
+      <Filter>interface</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\DescriptionScreen.cpp">
+      <Filter>interface</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\Dialog.cpp">
+      <Filter>interface</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\DialogScreen.cpp">
+      <Filter>interface</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\DXImageMgr.cpp">
+      <Filter>interface</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\Edit.cpp">
+      <Filter>interface</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\GameScreen.cpp">
+      <Filter>interface</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\GraphMgr.cpp">
+      <Filter>interface</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\Interface.cpp">
+      <Filter>interface</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\InventoryScreen.cpp">
+      <Filter>interface</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\JournalScreen.cpp">
+      <Filter>interface</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\Lagoon.cpp">
+      <Filter>interface</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\LoadingScreen.cpp">
+      <Filter>interface</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\MainMenu.cpp">
+      <Filter>interface</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\MenuMgr.cpp">
+      <Filter>interface</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\MouseCursor.cpp">
+      <Filter>interface</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\MultiEdit.cpp">
+      <Filter>interface</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\OptionsScreen.cpp">
+      <Filter>interface</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\Screens.cpp">
+      <Filter>interface</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\ScreenShot.cpp">
+      <Filter>interface</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\SlotsEngine.cpp">
+      <Filter>interface</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\Text.cpp">
+      <Filter>interface</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\TextBox.cpp">
+      <Filter>interface</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\Tip.cpp">
+      <Filter>interface</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\TradeScreen.cpp">
+      <Filter>interface</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\WidgetFactory.cpp">
+      <Filter>interface</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\WidgetSoundMgr.cpp">
+      <Filter>interface</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\els\elText.cpp">
+      <Filter>interface\els</Filter>
+    </ClCompile>
+    <ClCompile Include="ddframe\DDFrame.cpp">
+      <Filter>ddframe</Filter>
+    </ClCompile>
+    <ClCompile Include="ddframe\DDMainWnd.cpp">
+      <Filter>ddframe</Filter>
+    </ClCompile>
+    <ClCompile Include="options\Options.cpp">
+      <Filter>options</Filter>
+    </ClCompile>
+    <ClCompile Include="options\PCOptions.cpp">
+      <Filter>options</Filter>
+    </ClCompile>
+    <ClCompile Include="options\XRegistry.cpp">
+      <Filter>options</Filter>
+    </ClCompile>
+    <ClCompile Include="version.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="character.h">
+      <Filter>root</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonTrace.h">
+      <Filter>root</Filter>
+    </ClInclude>
+    <ClInclude Include="DataFromFile.h">
+      <Filter>root</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>root</Filter>
+    </ClInclude>
+    <ClInclude Include="globals.h">
+      <Filter>root</Filter>
+    </ClInclude>
+    <ClInclude Include="HmStatusTracker.h">
+      <Filter>root</Filter>
+    </ClInclude>
+    <ClInclude Include="IWorld.h">
+      <Filter>root</Filter>
+    </ClInclude>
+    <ClInclude Include="MasterPtr.h">
+      <Filter>root</Filter>
+    </ClInclude>
+    <ClInclude Include="MlVersion.h">
+      <Filter>root</Filter>
+    </ClInclude>
+    <ClInclude Include="ModMgr.h">
+      <Filter>root</Filter>
+    </ClInclude>
+    <ClInclude Include="ParadiseWorld.h">
+      <Filter>root</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayedVideoMgr.h">
+      <Filter>root</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>root</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneGraph.h">
+      <Filter>root</Filter>
+    </ClInclude>
+    <ClInclude Include="VisObj.h">
+      <Filter>root</Filter>
+    </ClInclude>
+    <ClInclude Include="VisObjMgr.h">
+      <Filter>root</Filter>
+    </ClInclude>
+    <ClInclude Include="VolumeHelper.h">
+      <Filter>root</Filter>
+    </ClInclude>
+    <ClInclude Include="VTuneAttach.h">
+      <Filter>root</Filter>
+    </ClInclude>
+    <ClInclude Include="World.h">
+      <Filter>root</Filter>
+    </ClInclude>
+    <ClInclude Include="precomp.h">
+      <Filter>mainten</Filter>
+    </ClInclude>
+    <ClInclude Include="gamelevel\chop.h">
+      <Filter>gamelevel</Filter>
+    </ClInclude>
+    <ClInclude Include="gamelevel\ExplosionManager.h">
+      <Filter>gamelevel</Filter>
+    </ClInclude>
+    <ClInclude Include="gamelevel\GrenadeTracer2.h">
+      <Filter>gamelevel</Filter>
+    </ClInclude>
+    <ClInclude Include="gamelevel\Grid.h">
+      <Filter>gamelevel</Filter>
+    </ClInclude>
+    <ClInclude Include="gamelevel\LevelToLogic.h">
+      <Filter>gamelevel</Filter>
+    </ClInclude>
+    <ClInclude Include="gamelevel\ParseUtils.h">
+      <Filter>gamelevel</Filter>
+    </ClInclude>
+    <ClInclude Include="gamelevel\poly.h">
+      <Filter>gamelevel</Filter>
+    </ClInclude>
+    <ClInclude Include="gamelevel\ProgrBar.h">
+      <Filter>gamelevel</Filter>
+    </ClInclude>
+    <ClInclude Include="gamelevel\ScatteredItems.h">
+      <Filter>gamelevel</Filter>
+    </ClInclude>
+    <ClInclude Include="gamelevel\SndAuto.h">
+      <Filter>gamelevel</Filter>
+    </ClInclude>
+    <ClInclude Include="gamelevel\SoundInfo.h">
+      <Filter>gamelevel</Filter>
+    </ClInclude>
+    <ClInclude Include="gamelevel\ALDMgr.h">
+      <Filter>gamelevel\level</Filter>
+    </ClInclude>
+    <ClInclude Include="gamelevel\GameLevel.h">
+      <Filter>gamelevel\level</Filter>
+    </ClInclude>
+    <ClInclude Include="gamelevel\IntersectionCache.h">
+      <Filter>gamelevel\level</Filter>
+    </ClInclude>
+    <ClInclude Include="gamelevel\LongShot.h">
+      <Filter>gamelevel\level</Filter>
+    </ClInclude>
+    <ClInclude Include="gamelevel\Mark.h">
+      <Filter>gamelevel\level</Filter>
+    </ClInclude>
+    <ClInclude Include="gamelevel\oct_tree_cull.h">
+      <Filter>gamelevel\level</Filter>
+    </ClInclude>
+    <ClInclude Include="gamelevel\oct_tree_drawer.h">
+      <Filter>gamelevel\level</Filter>
+    </ClInclude>
+    <ClInclude Include="gamelevel\oct_tree_idx.h">
+      <Filter>gamelevel\level</Filter>
+    </ClInclude>
+    <ClInclude Include="gamelevel\PoLGameLevel.h">
+      <Filter>gamelevel\level</Filter>
+    </ClInclude>
+    <ClInclude Include="gamelevel\PoLLevelUtils.h">
+      <Filter>gamelevel\level</Filter>
+    </ClInclude>
+    <ClInclude Include="gamelevel\DestructibleInfo.h">
+      <Filter>gamelevel\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="gamelevel\DestructibleProperty.h">
+      <Filter>gamelevel\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="gamelevel\DoorProperty.h">
+      <Filter>gamelevel\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="gamelevel\DynObject.h">
+      <Filter>gamelevel\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="gamelevel\DynObjectInfo.h">
+      <Filter>gamelevel\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="gamelevel\DynObjectOldData.h">
+      <Filter>gamelevel\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="gamelevel\DynObjectPool.h">
+      <Filter>gamelevel\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="gamelevel\DynObjectSet.h">
+      <Filter>gamelevel\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="gamelevel\DynObjectSetInfo.h">
+      <Filter>gamelevel\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="gamelevel\ElevatorProperty.h">
+      <Filter>gamelevel\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="gamelevel\LevelCase.h">
+      <Filter>gamelevel\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="gamelevel\LevelCaseInfo.h">
+      <Filter>gamelevel\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="gamelevel\LevelObjects.h">
+      <Filter>gamelevel\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="gamelevel\ObjectProperty.h">
+      <Filter>gamelevel\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="gamelevel\objectsNG.h">
+      <Filter>gamelevel\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="gamelevel\Shape.h">
+      <Filter>gamelevel\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="gamelevel\ShapePool.h">
+      <Filter>gamelevel\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="gamelevel\Station.h">
+      <Filter>gamelevel\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="gamelevel\TrainInfo.h">
+      <Filter>gamelevel\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="gamelevel\TrainProperty.h">
+      <Filter>gamelevel\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="gamelevel\UsableProperty.h">
+      <Filter>gamelevel\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="gamelevel\UseInfo.h">
+      <Filter>gamelevel\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="skin\AnimaLibrary.h">
+      <Filter>skin</Filter>
+    </ClInclude>
+    <ClInclude Include="skin\Bone.h">
+      <Filter>skin</Filter>
+    </ClInclude>
+    <ClInclude Include="skin\BSpline.h">
+      <Filter>skin</Filter>
+    </ClInclude>
+    <ClInclude Include="skin\ComplexShadow.h">
+      <Filter>skin</Filter>
+    </ClInclude>
+    <ClInclude Include="skin\iSlicer.h">
+      <Filter>skin</Filter>
+    </ClInclude>
+    <ClInclude Include="skin\KeyAnimation.h">
+      <Filter>skin</Filter>
+    </ClInclude>
+    <ClInclude Include="skin\Person.h">
+      <Filter>skin</Filter>
+    </ClInclude>
+    <ClInclude Include="skin\RealEntityMover.h">
+      <Filter>skin</Filter>
+    </ClInclude>
+    <ClInclude Include="skin\Shadow.h">
+      <Filter>skin</Filter>
+    </ClInclude>
+    <ClInclude Include="skin\ShadowAccum.h">
+      <Filter>skin</Filter>
+    </ClInclude>
+    <ClInclude Include="skin\skanim.h">
+      <Filter>skin</Filter>
+    </ClInclude>
+    <ClInclude Include="skin\skeleton.h">
+      <Filter>skin</Filter>
+    </ClInclude>
+    <ClInclude Include="skin\Skin.h">
+      <Filter>skin</Filter>
+    </ClInclude>
+    <ClInclude Include="skin\slicer.h">
+      <Filter>skin</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\Banner.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\BannerMgr.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\Console.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\DescriptionScreen.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\Dialog.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\DialogScreen.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\DXImageMgr.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\Edit.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\GameScreen.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\GraphMgr.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\Interface.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\InventoryScreen.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\JournalScreen.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\Lagoon.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\LoadingScreen.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\MainMenu.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\MenuMgr.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\MouseCursor.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\MultiEdit.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\OptionsScreen.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\Screens.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\ScreenShot.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\SlotsEngine.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\Text.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\TextBox.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\Tip.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\TradeScreen.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\WidgetFactory.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\WidgetSoundMgr.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\els\elText.h">
+      <Filter>interface\els</Filter>
+    </ClInclude>
+    <ClInclude Include="ddframe\DDFrame.h">
+      <Filter>ddframe</Filter>
+    </ClInclude>
+    <ClInclude Include="ddframe\DDMainWnd.h">
+      <Filter>ddframe</Filter>
+    </ClInclude>
+    <ClInclude Include="options\Options.h">
+      <Filter>options</Filter>
+    </ClInclude>
+    <ClInclude Include="options\PCOptions.h">
+      <Filter>options</Filter>
+    </ClInclude>
+    <ClInclude Include="options\XRegistry.h">
+      <Filter>options</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon1.ico">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="uninst.ico">
+      <Filter>resources</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resource.rc">
+      <Filter>resources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="undercover.sconscript">
+      <Filter>build</Filter>
+    </None>
+  </ItemGroup>
+</Project>

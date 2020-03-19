@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="build">
+      <UniqueIdentifier>{ca11f195-d651-42bf-9389-1594e2fcfa67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{3ec21c5a-8ed7-406e-92b3-78106edbc3f6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="mll_fs.sconscript">
+      <Filter>build</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\cache.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CriticalSection.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\decrypter.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Entry.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\file_id.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fs_guider.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fs_path.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hdd_sub_fs.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hdd_sub_fs_iter.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mask_regex.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\precomp.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\system.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\system_hidden.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\zip_entry.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\zip_eocd.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\zip_file.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\zip_input_stream.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\zip_input_streambuf.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\zip_local_entry.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\zip_sub_fs.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\zip_sub_fs_iter.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\CriticalSection.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\decrypter.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dos_datetime.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\precomp.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Resource.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\system_hidden.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\zip_entry.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\zip_eocd.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\zip_file.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\zip_input_stream.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\zip_input_streambuf.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\zip_local_entry.h">
+      <Filter>src</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

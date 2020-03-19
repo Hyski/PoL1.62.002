@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{fe25c31c-2f7b-4593-83e8-7d4db758b667}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tool">
+      <UniqueIdentifier>{9494c153-363d-46c2-93b8-ac15dfadb51d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="build">
+      <UniqueIdentifier>{d3f05c38-db6d-462d-b52a-0b9e52da4228}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\antlr\ANTLRException.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\antlr\ANTLRUtil.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\antlr\AST.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\antlr\ASTArray.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\antlr\ASTFactory.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\antlr\ASTNULLType.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\antlr\ASTPair.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\antlr\ASTRefCount.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\antlr\BaseAST.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\antlr\BitSet.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\antlr\CharBuffer.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\antlr\CharInputBuffer.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\antlr\CharScanner.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\antlr\CharStreamException.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\antlr\CharStreamIOException.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\antlr\CircularQueue.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\antlr\CommonAST.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\antlr\CommonASTWithHiddenTokens.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\antlr\CommonHiddenStreamToken.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\antlr\CommonToken.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\antlr\config.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\antlr\InputBuffer.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\antlr\IOException.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\antlr\LexerSharedInputState.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\antlr\LLkParser.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\antlr\MismatchedCharException.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\antlr\MismatchedTokenException.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\antlr\NoViableAltException.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\antlr\NoViableAltForCharException.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\antlr\Parser.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\antlr\ParserSharedInputState.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\antlr\RecognitionException.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\antlr\RefCount.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\antlr\SemanticException.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\antlr\String.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\antlr\Token.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\antlr\TokenBuffer.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\antlr\TokenStream.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\antlr\TokenStreamBasicFilter.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\antlr\TokenStreamException.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\antlr\TokenStreamHiddenTokenFilter.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\antlr\TokenStreamIOException.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\antlr\TokenStreamRecognitionException.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\antlr\TokenStreamRetryException.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\antlr\TokenStreamSelector.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\antlr\TreeParser.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\antlr\TreeParserSharedInputState.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="antlr.sconscript">
+      <Filter>build</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ANTLRUtil.cpp" />
+    <ClCompile Include="ASTFactory.cpp" />
+    <ClCompile Include="ASTNULLType.cpp" />
+    <ClCompile Include="ASTRefCount.cpp" />
+    <ClCompile Include="BaseAST.cpp" />
+    <ClCompile Include="BitSet.cpp" />
+    <ClCompile Include="CharBuffer.cpp" />
+    <ClCompile Include="CharScanner.cpp" />
+    <ClCompile Include="CommonAST.cpp" />
+    <ClCompile Include="CommonASTWithHiddenTokens.cpp" />
+    <ClCompile Include="CommonHiddenStreamToken.cpp" />
+    <ClCompile Include="CommonToken.cpp" />
+    <ClCompile Include="dll.cpp" />
+    <ClCompile Include="InputBuffer.cpp" />
+    <ClCompile Include="LLkParser.cpp" />
+    <ClCompile Include="MismatchedCharException.cpp" />
+    <ClCompile Include="MismatchedTokenException.cpp" />
+    <ClCompile Include="NoViableAltException.cpp" />
+    <ClCompile Include="NoViableAltForCharException.cpp" />
+    <ClCompile Include="Parser.cpp" />
+    <ClCompile Include="RecognitionException.cpp" />
+    <ClCompile Include="String.cpp" />
+    <ClCompile Include="Token.cpp" />
+    <ClCompile Include="TokenBuffer.cpp" />
+    <ClCompile Include="TokenStreamBasicFilter.cpp" />
+    <ClCompile Include="TokenStreamHiddenTokenFilter.cpp" />
+    <ClCompile Include="TokenStreamSelector.cpp" />
+    <ClCompile Include="TreeParser.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="tool\cantlr.exe">
+      <Filter>tool</Filter>
+    </CustomBuild>
+    <CustomBuild Include="tool\cygiconv-2.dll">
+      <Filter>tool</Filter>
+    </CustomBuild>
+    <CustomBuild Include="tool\cygwin1.dll">
+      <Filter>tool</Filter>
+    </CustomBuild>
+    <CustomBuild Include="tool\cygz.dll">
+      <Filter>tool</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

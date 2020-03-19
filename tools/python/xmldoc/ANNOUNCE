@@ -1,0 +1,72 @@
+To be sent to: c.l.py.announce, xml-dev, www-dom, comp.text.xml,
+               freshmeat.net, <editors at xmlhack.com>,
+               SF.net PyXML project news
+               other suggestions?
+
+================== 
+Version 0.8.3 of the Python/XML distribution is now available.  It
+should be considered a beta release, and can be downloaded from
+the following URLs:
+
+http://prdownloads.sourceforge.net/pyxml/PyXML-0.8.3.tar.gz
+http://prdownloads.sourceforge.net/pyxml/PyXML-0.8.3.win32-py2.2.exe
+http://prdownloads.sourceforge.net/pyxml/PyXML-0.8.3.win32-py2.3.exe
+http://prdownloads.sourceforge.net/pyxml/PyXML-0.8.3-2.2.Suse82.i386.rpm
+
+
+Changes in this version, compared to 0.8.2:
+
+  * Fix memory leak in Expat bindings (content model information
+    provided by Expat was not freed as required).
+  * New convenience classes in the xml.ns module:
+    ClosedNamespace, OpenNamespace.
+  * The symbol "_" is no longer inserted into the built-in
+    namespace via the gettext module; I18N support is no longer
+    invasive.
+  * expatreader now implements feature_namespace_prefixes.
+  * drv_xmlproc now supports EntityResolvers that return system IDs.
+  * Various bugs have been fixed: 
+    677768: 0.8.2 setup.py errors on OS X
+    684522: ns_parse parsing error for ampersands in description field
+    696457: public/system ID swapped [in expatreader]
+    725010: Script text not contained in script element
+    728810: Forgotten print statement [in wddx]
+    733890: Memory Leak in expatparser.py
+    757799: Correct XmlWriter.processingInstruction()
+    765249: Problems building PyXML 0.8.2 on MacOSX
+    767130: Invalid charset breaks installation with Python 2.3(beta) [4DOM]
+    774091: minidom CharacterData string methods fail when offset=length
+    774095: minidom hasAttributes method only available on Element
+    774100: minidom removeAttributeNode return value
+    774104: minidom setNamedItem unlinks replaced attributes
+    774108: 4DOM setAttributeNode[NS] setting attribute already on node
+
+The Python/XML distribution contains the basic tools required for
+processing XML data using the Python programming language, assembled
+into one easy-to-install package.  The distribution includes parsers
+and standard interfaces such as SAX and DOM, along with various other
+useful modules.
+
+The package currently contains:
+
+        * XML parsers: Pyexpat (Jack Jansen), xmlproc (Lars Marius
+          Garshol), sgmlop (Fredrik Lundh).
+        * SAX interface (Lars Marius Garshol)
+        * minidom DOM implementation (Paul Prescod, others)
+        * 4DOM and 4XPath from Fourthought (Uche Ogbuji, Mike Olson)
+        * Schema implementations: TREX (James Tauber)
+        * Various utility modules and functions (various people)
+        * Documentation and example programs (various people)
+
+The code is being developed bazaar-style by contributors from the
+Python XML Special Interest Group, so please send comments and
+questions to <xml-sig@python.org>.  Bug reports may be filed on
+SourceForge:
+
+http://sourceforge.net/tracker/index.php?group_id=6473&atid=106473
+
+For more information about Python and XML, see:
+        http://www.python.org/topics/xml/
+
+-- 
+Martin v. Löwis               http://www.informatik.hu-berlin.de/~loewis

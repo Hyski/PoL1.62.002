@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="build">
+      <UniqueIdentifier>{f0aa6664-b294-4f8c-9eed-6d9ed7e50dce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{52e2c242-60bd-4ea3-84e6-4e8d3d85e6d9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="stlport.sconscript">
+      <Filter>build</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\aligned_buffer.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\c_locale.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\complex_impl.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\fstream_impl.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\locale_impl.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\locale_nonclassic.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\message_facets.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\msvc_warning_disablers.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mwerks_debug_prefix.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mwerks_prefix.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mwerks_x86_prefix.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\num_put.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\stlport_prefix.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\uint64.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\vc_warning_disable.h">
+      <Filter>src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\c_locale.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\c_locale_stub.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\codecvt.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\collate.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\complex.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\complex_exp.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\complex_io.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\complex_io_w.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\complex_trig.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ctype.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dll_main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\facets_byname.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fstream.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ios.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\iostream.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\istream.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\locale.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\locale_catalog.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\locale_impl.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\messages.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\monetary.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\num_get.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\num_get_float.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\num_put.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\num_put_float.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\numpunct.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ostream.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sstream.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\stdio_streambuf.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\streambuf.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\string_w.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\strstream.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\time_facets.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

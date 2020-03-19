@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D6D2D28C-1D25-4D6E-B0DA-F374EED4BEFA}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.50727.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)executable/bin/debug\</OutDir>
+    <IntDir>$(SolutionDir)temp/$(ProjectName)/$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)executable/bin/release\</OutDir>
+    <IntDir>$(SolutionDir)temp/$(ProjectName)/$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(ProjectDir)../stlport/stlport;$(ProjectDir)../vscrt/include;$(ProjectDir)../psdk/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <PrecompiledHeaderOutputFile>$(IntDir)precomp.pch</PrecompiledHeaderOutputFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ForcedIncludeFiles>vc_warning_disable.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>$(ProjectDir)../vscrt/lib;$(ProjectDir)../psdk/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)stlport.pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(SolutionDir)lib/debug/$(ProjectName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir)../stlport/stlport;$(ProjectDir)../vscrt/include;$(ProjectDir)../psdk/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <PrecompiledHeaderOutputFile>$(IntDir)precomp.pch</PrecompiledHeaderOutputFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ForcedIncludeFiles>vc_warning_disable.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>$(ProjectDir)../vscrt/lib;$(ProjectDir)../psdk/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateMapFile>true</GenerateMapFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <ImportLibrary>$(SolutionDir)lib/release/$(ProjectName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="stlport.sconscript" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\aligned_buffer.h" />
+    <ClInclude Include="src\c_locale.h" />
+    <ClInclude Include="src\complex_impl.h" />
+    <ClInclude Include="src\fstream_impl.h" />
+    <ClInclude Include="src\locale_impl.h" />
+    <ClInclude Include="src\locale_nonclassic.h" />
+    <ClInclude Include="src\message_facets.h" />
+    <ClInclude Include="src\msvc_warning_disablers.h" />
+    <ClInclude Include="src\mwerks_debug_prefix.h" />
+    <ClInclude Include="src\mwerks_prefix.h" />
+    <ClInclude Include="src\mwerks_x86_prefix.h" />
+    <ClInclude Include="src\num_put.h" />
+    <ClInclude Include="src\stlport_prefix.h" />
+    <ClInclude Include="src\uint64.h" />
+    <ClInclude Include="src\vc_warning_disable.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\c_locale.c" />
+    <ClCompile Include="src\c_locale_stub.cpp" />
+    <ClCompile Include="src\codecvt.cpp" />
+    <ClCompile Include="src\collate.cpp" />
+    <ClCompile Include="src\complex.cpp" />
+    <ClCompile Include="src\complex_exp.cpp" />
+    <ClCompile Include="src\complex_io.cpp" />
+    <ClCompile Include="src\complex_io_w.cpp" />
+    <ClCompile Include="src\complex_trig.cpp" />
+    <ClCompile Include="src\ctype.cpp" />
+    <ClCompile Include="src\dll_main.cpp" />
+    <ClCompile Include="src\facets_byname.cpp" />
+    <ClCompile Include="src\fstream.cpp" />
+    <ClCompile Include="src\ios.cpp" />
+    <ClCompile Include="src\iostream.cpp" />
+    <ClCompile Include="src\istream.cpp" />
+    <ClCompile Include="src\locale.cpp" />
+    <ClCompile Include="src\locale_catalog.cpp" />
+    <ClCompile Include="src\locale_impl.cpp" />
+    <ClCompile Include="src\messages.cpp" />
+    <ClCompile Include="src\monetary.cpp" />
+    <ClCompile Include="src\num_get.cpp" />
+    <ClCompile Include="src\num_get_float.cpp" />
+    <ClCompile Include="src\num_put.cpp" />
+    <ClCompile Include="src\num_put_float.cpp" />
+    <ClCompile Include="src\numpunct.cpp" />
+    <ClCompile Include="src\ostream.cpp" />
+    <ClCompile Include="src\sstream.cpp" />
+    <ClCompile Include="src\stdio_streambuf.cpp" />
+    <ClCompile Include="src\streambuf.cpp" />
+    <ClCompile Include="src\string_w.cpp" />
+    <ClCompile Include="src\strstream.cpp" />
+    <ClCompile Include="src\time_facets.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,37 @@
+﻿Построение начато 10.08.2019 2:51:00.
+     1>Проект "E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\zlib\zlib.vcxproj" в узле 4 (целевые объекты Build).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\zlib\../stlport/stlport" /I"E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\zlib\../vscrt/include" /I"E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\zlib\../psdk/include" /I"E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\zlib\include" /Zi /nologo /W3 /WX- /O2 /Oy- /D WIN32 /D _WINDOWS /D ZLIB_DLL /D _WINDLL /D _MBCS /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\temp/zlib/Release\\" /Fd"E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\temp/zlib/Release\vc110.pdb" /Gd /TC /analyze- /errorReport:prompt src\adler32.c src\compress.c src\crc32.c src\deflate.c src\gzio.c src\infback.c src\inffast.c src\inflate.c src\inftrees.c src\trees.c src\uncompr.c src\zutil.c
+         adler32.c
+         compress.c
+         crc32.c
+         deflate.c
+         gzio.c
+         infback.c
+         inffast.c
+         inflate.c
+         inftrees.c
+         trees.c
+         uncompr.c
+         zutil.c
+         Создание кода...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\executable/bin/release\zlib.dll" /INCREMENTAL:NO /NOLOGO /LIBPATH:"E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\zlib\../vscrt/lib" /LIBPATH:"E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\zlib\../psdk/lib" /LIBPATH:"E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\lib/Release" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\executable/bin/release\zlib.pdb" /MAP /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\lib/release/zlib.lib" /MACHINE:X86 /SAFESEH /DLL "E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\temp/zlib/Release\adler32.obj"
+         "E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\temp/zlib/Release\compress.obj"
+         "E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\temp/zlib/Release\crc32.obj"
+         "E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\temp/zlib/Release\deflate.obj"
+         "E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\temp/zlib/Release\gzio.obj"
+         "E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\temp/zlib/Release\infback.obj"
+         "E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\temp/zlib/Release\inffast.obj"
+         "E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\temp/zlib/Release\inflate.obj"
+         "E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\temp/zlib/Release\inftrees.obj"
+         "E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\temp/zlib/Release\trees.obj"
+         "E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\temp/zlib/Release\uncompr.obj"
+         "E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\temp/zlib/Release\zutil.obj"
+         "E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\lib\release\stlport.lib"
+     1>LINK : fatal error LNK1181: не удается открыть входной файл "E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\lib\release\stlport.lib"
+     1>Построение проекта "E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\zlib\zlib.vcxproj" завершено (целевые объекты Build) с ошибкой.
+
+Сбой построения.
+
+Затраченное время: 00:00:01.31

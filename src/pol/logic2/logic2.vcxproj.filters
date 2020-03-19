@@ -1,0 +1,674 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="players">
+      <UniqueIdentifier>{834128e1-e976-4ead-bf80-b7473244e313}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="entities">
+      <UniqueIdentifier>{d34b874f-b01b-43a0-9c21-f1654c0ff438}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="menus">
+      <UniqueIdentifier>{918ffe85-96a2-4fb9-93d5-cd7aeff31331}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="menus\game">
+      <UniqueIdentifier>{50db3112-049e-49d0-a86f-0f7f28c2cf37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="menus\inventory">
+      <UniqueIdentifier>{79a88763-5073-419b-9983-083e06f3442b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="menus\shop">
+      <UniqueIdentifier>{1781d760-c3d5-4fa1-8d61-c554081c6123}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="menus\journal">
+      <UniqueIdentifier>{f315e24d-51df-4ae2-ab9e-be2e5a6718ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="menus\dragndrop">
+      <UniqueIdentifier>{8293b460-e7b8-40f1-b8a7-f381d7fb4416}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="misc">
+      <UniqueIdentifier>{a7f4c9c5-6f1a-4518-a09b-7a7944efd5e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="misc\sndutils">
+      <UniqueIdentifier>{e9fe9a6f-8bd2-4fba-ae19-f87cf8f09e3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="misc\hexutils">
+      <UniqueIdentifier>{5e82b5dd-16ab-4203-b8de-e1ec2da38f83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="misc\graphics">
+      <UniqueIdentifier>{91610707-5a85-433e-882c-0f01443c71bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="misc\actions">
+      <UniqueIdentifier>{bc2fb1a5-e78c-4a1f-bed1-f84a7bc8f2c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="misc\actions\drv">
+      <UniqueIdentifier>{f4878323-b213-4eb6-b0c1-ca14166bedb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="misc\actions\activities">
+      <UniqueIdentifier>{316df750-aa6f-4d43-a5e8-7880e6518ecf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="misc\sscene">
+      <UniqueIdentifier>{15501164-46bb-489c-82a2-53dd65ed659a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="misc\eventpipe">
+      <UniqueIdentifier>{35c1af63-b787-4e21-b71a-25634a74efe4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="misc\cheat">
+      <UniqueIdentifier>{be983a9c-aad9-4afc-a637-39e0985166b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="misc\test">
+      <UniqueIdentifier>{497755dc-fb72-460f-a826-0f94797b5ca1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="misc\visibilitymgr">
+      <UniqueIdentifier>{4fdae6a9-0bf2-4974-a56d-d0334993ed35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ai">
+      <UniqueIdentifier>{c4681f64-7aa9-40dc-a004-f0c4552fca8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ai\behaviours">
+      <UniqueIdentifier>{8346327c-f4d7-4988-afac-d56b56113225}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="things">
+      <UniqueIdentifier>{9e44fd4d-68ee-49e4-ac16-1884bdc3a43e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="build">
+      <UniqueIdentifier>{dda355ce-285e-4b8b-83b9-8441e0893aa3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="interlevel">
+      <UniqueIdentifier>{852d2991-8bfb-4c80-ad40-6f0519d5129c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GameId.cpp">
+      <Filter>players</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>players</Filter>
+    </ClCompile>
+    <ClCompile Include="entity.cpp">
+      <Filter>entities</Filter>
+    </ClCompile>
+    <ClCompile Include="RankTable.cpp">
+      <Filter>entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Spawn.cpp">
+      <Filter>entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Strategy.cpp">
+      <Filter>entities</Filter>
+    </ClCompile>
+    <ClCompile Include="TraderInfo.cpp">
+      <Filter>entities</Filter>
+    </ClCompile>
+    <ClCompile Include="form.cpp">
+      <Filter>menus</Filter>
+    </ClCompile>
+    <ClCompile Include="GameForm.cpp">
+      <Filter>menus\game</Filter>
+    </ClCompile>
+    <ClCompile Include="InventoryFormImp3.cpp">
+      <Filter>menus\inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="ShopFormImp.cpp">
+      <Filter>menus\shop</Filter>
+    </ClCompile>
+    <ClCompile Include="JournalFormImp3.cpp">
+      <Filter>menus\journal</Filter>
+    </ClCompile>
+    <ClCompile Include="DragDropManager.cpp">
+      <Filter>menus\dragndrop</Filter>
+    </ClCompile>
+    <ClCompile Include="DirtyLinks.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="InfoUtils.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="PathUtils.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="Phrase.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="TraceUtils.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="SndUtils.cpp">
+      <Filter>misc\sndutils</Filter>
+    </ClCompile>
+    <ClCompile Include="HexGrid.cpp">
+      <Filter>misc\hexutils</Filter>
+    </ClCompile>
+    <ClCompile Include="hexutils.cpp">
+      <Filter>misc\hexutils</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphHexGrid.cpp">
+      <Filter>misc\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic.cpp">
+      <Filter>misc\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Activity.cpp">
+      <Filter>misc\actions</Filter>
+    </ClCompile>
+    <ClCompile Include="ActivityStatusSender.cpp">
+      <Filter>misc\actions</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraShieldThrowManager.cpp">
+      <Filter>misc\actions</Filter>
+    </ClCompile>
+    <ClCompile Include="GrenadeThrowManager.cpp">
+      <Filter>misc\actions</Filter>
+    </ClCompile>
+    <ClCompile Include="ShootManager.cpp">
+      <Filter>misc\actions</Filter>
+    </ClCompile>
+    <ClCompile Include="ShootNotifier.cpp">
+      <Filter>misc\actions</Filter>
+    </ClCompile>
+    <ClCompile Include="TargetManager.cpp">
+      <Filter>misc\actions</Filter>
+    </ClCompile>
+    <ClCompile Include="TracingLOFCheck.cpp">
+      <Filter>misc\actions</Filter>
+    </ClCompile>
+    <ClCompile Include="DecAccuracyDrv.cpp">
+      <Filter>misc\actions\drv</Filter>
+    </ClCompile>
+    <ClCompile Include="MPLimitDrv.cpp">
+      <Filter>misc\actions\drv</Filter>
+    </ClCompile>
+    <ClCompile Include="OpponentViewDrv.cpp">
+      <Filter>misc\actions\drv</Filter>
+    </ClCompile>
+    <ClCompile Include="PassDrv.cpp">
+      <Filter>misc\actions\drv</Filter>
+    </ClCompile>
+    <ClCompile Include="PathShowDrv.cpp">
+      <Filter>misc\actions\drv</Filter>
+    </ClCompile>
+    <ClCompile Include="ReactionDrv.cpp">
+      <Filter>misc\actions\drv</Filter>
+    </ClCompile>
+    <ClCompile Include="StanceChangeDrv.cpp">
+      <Filter>misc\actions\drv</Filter>
+    </ClCompile>
+    <ClCompile Include="StepLimitDrv.cpp">
+      <Filter>misc\actions\drv</Filter>
+    </ClCompile>
+    <ClCompile Include="UpdateMPDrv.cpp">
+      <Filter>misc\actions\drv</Filter>
+    </ClCompile>
+    <ClCompile Include="UpdateVisMapDrv.cpp">
+      <Filter>misc\actions\drv</Filter>
+    </ClCompile>
+    <ClCompile Include="LandingActivity.cpp">
+      <Filter>misc\actions\activities</Filter>
+    </ClCompile>
+    <ClCompile Include="MoveActivity.cpp">
+      <Filter>misc\actions\activities</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiMoveActivity.cpp">
+      <Filter>misc\actions\activities</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiMoveUtils.cpp">
+      <Filter>misc\actions\activities</Filter>
+    </ClCompile>
+    <ClCompile Include="ParMoveActivity.cpp">
+      <Filter>misc\actions\activities</Filter>
+    </ClCompile>
+    <ClCompile Include="RotateActivity.cpp">
+      <Filter>misc\actions\activities</Filter>
+    </ClCompile>
+    <ClCompile Include="ShipmentActivity.cpp">
+      <Filter>misc\actions\activities</Filter>
+    </ClCompile>
+    <ClCompile Include="ShootActivity.cpp">
+      <Filter>misc\actions\activities</Filter>
+    </ClCompile>
+    <ClCompile Include="ThrowActivity.cpp">
+      <Filter>misc\actions\activities</Filter>
+    </ClCompile>
+    <ClCompile Include="UseActivity.cpp">
+      <Filter>misc\actions\activities</Filter>
+    </ClCompile>
+    <ClCompile Include="SSceneMgrImp.cpp">
+      <Filter>misc\sscene</Filter>
+    </ClCompile>
+    <ClCompile Include="CheatParser.cpp">
+      <Filter>misc\cheat</Filter>
+    </ClCompile>
+    <ClCompile Include="Marker.cpp">
+      <Filter>misc\visibilitymgr</Filter>
+    </ClCompile>
+    <ClCompile Include="Relation.cpp">
+      <Filter>misc\visibilitymgr</Filter>
+    </ClCompile>
+    <ClCompile Include="Spectator.cpp">
+      <Filter>misc\visibilitymgr</Filter>
+    </ClCompile>
+    <ClCompile Include="VisMap.cpp">
+      <Filter>misc\visibilitymgr</Filter>
+    </ClCompile>
+    <ClCompile Include="VisParams.cpp">
+      <Filter>misc\visibilitymgr</Filter>
+    </ClCompile>
+    <ClCompile Include="AIAPI.cpp">
+      <Filter>ai</Filter>
+    </ClCompile>
+    <ClCompile Include="AIBase.cpp">
+      <Filter>ai</Filter>
+    </ClCompile>
+    <ClCompile Include="AIDefs.cpp">
+      <Filter>ai</Filter>
+    </ClCompile>
+    <ClCompile Include="AIUtils.cpp">
+      <Filter>ai</Filter>
+    </ClCompile>
+    <ClCompile Include="CivilianAI.cpp">
+      <Filter>ai</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyDetection.cpp">
+      <Filter>ai</Filter>
+    </ClCompile>
+    <ClCompile Include="EntityDamagerImp.cpp">
+      <Filter>ai</Filter>
+    </ClCompile>
+    <ClCompile Include="PanicBehaviour.cpp">
+      <Filter>ai</Filter>
+    </ClCompile>
+    <ClCompile Include="PanicPlayer.cpp">
+      <Filter>ai</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerTeamSpectator.cpp">
+      <Filter>ai</Filter>
+    </ClCompile>
+    <ClCompile Include="SubteamNode.cpp">
+      <Filter>ai</Filter>
+    </ClCompile>
+    <ClCompile Include="AlarmistNode.cpp">
+      <Filter>ai\behaviours</Filter>
+    </ClCompile>
+    <ClCompile Include="AssaultEnemyNode.cpp">
+      <Filter>ai\behaviours</Filter>
+    </ClCompile>
+    <ClCompile Include="AssaultTechEnemyNode.cpp">
+      <Filter>ai\behaviours</Filter>
+    </ClCompile>
+    <ClCompile Include="CommonEnemyNode.cpp">
+      <Filter>ai\behaviours</Filter>
+    </ClCompile>
+    <ClCompile Include="FixedEnemyNode.cpp">
+      <Filter>ai\behaviours</Filter>
+    </ClCompile>
+    <ClCompile Include="FixedTechEnemyNode.cpp">
+      <Filter>ai\behaviours</Filter>
+    </ClCompile>
+    <ClCompile Include="PatrolEnemyNode.cpp">
+      <Filter>ai\behaviours</Filter>
+    </ClCompile>
+    <ClCompile Include="PatrolTechEnemyNode.cpp">
+      <Filter>ai\behaviours</Filter>
+    </ClCompile>
+    <ClCompile Include="Thing.cpp">
+      <Filter>things</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseBox.cpp">
+      <Filter>interlevel</Filter>
+    </ClCompile>
+    <ClCompile Include="Bureau.cpp">
+      <Filter>interlevel</Filter>
+    </ClCompile>
+    <ClCompile Include="DataBox.cpp">
+      <Filter>interlevel</Filter>
+    </ClCompile>
+    <ClCompile Include="DeadList.cpp">
+      <Filter>interlevel</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObjectsMgr.cpp">
+      <Filter>interlevel</Filter>
+    </ClCompile>
+    <ClCompile Include="StoreBox.cpp">
+      <Filter>interlevel</Filter>
+    </ClCompile>
+    <ClCompile Include="ExperienceSaver.cpp" />
+    <ClCompile Include="GameLogic.cpp" />
+    <ClCompile Include="Invariants.cpp" />
+    <ClCompile Include="logicdefs.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GameId.h">
+      <Filter>players</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>players</Filter>
+    </ClInclude>
+    <ClInclude Include="AIContext.h">
+      <Filter>entities</Filter>
+    </ClInclude>
+    <ClInclude Include="entity.h">
+      <Filter>entities</Filter>
+    </ClInclude>
+    <ClInclude Include="entityaux.h">
+      <Filter>entities</Filter>
+    </ClInclude>
+    <ClInclude Include="EntityFactory.h">
+      <Filter>entities</Filter>
+    </ClInclude>
+    <ClInclude Include="RankTable.h">
+      <Filter>entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Spawn.h">
+      <Filter>entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Strategy.h">
+      <Filter>entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Form.h">
+      <Filter>menus</Filter>
+    </ClInclude>
+    <ClInclude Include="GameFormImp.h">
+      <Filter>menus\game</Filter>
+    </ClInclude>
+    <ClInclude Include="InventoryFormImp3.h">
+      <Filter>menus\inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="ShopFormImp.h">
+      <Filter>menus\shop</Filter>
+    </ClInclude>
+    <ClInclude Include="JournalFormImp3.h">
+      <Filter>menus\journal</Filter>
+    </ClInclude>
+    <ClInclude Include="DragDropManager.h">
+      <Filter>menus\dragndrop</Filter>
+    </ClInclude>
+    <ClInclude Include="Damager.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="DirtyLinks.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="DynUtils.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="InfoUtils.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Observer.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="PathUtils.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Phrase.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="TraceUtils.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="XlsReader.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="SndUtils.h">
+      <Filter>misc\sndutils</Filter>
+    </ClInclude>
+    <ClInclude Include="HexGrid.h">
+      <Filter>misc\hexutils</Filter>
+    </ClInclude>
+    <ClInclude Include="hexutils.h">
+      <Filter>misc\hexutils</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphHexGrid.h">
+      <Filter>misc\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic.h">
+      <Filter>misc\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Activity.h">
+      <Filter>misc\actions</Filter>
+    </ClInclude>
+    <ClInclude Include="ActivityCommand.h">
+      <Filter>misc\actions</Filter>
+    </ClInclude>
+    <ClInclude Include="ActivityFactory.h">
+      <Filter>misc\actions</Filter>
+    </ClInclude>
+    <ClInclude Include="ActivityStatusSender.h">
+      <Filter>misc\actions</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraShieldThrowManager.h">
+      <Filter>misc\actions</Filter>
+    </ClInclude>
+    <ClInclude Include="GrenadeThrowManager.h">
+      <Filter>misc\actions</Filter>
+    </ClInclude>
+    <ClInclude Include="ShootManager.h">
+      <Filter>misc\actions</Filter>
+    </ClInclude>
+    <ClInclude Include="ShootNotifier.h">
+      <Filter>misc\actions</Filter>
+    </ClInclude>
+    <ClInclude Include="SScene.h">
+      <Filter>misc\actions</Filter>
+    </ClInclude>
+    <ClInclude Include="TargetManager.h">
+      <Filter>misc\actions</Filter>
+    </ClInclude>
+    <ClInclude Include="ThrowManager.h">
+      <Filter>misc\actions</Filter>
+    </ClInclude>
+    <ClInclude Include="TracingLOFCheck.h">
+      <Filter>misc\actions</Filter>
+    </ClInclude>
+    <ClInclude Include="DecAccuracyDrv.h">
+      <Filter>misc\actions\drv</Filter>
+    </ClInclude>
+    <ClInclude Include="DecoratorDrv.h">
+      <Filter>misc\actions\drv</Filter>
+    </ClInclude>
+    <ClInclude Include="Driver.h">
+      <Filter>misc\actions\drv</Filter>
+    </ClInclude>
+    <ClInclude Include="MPLimitDrv.h">
+      <Filter>misc\actions\drv</Filter>
+    </ClInclude>
+    <ClInclude Include="OpponentViewDrv.h">
+      <Filter>misc\actions\drv</Filter>
+    </ClInclude>
+    <ClInclude Include="PassDrv.h">
+      <Filter>misc\actions\drv</Filter>
+    </ClInclude>
+    <ClInclude Include="PathShowDrv.h">
+      <Filter>misc\actions\drv</Filter>
+    </ClInclude>
+    <ClInclude Include="ReactionDrv.h">
+      <Filter>misc\actions\drv</Filter>
+    </ClInclude>
+    <ClInclude Include="StanceChangeDrv.h">
+      <Filter>misc\actions\drv</Filter>
+    </ClInclude>
+    <ClInclude Include="StepLimitDrv.h">
+      <Filter>misc\actions\drv</Filter>
+    </ClInclude>
+    <ClInclude Include="UpdateMPDrv.h">
+      <Filter>misc\actions\drv</Filter>
+    </ClInclude>
+    <ClInclude Include="UpdateVisMapDrv.h">
+      <Filter>misc\actions\drv</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseActivity.h">
+      <Filter>misc\actions\activities</Filter>
+    </ClInclude>
+    <ClInclude Include="LandingActivity.h">
+      <Filter>misc\actions\activities</Filter>
+    </ClInclude>
+    <ClInclude Include="MoveActivity.h">
+      <Filter>misc\actions\activities</Filter>
+    </ClInclude>
+    <ClInclude Include="MultiMoveActivity.h">
+      <Filter>misc\actions\activities</Filter>
+    </ClInclude>
+    <ClInclude Include="MultiMoveUtils.h">
+      <Filter>misc\actions\activities</Filter>
+    </ClInclude>
+    <ClInclude Include="ParMoveActivity.h">
+      <Filter>misc\actions\activities</Filter>
+    </ClInclude>
+    <ClInclude Include="RotateActivity.h">
+      <Filter>misc\actions\activities</Filter>
+    </ClInclude>
+    <ClInclude Include="ShipmentActivity.h">
+      <Filter>misc\actions\activities</Filter>
+    </ClInclude>
+    <ClInclude Include="ShootActivity.h">
+      <Filter>misc\actions\activities</Filter>
+    </ClInclude>
+    <ClInclude Include="ThrowActivity.h">
+      <Filter>misc\actions\activities</Filter>
+    </ClInclude>
+    <ClInclude Include="UseActivity.h">
+      <Filter>misc\actions\activities</Filter>
+    </ClInclude>
+    <ClInclude Include="SSceneMgrImp.h">
+      <Filter>misc\sscene</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObserver.h">
+      <Filter>misc\eventpipe</Filter>
+    </ClInclude>
+    <ClInclude Include="CheatParser.h">
+      <Filter>misc\cheat</Filter>
+    </ClInclude>
+    <ClInclude Include="profiler.h">
+      <Filter>misc\test</Filter>
+    </ClInclude>
+    <ClInclude Include="Marker.h">
+      <Filter>misc\visibilitymgr</Filter>
+    </ClInclude>
+    <ClInclude Include="MarkerObserver.h">
+      <Filter>misc\visibilitymgr</Filter>
+    </ClInclude>
+    <ClInclude Include="Relation.h">
+      <Filter>misc\visibilitymgr</Filter>
+    </ClInclude>
+    <ClInclude Include="Spectator.h">
+      <Filter>misc\visibilitymgr</Filter>
+    </ClInclude>
+    <ClInclude Include="SpectatorObserver.h">
+      <Filter>misc\visibilitymgr</Filter>
+    </ClInclude>
+    <ClInclude Include="VisMap.h">
+      <Filter>misc\visibilitymgr</Filter>
+    </ClInclude>
+    <ClInclude Include="VisParams.h">
+      <Filter>misc\visibilitymgr</Filter>
+    </ClInclude>
+    <ClInclude Include="AIAPI.h">
+      <Filter>ai</Filter>
+    </ClInclude>
+    <ClInclude Include="AIBase.h">
+      <Filter>ai</Filter>
+    </ClInclude>
+    <ClInclude Include="AIDefs.h">
+      <Filter>ai</Filter>
+    </ClInclude>
+    <ClInclude Include="AIEnemyNode.h">
+      <Filter>ai</Filter>
+    </ClInclude>
+    <ClInclude Include="AINode.h">
+      <Filter>ai</Filter>
+    </ClInclude>
+    <ClInclude Include="AIUtils.h">
+      <Filter>ai</Filter>
+    </ClInclude>
+    <ClInclude Include="Cameraman.h">
+      <Filter>ai</Filter>
+    </ClInclude>
+    <ClInclude Include="CivilianAI.h">
+      <Filter>ai</Filter>
+    </ClInclude>
+    <ClInclude Include="CompoundNode.h">
+      <Filter>ai</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyActivityObserver.h">
+      <Filter>ai</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyDetection.h">
+      <Filter>ai</Filter>
+    </ClInclude>
+    <ClInclude Include="PanicBehaviour.h">
+      <Filter>ai</Filter>
+    </ClInclude>
+    <ClInclude Include="PanicPlayer.h">
+      <Filter>ai</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerTeamSpectator.h">
+      <Filter>ai</Filter>
+    </ClInclude>
+    <ClInclude Include="SubteamNode.h">
+      <Filter>ai</Filter>
+    </ClInclude>
+    <ClInclude Include="AlarmistNode.h">
+      <Filter>ai\behaviours</Filter>
+    </ClInclude>
+    <ClInclude Include="AssaultEnemyNode.h">
+      <Filter>ai\behaviours</Filter>
+    </ClInclude>
+    <ClInclude Include="AssaultTechEnemyNode.h">
+      <Filter>ai\behaviours</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonEnemyNode.h">
+      <Filter>ai\behaviours</Filter>
+    </ClInclude>
+    <ClInclude Include="FixedEnemyNode.h">
+      <Filter>ai\behaviours</Filter>
+    </ClInclude>
+    <ClInclude Include="FixedTechEnemyNode.h">
+      <Filter>ai\behaviours</Filter>
+    </ClInclude>
+    <ClInclude Include="PatrolEnemyNode.h">
+      <Filter>ai\behaviours</Filter>
+    </ClInclude>
+    <ClInclude Include="PatrolTechEnemyNode.h">
+      <Filter>ai\behaviours</Filter>
+    </ClInclude>
+    <ClInclude Include="Thing.h">
+      <Filter>things</Filter>
+    </ClInclude>
+    <ClInclude Include="ThingFactory.h">
+      <Filter>things</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseBox.h">
+      <Filter>interlevel</Filter>
+    </ClInclude>
+    <ClInclude Include="BoxVisitor.h">
+      <Filter>interlevel</Filter>
+    </ClInclude>
+    <ClInclude Include="Bureau.h">
+      <Filter>interlevel</Filter>
+    </ClInclude>
+    <ClInclude Include="DataBox.h">
+      <Filter>interlevel</Filter>
+    </ClInclude>
+    <ClInclude Include="DeadList.h">
+      <Filter>interlevel</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjectsMgr.h">
+      <Filter>interlevel</Filter>
+    </ClInclude>
+    <ClInclude Include="StoreBox.h">
+      <Filter>interlevel</Filter>
+    </ClInclude>
+    <ClInclude Include="EntityRef.h" />
+    <ClInclude Include="ExperienceSaver.h" />
+    <ClInclude Include="GameLogic.h" />
+    <ClInclude Include="Invariants.h" />
+    <ClInclude Include="logicdefs.h" />
+    <ClInclude Include="logictypes.h" />
+    <ClInclude Include="Multiplayer.h" />
+    <ClInclude Include="TableUtils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="logic2.sconscript">
+      <Filter>build</Filter>
+    </None>
+  </ItemGroup>
+</Project>

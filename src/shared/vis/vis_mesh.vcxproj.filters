@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="sources">
+      <UniqueIdentifier>{fd9291ec-5df8-4f83-822f-8bc56d9daf7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="headers">
+      <UniqueIdentifier>{13589277-334c-4c8f-81cd-b26fedd76425}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="build">
+      <UniqueIdentifier>{acc43662-4e40-4df9-8586-e356ec94fabf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="VisAnimMgr.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="VisMesh.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="VisMeshAnim.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="VisMeshMgr.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="VisMeshPiece.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="VisMeshPolyGroup.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="VisMeshState.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="VisMeshStateAnim.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Vis.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="HashTree.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="HashTreeRealization.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="VisAnimMgr.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="VisAppFront.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="VisMesh.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="VisMeshAnim.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="VisMeshMgr.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="VisMeshPiece.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="VisMeshPolyGroup.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="VisMeshState.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="VisMeshStateAnim.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Vis.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="vis_mesh.sconscript">
+      <Filter>build</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{feb9007b-dcd8-4488-a9a1-10a7f08a9f64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="build">
+      <UniqueIdentifier>{9f9bc308-1cb6-476b-831a-58b64a014124}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\mutual\_export_rules.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mutual\delimiter.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mutual\FileSelector.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mutual\handle.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mutual\novtable.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mutual\object.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mutual\resource.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mutual\resourcemgr.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mutual\rtti.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="rtti.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="mutual.sconscript">
+      <Filter>build</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="resourcemgr.cpp" />
+    <ClCompile Include="rtti.cpp" />
+  </ItemGroup>
+</Project>

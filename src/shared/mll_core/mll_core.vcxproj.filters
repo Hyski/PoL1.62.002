@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{b59e05fc-0168-4194-ae55-05f715c62b28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="build">
+      <UniqueIdentifier>{c32307ca-15e3-4906-83a5-04e487bc2d7b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\CallStackUnroller.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dump.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ExceptionHandlerInitor.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\handler.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\info_section.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\iutils.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\log.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\manip.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\named_vars.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\precomp.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\printf.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\profiler.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\renderer.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\reporter.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SymEngine.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\timer.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\typedefs.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\CallStackUnroller.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dump.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\handler.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\precomp.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SymEngine.h">
+      <Filter>src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="mll_core.sconscript">
+      <Filter>build</Filter>
+    </None>
+  </ItemGroup>
+</Project>

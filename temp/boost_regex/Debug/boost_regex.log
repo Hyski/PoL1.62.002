@@ -1,0 +1,125 @@
+﻿Построение начато 10.08.2019 2:45:15.
+     1>Проект "E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\boost_regex\boost_regex.vcxproj" в узле 2 (целевые объекты Build).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\boost_regex\../stlport/stlport" /I"E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\boost_regex\../vscrt/include" /I"E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\boost_regex\../psdk/include" /I"E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\boost_regex\../boost" /Zi /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D BOOST_REGEX_DYN_LINK /D _WINDLL /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\temp/boost_regex/Debug\\" /Fd"E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\temp/boost_regex/Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt src\c_regex_traits.cpp src\c_regex_traits_common.cpp src\cpp_regex_traits.cpp src\cregex.cpp src\fileiter.cpp src\instances.cpp src\posix_api.cpp src\regex.cpp src\regex_debug.cpp src\regex_synch.cpp src\w32_regex_traits.cpp src\wide_posix_api.cpp src\winstances.cpp
+         winstances.cpp
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(46): error C2757: __std_alias: символ с этим именем уже существует, поэтому оно не может быть использовано в качестве имени пространства имен
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2039: vsnprintf: не является членом "std"
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2873: vsnprintf: использование символа в "using"-объявлении не допускается
+         Unknown compiler version - please run the configure tests and report the results
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\boost\boost/regex/v4/instances.hpp(71): warning C4910: boost::reg_expression<charT>: "__declspec(dllexport)" и "extern" несовместимы при явном создании экземпляра
+                 with
+                 [
+                     charT=char
+                 ]
+         wide_posix_api.cpp
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(46): error C2757: __std_alias: символ с этим именем уже существует, поэтому оно не может быть использовано в качестве имени пространства имен
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2039: vsnprintf: не является членом "std"
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2873: vsnprintf: использование символа в "using"-объявлении не допускается
+         Unknown compiler version - please run the configure tests and report the results
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\boost\boost/regex/v4/instances.hpp(71): warning C4910: boost::reg_expression<charT>: "__declspec(dllexport)" и "extern" несовместимы при явном создании экземпляра
+                 with
+                 [
+                     charT=char
+                 ]
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\boost\boost/regex/v4/instances.hpp(71): warning C4910: boost::reg_expression<charT>: "__declspec(dllexport)" и "extern" несовместимы при явном создании экземпляра
+                 with
+                 [
+                     charT=boost::regex_wchar_type
+                 ]
+         w32_regex_traits.cpp
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(46): error C2757: __std_alias: символ с этим именем уже существует, поэтому оно не может быть использовано в качестве имени пространства имен
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2039: vsnprintf: не является членом "std"
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2873: vsnprintf: использование символа в "using"-объявлении не допускается
+         Unknown compiler version - please run the configure tests and report the results
+         regex_synch.cpp
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(46): error C2757: __std_alias: символ с этим именем уже существует, поэтому оно не может быть использовано в качестве имени пространства имен
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2039: vsnprintf: не является членом "std"
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2873: vsnprintf: использование символа в "using"-объявлении не допускается
+         Unknown compiler version - please run the configure tests and report the results
+         regex_debug.cpp
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(46): error C2757: __std_alias: символ с этим именем уже существует, поэтому оно не может быть использовано в качестве имени пространства имен
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2039: vsnprintf: не является членом "std"
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2873: vsnprintf: использование символа в "using"-объявлении не допускается
+         Unknown compiler version - please run the configure tests and report the results
+         regex.cpp
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(46): error C2757: __std_alias: символ с этим именем уже существует, поэтому оно не может быть использовано в качестве имени пространства имен
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2039: vsnprintf: не является членом "std"
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2873: vsnprintf: использование символа в "using"-объявлении не допускается
+         Unknown compiler version - please run the configure tests and report the results
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\boost\boost/regex/v4/instances.hpp(71): warning C4910: boost::reg_expression<charT>: "__declspec(dllexport)" и "extern" несовместимы при явном создании экземпляра
+                 with
+                 [
+                     charT=char
+                 ]
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\boost\boost/regex/v4/instances.hpp(71): warning C4910: boost::reg_expression<charT>: "__declspec(dllexport)" и "extern" несовместимы при явном создании экземпляра
+                 with
+                 [
+                     charT=boost::regex_wchar_type
+                 ]
+         posix_api.cpp
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(46): error C2757: __std_alias: символ с этим именем уже существует, поэтому оно не может быть использовано в качестве имени пространства имен
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2039: vsnprintf: не является членом "std"
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2873: vsnprintf: использование символа в "using"-объявлении не допускается
+         Unknown compiler version - please run the configure tests and report the results
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\boost\boost/regex/v4/instances.hpp(71): warning C4910: boost::reg_expression<charT>: "__declspec(dllexport)" и "extern" несовместимы при явном создании экземпляра
+                 with
+                 [
+                     charT=char
+                 ]
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\boost\boost/regex/v4/instances.hpp(71): warning C4910: boost::reg_expression<charT>: "__declspec(dllexport)" и "extern" несовместимы при явном создании экземпляра
+                 with
+                 [
+                     charT=boost::regex_wchar_type
+                 ]
+         instances.cpp
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(46): error C2757: __std_alias: символ с этим именем уже существует, поэтому оно не может быть использовано в качестве имени пространства имен
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2039: vsnprintf: не является членом "std"
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2873: vsnprintf: использование символа в "using"-объявлении не допускается
+         Unknown compiler version - please run the configure tests and report the results
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\boost\boost/regex/v4/instances.hpp(71): warning C4910: boost::reg_expression<charT>: "__declspec(dllexport)" и "extern" несовместимы при явном создании экземпляра
+                 with
+                 [
+                     charT=boost::regex_wchar_type
+                 ]
+         fileiter.cpp
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(46): error C2757: __std_alias: символ с этим именем уже существует, поэтому оно не может быть использовано в качестве имени пространства имен
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2039: vsnprintf: не является членом "std"
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2873: vsnprintf: использование символа в "using"-объявлении не допускается
+         Unknown compiler version - please run the configure tests and report the results
+         cregex.cpp
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(46): error C2757: __std_alias: символ с этим именем уже существует, поэтому оно не может быть использовано в качестве имени пространства имен
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2039: vsnprintf: не является членом "std"
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2873: vsnprintf: использование символа в "using"-объявлении не допускается
+         Unknown compiler version - please run the configure tests and report the results
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\boost\boost/regex/v4/instances.hpp(71): warning C4910: boost::reg_expression<charT>: "__declspec(dllexport)" и "extern" несовместимы при явном создании экземпляра
+                 with
+                 [
+                     charT=char
+                 ]
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\boost\boost/regex/v4/instances.hpp(71): warning C4910: boost::reg_expression<charT>: "__declspec(dllexport)" и "extern" несовместимы при явном создании экземпляра
+                 with
+                 [
+                     charT=boost::regex_wchar_type
+                 ]
+         cpp_regex_traits.cpp
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(46): error C2757: __std_alias: символ с этим именем уже существует, поэтому оно не может быть использовано в качестве имени пространства имен
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2039: vsnprintf: не является членом "std"
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2873: vsnprintf: использование символа в "using"-объявлении не допускается
+         Unknown compiler version - please run the configure tests and report the results
+         c_regex_traits_common.cpp
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(46): error C2757: __std_alias: символ с этим именем уже существует, поэтому оно не может быть использовано в качестве имени пространства имен
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2039: vsnprintf: не является членом "std"
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2873: vsnprintf: использование символа в "using"-объявлении не допускается
+         Unknown compiler version - please run the configure tests and report the results
+         c_regex_traits.cpp
+         Unknown compiler version - please run the configure tests and report the results
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(46): error C2757: __std_alias: символ с этим именем уже существует, поэтому оно не может быть использовано в качестве имени пространства имен
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2039: vsnprintf: не является членом "std"
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2873: vsnprintf: использование символа в "using"-объявлении не допускается
+         Создание кода...
+     1>Построение проекта "E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\boost_regex\boost_regex.vcxproj" завершено (целевые объекты Build) с ошибкой.
+
+Сбой построения.
+
+Затраченное время: 00:00:12.76

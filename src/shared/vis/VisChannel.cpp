@@ -1,0 +1,25 @@
+#include "Vis.h"
+
+namespace Vis
+{
+
+#ifndef ML_STATIC
+#define VIS_GEN_PERS(A)		\
+	ML_RTTI_CUSTOM_TEMPLATE_IMPL(Channel##A,getChannelName(),ChannelBase);	\
+	ML_PERSISTENT_TEMPLATE_IMPL2( Channel##A, VIS_BASIC_PTAG );
+#else
+#define VIS_GEN_PERS(A)		\
+	ML_PERSISTENT_TEMPLATE_IMPL2( Channel##A, VIS_BASIC_PTAG );
+#endif
+
+	VIS_FOREACH_CHANNEL_TYPE(VIS_GEN_PERS)
+
+#undef VIS_GEN_PERS
+#undef VIS_GET_CHANNEL_TYPE
+
+#define VIS_GEN_CHANNEL_TYPE(A)		\
+	template Channel< VIS_CHANNEL_TRAITS##A :: Value_t, VIS_CHANNEL_TRAITS##A :: Tag_t>;
+	VIS_FOREACH_CHANNEL_TYPE(VIS_GEN_CHANNEL_TYPE)
+#undef VIS_GEN_CHANNEL_TYPE
+
+}

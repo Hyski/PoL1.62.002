@@ -1,0 +1,49 @@
+Python Expat wrapper module
+===========================
+
+Building the pyexpat module
+--------------------------------------
+
+The module is built as part of running setup.py
+
+Using the pyexpat module
+-----------------------
+
+The pyexpat module exports two functions:
+ParserCreate(encoding) Creates a new parser object. The optional
+        encoding arg (a string) specifies the encoding.
+ErrorString(number) Return a string corresponding to the given error
+        number.
+
+Parser objects have one method:
+Parse(data, isfinal) Parse some data. If the optional isfinal arg is 1 
+        this is the last bit of data. Raises an exception in case of
+        an error, the error attributes have information on the error.
+
+Parser objects have the following attributes:
+
+StartElementHandler, EndElementHandler, CharacterDataHandler,
+ProcessingInstructionHandler - The Python handlers called for various
+        events. See below for the signatures.
+ErrorCode, ErrorLineNumber, ErrorColumnNumber, ErrorByteIndex -
+        Readonly integers giving information on the current parse
+        error.
+
+Testing it
+----------
+
+There's a very minimal test script in expattest.py. It should be easy 
+to adapt it to generate ESIS (but I'm not familiar enough with ESIS to 
+do it). This module parsed Hamlet in 2 seconds on an 180 Mhz R5000 SGI 
+O2.
+
+Feedback
+--------
+
+Please report problems to xml-sig@python.org.
+
+The author is Jack Jansen, jack@cwi.nl. The expat proper was written
+by James Clark and can be found at http://www.jclark.com/xml/ .
+
+        Jack Jansen, CWI, Amsterdam
+        jack@cwi.nl

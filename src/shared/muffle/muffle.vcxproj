@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1048C450-2165-4591-B9C3-2575E4B30300}</ProjectGuid>
+    <RootNamespace>muffle</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.50727.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)executable/bin/$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)temp/$(ProjectName)/$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)executable/bin/$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)temp/$(ProjectName)/$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/EHac %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)src/external/boost;$(SolutionDir)src/external/antlr/include;$(SolutionDir)src/external/ogg/include;$(SolutionDir)src/external/stlport/stlport;$(SolutionDir)src/external/directx/include;$(SolutionDir)src/external/psdk/include;$(SolutionDir)src/external/vscrt/include;$(SolutionDir)src/external/atlmfc/include;$(SolutionDir)src/shared/mll/include;$(ProjectDir)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_HOME_VERSION;MLL_USE_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ExceptionHandling />
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>precomp.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+      <DisableSpecificWarnings>4996;4251;4355;4231;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>dsound.lib;dxguid.lib;vorbisfile_static.lib;ogg_static.lib;vorbis_static.lib;winmm.lib;antlr.lib;mll_core.lib;stlport.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>$(SolutionDir)src/external/directx/lib;$(SolutionDir)src/external/psdk/lib;$(SolutionDir)src/external/vscrt/lib;$(SolutionDir)src/external/ogg/lib;$(SolutionDir)lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>$(OutDir)$(ProjectName).map</MapFileName>
+      <ImportLibrary>$(SolutionDir)lib/$(Configuration)/$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+      <FixedBaseAddress>false</FixedBaseAddress>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\../temp/muffle/debug/muffle.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0419</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/EHac %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>$(SolutionDir)src/external/boost;$(SolutionDir)src/external/antlr/include;$(SolutionDir)src/external/ogg/include;$(SolutionDir)src/external/stlport/stlport;$(SolutionDir)src/external/directx/include;$(SolutionDir)src/external/psdk/include;$(SolutionDir)src/external/vscrt/include;$(SolutionDir)src/external/atlmfc/include;$(SolutionDir)src/shared/mll/include;$(ProjectDir)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_HOME_VERSION;MLL_USE_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling />
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>precomp.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+      <DisableSpecificWarnings>4996;4251;4355;4231;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>dsound.lib;dxguid.lib;vorbisfile_static.lib;ogg_static.lib;vorbis_static.lib;winmm.lib;antlr.lib;mll_core.lib;stlport.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>$(SolutionDir)src/external/directx/lib;$(SolutionDir)src/external/psdk/lib;$(SolutionDir)src/external/vscrt/lib;$(SolutionDir)src/external/ogg/lib;$(SolutionDir)lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>$(OutDir)$(ProjectName).map</MapFileName>
+      <ImportLibrary>$(SolutionDir)lib/$(Configuration)/$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+      <FixedBaseAddress>false</FixedBaseAddress>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\../temp/muffle/release/muffle.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0419</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="exception.h" />
+    <ClInclude Include="guid.h" />
+    <ClInclude Include="precomp.h" />
+    <ClInclude Include="safety.h" />
+    <ClInclude Include="caps.h" />
+    <ClInclude Include="dsound.h" />
+    <ClInclude Include="format.h" />
+    <ClInclude Include="primarybuffer.h" />
+    <ClInclude Include="scriptmgr.h" />
+    <ClInclude Include="SoundScriptLexer.hpp" />
+    <ClInclude Include="SoundScriptParser.hpp" />
+    <ClInclude Include="SoundScriptParserTokenTypes.hpp" />
+    <ClInclude Include="SoundScriptRecorder.h" />
+    <ClInclude Include="CriticalSection.h" />
+    <ClInclude Include="filemgmt.h" />
+    <ClInclude Include="RealFile.h" />
+    <ClInclude Include="stream.h" />
+    <ClInclude Include="Buffer2.h" />
+    <ClInclude Include="DecodeBuffer2.h" />
+    <ClInclude Include="Locker2.h" />
+    <ClInclude Include="Script2.h" />
+    <ClInclude Include="Settings2.h" />
+    <ClInclude Include="SoundBuffer2.h" />
+    <ClInclude Include="StaticBuffer2.h" />
+    <ClInclude Include="Lock2.h" />
+    <ClInclude Include="Ptr2.h" />
+    <ClInclude Include="SafeAlloc2.h" />
+    <ClInclude Include="Synchronized2.h" />
+    <ClInclude Include="WeakToken2.h" />
+    <ClInclude Include="Work2.h" />
+    <ClInclude Include="Worker2.h" />
+    <ClInclude Include="Emitter2.h" />
+    <ClInclude Include="EmitterInfo2.h" />
+    <ClInclude Include="EmitterProxy2.h" />
+    <ClInclude Include="PlayingSound2.h" />
+    <ClInclude Include="PlayingSoundMgr2.h" />
+    <ClInclude Include="Kernel2.h" />
+    <ClInclude Include="MuffleImpl2.h" />
+    <ClInclude Include="Decoder2.h" />
+    <ClInclude Include="DecoderMgr2.h" />
+    <ClInclude Include="OggDecoder2.h" />
+    <ClInclude Include="WaveDecoder2.h" />
+    <ClInclude Include="BufferCtrl2.h" />
+    <ClInclude Include="BufferCtrl2Impl.h" />
+    <ClInclude Include="BufferCtrlMgr2.h" />
+    <ClInclude Include="ThemeManager2.h" />
+    <ClInclude Include="ThemeSession2.h" />
+    <ClInclude Include="ThemeSessionProxy2.h" />
+    <ClInclude Include="Fader2.h" />
+    <ClInclude Include="include\muffle\ISound.h" />
+    <ClInclude Include="include\muffle\vfs.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="guid.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+    </ClCompile>
+    <ClCompile Include="precomp.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="safety.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+    </ClCompile>
+    <ClCompile Include="caps.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+    </ClCompile>
+    <ClCompile Include="dsound.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+    </ClCompile>
+    <ClCompile Include="primarybuffer.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+    </ClCompile>
+    <ClCompile Include="scriptmgr.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+    </ClCompile>
+    <ClCompile Include="SoundScriptLexer.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+    </ClCompile>
+    <ClCompile Include="SoundScriptParser.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+    </ClCompile>
+    <ClCompile Include="SoundScriptRecorder.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+    </ClCompile>
+    <ClCompile Include="CriticalSection.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+    </ClCompile>
+    <ClCompile Include="filemgmt.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+    </ClCompile>
+    <ClCompile Include="RealFile.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+    </ClCompile>
+    <ClCompile Include="Stream.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+    </ClCompile>
+    <ClCompile Include="DecodeBuffer2.cpp" />
+    <ClCompile Include="Locker2.cpp" />
+    <ClCompile Include="Settings2.cpp" />
+    <ClCompile Include="SoundBuffer2.cpp" />
+    <ClCompile Include="Synchronized2.cpp" />
+    <ClCompile Include="WeakToken2.cpp" />
+    <ClCompile Include="Work2.cpp" />
+    <ClCompile Include="Worker2.cpp" />
+    <ClCompile Include="Emitter2.cpp" />
+    <ClCompile Include="EmitterProxy2.cpp" />
+    <ClCompile Include="PlayingSound2.cpp" />
+    <ClCompile Include="PlayingSoundMgr2.cpp" />
+    <ClCompile Include="Kernel2.cpp" />
+    <ClCompile Include="MuffleEntry2.cpp" />
+    <ClCompile Include="MuffleImpl2.cpp" />
+    <ClCompile Include="Decoder2.cpp" />
+    <ClCompile Include="DecoderMgr2.cpp" />
+    <ClCompile Include="OggDecoder2.cpp" />
+    <ClCompile Include="WaveDecoder2.cpp" />
+    <ClCompile Include="BufferCtrl2.cpp" />
+    <ClCompile Include="BufferCtrl2Impl.cpp" />
+    <ClCompile Include="BufferCtrlMgr2.cpp" />
+    <ClCompile Include="ThemeManager2.cpp" />
+    <ClCompile Include="ThemeSession2.cpp" />
+    <ClCompile Include="Fader2.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="grammar.g">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">del SoundScriptLexer.hpp
+del SoundScriptLexer.cpp
+del SoundScriptParser.hpp
+del SoundScriptParser.cpp
+del SoundScriptParserTokenTypes.txt
+del SoundScriptParserTokenTypes.hpp
+$(SolutionDir)src/external/antlr/tool/cantlr.exe grammar.g
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">SoundScriptLexer.hpp;SoundScriptLexer.cpp;SoundScriptParser.hpp;SoundScriptParser.cpp;SoundScriptParserTokenTypes.hpp;SoundScriptParserTokenTypes.txt;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">del SoundScriptLexer.hpp
+del SoundScriptLexer.cpp
+del SoundScriptParser.hpp
+del SoundScriptParser.cpp
+del SoundScriptParserTokenTypes.txt
+del SoundScriptParserTokenTypes.hpp
+$(SolutionDir)src/external/antlr/tool/cantlr.exe grammar.g
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">SoundScriptLexer.hpp;SoundScriptLexer.cpp;SoundScriptParser.hpp;SoundScriptParser.cpp;SoundScriptParserTokenTypes.hpp;SoundScriptParserTokenTypes.txt;%(Outputs)</Outputs>
+    </CustomBuild>
+    <None Include="muffle.sconscript" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="SoundScriptParserTokenTypes.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

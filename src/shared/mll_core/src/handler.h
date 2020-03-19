@@ -1,0 +1,6 @@
+#if !defined(__HANDLER_H_INCLUDED_7552370787048739__)
+#define __HANDLER_H_INCLUDED_7552370787048739__
+
+void stackTrace(std::ostream &, EXCEPTION_POINTERS *ptrs);
+
+#endif // !defined(__HANDLER_H_INCLUDED_7552370787048739__)

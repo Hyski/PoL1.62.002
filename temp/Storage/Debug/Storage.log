@@ -1,0 +1,96 @@
+﻿Построение начато 10.08.2019 2:45:28.
+     1>Проект "E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\shared\storage\Storage.vcxproj" в узле 3 (целевые объекты Build).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src/external/stlport/stlport" /I"E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src/external/psdk/include" /I"E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src/external/vscrt/include" /I"E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src/external/boost" /I"E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src/shared/mll/include" /I"E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src/shared/mutual/include" /Zi /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D MLL_USE_DLL /D _WINDLL /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"precomp.h" /Fp"E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\temp/Storage/Debug\precomp.pch" /Fo"E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\temp/Storage/Debug\\" /Fd"E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\temp/Storage/Debug\vc110.pdb" /Gd /TP /wd4251 /wd4275 /analyze- /errorReport:prompt precomp.cpp
+         precomp.cpp
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(46): error C2757: __std_alias: символ с этим именем уже существует, поэтому оно не может быть использовано в качестве имени пространства имен
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2039: vsnprintf: не является членом "std"
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\stlport\stlport\cstdio(117): error C2873: vsnprintf: использование символа в "using"-объявлении не допускается
+         Unknown compiler version - please run the configure tests and report the results
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\boost\boost/type_traits/type_with_alignment.hpp(204): warning C4018: >=: несоответствие типов со знаком и без знака
+                 E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\boost\boost/type_traits/type_with_alignment.hpp(209): см. ссылку на создание экземпляров класса шаблон при компиляции "boost::type_with_alignment<Align>"
+     1>e:\power of law & paradise cracked\версии\polrebuild 1.62.002\trunk\src\shared\storage\include\storage\Ptr.h(80): error C3203: Ptr: неспециализированный класс шаблон нельзя использовать в качестве аргумента шаблон для параметра шаблон "P", требуется действительный тип
+                 e:\power of law & paradise cracked\версии\polrebuild 1.62.002\trunk\src\shared\storage\include\storage\Ptr.h(111): см. ссылку на создание экземпляров класса шаблон при компиляции "Storage::Ptr<T>"
+     1>e:\power of law & paradise cracked\версии\polrebuild 1.62.002\trunk\src\shared\storage\include\storage\Ptr.h(80): error C2955: Storage::Ptr: для использования класса шаблон требуется список аргументов шаблон
+                 e:\power of law & paradise cracked\версии\polrebuild 1.62.002\trunk\src\shared\storage\include\storage\Ptr.h(79): см. объявление "Storage::Ptr"
+     1>e:\power of law & paradise cracked\версии\polrebuild 1.62.002\trunk\src\shared\storage\include\storage\Ptr.h(80): error C2955: Storage::PtrHelper: для использования класса шаблон требуется список аргументов шаблон
+                 e:\power of law & paradise cracked\версии\polrebuild 1.62.002\trunk\src\shared\storage\include\storage\Ptr.h(48): см. объявление "Storage::PtrHelper"
+     1>e:\power of law & paradise cracked\версии\polrebuild 1.62.002\trunk\src\shared\storage\include\storage\Ptr.h(81): error C3203: Ptr: неспециализированный класс шаблон нельзя использовать в качестве аргумента шаблон для параметра шаблон "T", требуется действительный тип
+     1>e:\power of law & paradise cracked\версии\polrebuild 1.62.002\trunk\src\shared\storage\include\storage\Ptr.h(81): error C2955: Storage::Ptr: для использования класса шаблон требуется список аргументов шаблон
+                 e:\power of law & paradise cracked\версии\polrebuild 1.62.002\trunk\src\shared\storage\include\storage\Ptr.h(79): см. объявление "Storage::Ptr"
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\boost\boost/operators.hpp(153): error C2803: "operator !=" должен иметь по крайней мере один формальный параметр типа класс
+                 E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\boost\boost/operators.hpp(800): см. ссылку на создание экземпляров класса шаблон при компиляции "boost::equality_comparable1<T,B>"
+                 with
+                 [
+                     T=int,
+                     B=boost::detail::empty_base
+                 ]
+                 e:\power of law & paradise cracked\версии\polrebuild 1.62.002\trunk\src\shared\storage\include\storage\Ptr.h(81): см. ссылку на создание экземпляров класса шаблон при компиляции "boost::equality_comparable<T>"
+                 with
+                 [
+                     T=int
+                 ]
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\boost\boost/operators.hpp(153): error C2059: синтаксическая ошибка: return
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\boost\boost/operators.hpp(153): error C2238: непредвиденные лексемы перед ";"
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\boost\boost/operators.hpp(154): error C2143: синтаксическая ошибка: отсутствие ";" перед "}"
+     1>e:\power of law & paradise cracked\версии\polrebuild 1.62.002\trunk\src\shared\storage\include\storage\Ptr.h(82): error C3203: Ptr: неспециализированный класс шаблон нельзя использовать в качестве аргумента шаблон для параметра шаблон "T", требуется действительный тип
+     1>e:\power of law & paradise cracked\версии\polrebuild 1.62.002\trunk\src\shared\storage\include\storage\Ptr.h(82): error C2955: Storage::Ptr: для использования класса шаблон требуется список аргументов шаблон
+                 e:\power of law & paradise cracked\версии\polrebuild 1.62.002\trunk\src\shared\storage\include\storage\Ptr.h(79): см. объявление "Storage::Ptr"
+     1>e:\power of law & paradise cracked\версии\polrebuild 1.62.002\trunk\src\shared\storage\include\storage\Ptr.h(83): error C3203: Ptr: неспециализированный класс шаблон нельзя использовать в качестве аргумента шаблон для параметра шаблон "T", требуется действительный тип
+     1>e:\power of law & paradise cracked\версии\polrebuild 1.62.002\trunk\src\shared\storage\include\storage\Ptr.h(83): error C2955: Storage::Ptr: для использования класса шаблон требуется список аргументов шаблон
+                 e:\power of law & paradise cracked\версии\polrebuild 1.62.002\trunk\src\shared\storage\include\storage\Ptr.h(79): см. объявление "Storage::Ptr"
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\boost\boost/operators.hpp(392): error C2803: "operator >" должен иметь по крайней мере один формальный параметр типа класс
+                 E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\boost\boost/operators.hpp(822): см. ссылку на создание экземпляров класса шаблон при компиляции "boost::partially_ordered1<T,B>"
+                 with
+                 [
+                     T=int,
+                     B=boost::detail::empty_base
+                 ]
+                 e:\power of law & paradise cracked\версии\polrebuild 1.62.002\trunk\src\shared\storage\include\storage\Ptr.h(83): см. ссылку на создание экземпляров класса шаблон при компиляции "boost::partially_ordered<T>"
+                 with
+                 [
+                     T=int
+                 ]
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\boost\boost/operators.hpp(392): error C2059: синтаксическая ошибка: return
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\boost\boost/operators.hpp(392): error C2238: непредвиденные лексемы перед ";"
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\boost\boost/operators.hpp(393): error C2143: синтаксическая ошибка: отсутствие ";" перед "friend"
+     1>e:\power of law & paradise cracked\версии\polrebuild 1.62.002\trunk\src\shared\storage\include\storage\Ptr.h(84): error C3203: Ptr: неспециализированный класс шаблон нельзя использовать в качестве аргумента шаблон для параметра шаблон "T", требуется действительный тип
+     1>e:\power of law & paradise cracked\версии\polrebuild 1.62.002\trunk\src\shared\storage\include\storage\Ptr.h(84): error C2955: Storage::Ptr: для использования класса шаблон требуется список аргументов шаблон
+                 e:\power of law & paradise cracked\версии\polrebuild 1.62.002\trunk\src\shared\storage\include\storage\Ptr.h(79): см. объявление "Storage::Ptr"
+     1>e:\power of law & paradise cracked\версии\polrebuild 1.62.002\trunk\src\shared\storage\include\storage\Ptr.h(118): error C3203: AutoPtr: неспециализированный класс шаблон нельзя использовать в качестве аргумента шаблон для параметра шаблон "P", требуется действительный тип
+                 e:\power of law & paradise cracked\версии\polrebuild 1.62.002\trunk\src\shared\storage\include\storage\Ptr.h(168): см. ссылку на создание экземпляров класса шаблон при компиляции "Storage::AutoPtr<T>"
+     1>e:\power of law & paradise cracked\версии\polrebuild 1.62.002\trunk\src\shared\storage\include\storage\Ptr.h(118): error C2955: Storage::AutoPtr: для использования класса шаблон требуется список аргументов шаблон
+                 e:\power of law & paradise cracked\версии\polrebuild 1.62.002\trunk\src\shared\storage\include\storage\Ptr.h(117): см. объявление "Storage::AutoPtr"
+     1>e:\power of law & paradise cracked\версии\polrebuild 1.62.002\trunk\src\shared\storage\include\storage\Ptr.h(118): error C2955: Storage::PtrHelper: для использования класса шаблон требуется список аргументов шаблон
+                 e:\power of law & paradise cracked\версии\polrebuild 1.62.002\trunk\src\shared\storage\include\storage\Ptr.h(48): см. объявление "Storage::PtrHelper"
+     1>e:\power of law & paradise cracked\версии\polrebuild 1.62.002\trunk\src\shared\storage\include\storage\Ptr.h(119): error C3203: AutoPtr: неспециализированный класс шаблон нельзя использовать в качестве аргумента шаблон для параметра шаблон "T", требуется действительный тип
+     1>e:\power of law & paradise cracked\версии\polrebuild 1.62.002\trunk\src\shared\storage\include\storage\Ptr.h(119): error C2955: Storage::AutoPtr: для использования класса шаблон требуется список аргументов шаблон
+                 e:\power of law & paradise cracked\версии\polrebuild 1.62.002\trunk\src\shared\storage\include\storage\Ptr.h(117): см. объявление "Storage::AutoPtr"
+     1>e:\power of law & paradise cracked\версии\polrebuild 1.62.002\trunk\src\shared\storage\include\storage\Ptr.h(120): error C3203: AutoPtr: неспециализированный класс шаблон нельзя использовать в качестве аргумента шаблон для параметра шаблон "T", требуется действительный тип
+     1>e:\power of law & paradise cracked\версии\polrebuild 1.62.002\trunk\src\shared\storage\include\storage\Ptr.h(120): error C2955: Storage::AutoPtr: для использования класса шаблон требуется список аргументов шаблон
+                 e:\power of law & paradise cracked\версии\polrebuild 1.62.002\trunk\src\shared\storage\include\storage\Ptr.h(117): см. объявление "Storage::AutoPtr"
+     1>e:\power of law & paradise cracked\версии\polrebuild 1.62.002\trunk\src\shared\storage\include\storage\Ptr.h(121): error C3203: AutoPtr: неспециализированный класс шаблон нельзя использовать в качестве аргумента шаблон для параметра шаблон "T", требуется действительный тип
+     1>e:\power of law & paradise cracked\версии\polrebuild 1.62.002\trunk\src\shared\storage\include\storage\Ptr.h(121): error C2955: Storage::AutoPtr: для использования класса шаблон требуется список аргументов шаблон
+                 e:\power of law & paradise cracked\версии\polrebuild 1.62.002\trunk\src\shared\storage\include\storage\Ptr.h(117): см. объявление "Storage::AutoPtr"
+     1>e:\power of law & paradise cracked\версии\polrebuild 1.62.002\trunk\src\shared\storage\include\storage\Ptr.h(122): error C3203: AutoPtr: неспециализированный класс шаблон нельзя использовать в качестве аргумента шаблон для параметра шаблон "T", требуется действительный тип
+     1>e:\power of law & paradise cracked\версии\polrebuild 1.62.002\trunk\src\shared\storage\include\storage\Ptr.h(122): error C2955: Storage::AutoPtr: для использования класса шаблон требуется список аргументов шаблон
+                 e:\power of law & paradise cracked\версии\polrebuild 1.62.002\trunk\src\shared\storage\include\storage\Ptr.h(117): см. объявление "Storage::AutoPtr"
+     1>e:\power of law & paradise cracked\версии\polrebuild 1.62.002\trunk\src\shared\storage\include\storage\RepositoryIterator.h(63): error C3203: RepositoryIterator: неспециализированный класс шаблон нельзя использовать в качестве аргумента шаблон для параметра шаблон "T", требуется действительный тип
+                 e:\power of law & paradise cracked\версии\polrebuild 1.62.002\trunk\src\shared\storage\include\storage\RepositoryIterator.h(86): см. ссылку на создание экземпляров класса шаблон при компиляции "Storage::RepositoryIterator<T>"
+     1>e:\power of law & paradise cracked\версии\polrebuild 1.62.002\trunk\src\shared\storage\include\storage\RepositoryIterator.h(63): error C2955: Storage::RepositoryIterator: для использования класса шаблон требуется список аргументов шаблон
+                 e:\power of law & paradise cracked\версии\polrebuild 1.62.002\trunk\src\shared\storage\include\storage\RepositoryIterator.h(62): см. объявление "Storage::RepositoryIterator"
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\boost\boost/operators.hpp(269): error C2803: "operator ++" должен иметь по крайней мере один формальный параметр типа класс
+                 e:\power of law & paradise cracked\версии\polrebuild 1.62.002\trunk\src\shared\storage\include\storage\RepositoryIterator.h(63): см. ссылку на создание экземпляров класса шаблон при компиляции "boost::incrementable<T>"
+                 with
+                 [
+                     T=int
+                 ]
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\boost\boost/operators.hpp(270): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "nrv"
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\boost\boost/operators.hpp(270): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\boost\boost/operators.hpp(270): error C2061: синтаксическая ошибка: идентификатор "x"
+     1>E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\external\boost\boost/operators.hpp(270): fatal error C1903: не удается восстановить после предыдущих ошибок; остановка компиляции
+     1>Построение проекта "E:\Power of Law & Paradise Cracked\Версии\polrebuild 1.62.002\trunk\src\shared\storage\Storage.vcxproj" завершено (целевые объекты Build) с ошибкой.
+
+Сбой построения.
+
+Затраченное время: 00:00:00.96

@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="mainten">
+      <UniqueIdentifier>{b950bf44-b26d-4eb5-af10-00cef45b72c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="kernel">
+      <UniqueIdentifier>{f2a99853-2717-4f87-b1f7-0e76f52d3917}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scripts">
+      <UniqueIdentifier>{1f9dc86e-fae0-4e70-8cc2-55bb08b1f8fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scripts\parsing">
+      <UniqueIdentifier>{1dcbdf93-5bee-4d23-ba5a-48d1189b27fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sync">
+      <UniqueIdentifier>{bf970f9f-9283-4ac3-baf1-155865834371}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="io">
+      <UniqueIdentifier>{bc2a9e19-5bdd-45b9-b791-61d8e45b6ae1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="build">
+      <UniqueIdentifier>{d6ab93f6-f202-4aa1-bd53-7a091a8534d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="muffle2">
+      <UniqueIdentifier>{b6ebd5ab-e126-4e2d-bf0a-cbc0d1d7c9d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="muffle2\mainten">
+      <UniqueIdentifier>{14fc4d89-d297-452a-bdba-283b3ae4c5ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="muffle2\worker">
+      <UniqueIdentifier>{a425372d-6a10-4184-8c12-1b97da7999c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="muffle2\emitter">
+      <UniqueIdentifier>{08e7681b-4fa9-46a8-bb8e-465d78673682}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="muffle2\kernel">
+      <UniqueIdentifier>{66e802dd-2459-4f5f-9754-ebe7c97a6c23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="muffle2\decoders">
+      <UniqueIdentifier>{eedcffa5-7f1d-4d9b-a799-04ad551a090e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="muffle2\globalparams">
+      <UniqueIdentifier>{8fabc4a1-1f80-4fbc-9a7a-8c13daa9a0aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="muffle2\themes">
+      <UniqueIdentifier>{b61d63a1-5074-4bbe-83f6-aaebef715a45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="muffle2\fader">
+      <UniqueIdentifier>{1536faa4-837a-4e18-9b54-d1ba52ffce63}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="exception.h">
+      <Filter>mainten</Filter>
+    </ClInclude>
+    <ClInclude Include="guid.h">
+      <Filter>mainten</Filter>
+    </ClInclude>
+    <ClInclude Include="precomp.h">
+      <Filter>mainten</Filter>
+    </ClInclude>
+    <ClInclude Include="safety.h">
+      <Filter>mainten</Filter>
+    </ClInclude>
+    <ClInclude Include="caps.h">
+      <Filter>kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="dsound.h">
+      <Filter>kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="format.h">
+      <Filter>kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="primarybuffer.h">
+      <Filter>kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="scriptmgr.h">
+      <Filter>scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundScriptLexer.hpp">
+      <Filter>scripts\parsing</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundScriptParser.hpp">
+      <Filter>scripts\parsing</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundScriptParserTokenTypes.hpp">
+      <Filter>scripts\parsing</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundScriptRecorder.h">
+      <Filter>scripts\parsing</Filter>
+    </ClInclude>
+    <ClInclude Include="CriticalSection.h">
+      <Filter>sync</Filter>
+    </ClInclude>
+    <ClInclude Include="filemgmt.h">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="RealFile.h">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="stream.h">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="Buffer2.h">
+      <Filter>muffle2</Filter>
+    </ClInclude>
+    <ClInclude Include="DecodeBuffer2.h">
+      <Filter>muffle2</Filter>
+    </ClInclude>
+    <ClInclude Include="Locker2.h">
+      <Filter>muffle2</Filter>
+    </ClInclude>
+    <ClInclude Include="Script2.h">
+      <Filter>muffle2</Filter>
+    </ClInclude>
+    <ClInclude Include="Settings2.h">
+      <Filter>muffle2</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundBuffer2.h">
+      <Filter>muffle2</Filter>
+    </ClInclude>
+    <ClInclude Include="StaticBuffer2.h">
+      <Filter>muffle2</Filter>
+    </ClInclude>
+    <ClInclude Include="Lock2.h">
+      <Filter>muffle2\mainten</Filter>
+    </ClInclude>
+    <ClInclude Include="Ptr2.h">
+      <Filter>muffle2\mainten</Filter>
+    </ClInclude>
+    <ClInclude Include="SafeAlloc2.h">
+      <Filter>muffle2\mainten</Filter>
+    </ClInclude>
+    <ClInclude Include="Synchronized2.h">
+      <Filter>muffle2\mainten</Filter>
+    </ClInclude>
+    <ClInclude Include="WeakToken2.h">
+      <Filter>muffle2\mainten</Filter>
+    </ClInclude>
+    <ClInclude Include="Work2.h">
+      <Filter>muffle2\worker</Filter>
+    </ClInclude>
+    <ClInclude Include="Worker2.h">
+      <Filter>muffle2\worker</Filter>
+    </ClInclude>
+    <ClInclude Include="Emitter2.h">
+      <Filter>muffle2\emitter</Filter>
+    </ClInclude>
+    <ClInclude Include="EmitterInfo2.h">
+      <Filter>muffle2\emitter</Filter>
+    </ClInclude>
+    <ClInclude Include="EmitterProxy2.h">
+      <Filter>muffle2\emitter</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayingSound2.h">
+      <Filter>muffle2\emitter</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayingSoundMgr2.h">
+      <Filter>muffle2\emitter</Filter>
+    </ClInclude>
+    <ClInclude Include="Kernel2.h">
+      <Filter>muffle2\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="MuffleImpl2.h">
+      <Filter>muffle2\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="Decoder2.h">
+      <Filter>muffle2\decoders</Filter>
+    </ClInclude>
+    <ClInclude Include="DecoderMgr2.h">
+      <Filter>muffle2\decoders</Filter>
+    </ClInclude>
+    <ClInclude Include="OggDecoder2.h">
+      <Filter>muffle2\decoders</Filter>
+    </ClInclude>
+    <ClInclude Include="WaveDecoder2.h">
+      <Filter>muffle2\decoders</Filter>
+    </ClInclude>
+    <ClInclude Include="BufferCtrl2.h">
+      <Filter>muffle2\globalparams</Filter>
+    </ClInclude>
+    <ClInclude Include="BufferCtrl2Impl.h">
+      <Filter>muffle2\globalparams</Filter>
+    </ClInclude>
+    <ClInclude Include="BufferCtrlMgr2.h">
+      <Filter>muffle2\globalparams</Filter>
+    </ClInclude>
+    <ClInclude Include="ThemeManager2.h">
+      <Filter>muffle2\themes</Filter>
+    </ClInclude>
+    <ClInclude Include="ThemeSession2.h">
+      <Filter>muffle2\themes</Filter>
+    </ClInclude>
+    <ClInclude Include="ThemeSessionProxy2.h">
+      <Filter>muffle2\themes</Filter>
+    </ClInclude>
+    <ClInclude Include="Fader2.h">
+      <Filter>muffle2\fader</Filter>
+    </ClInclude>
+    <ClInclude Include="include\muffle\ISound.h" />
+    <ClInclude Include="include\muffle\vfs.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="guid.cpp">
+      <Filter>mainten</Filter>
+    </ClCompile>
+    <ClCompile Include="precomp.cpp">
+      <Filter>mainten</Filter>
+    </ClCompile>
+    <ClCompile Include="safety.cpp">
+      <Filter>mainten</Filter>
+    </ClCompile>
+    <ClCompile Include="caps.cpp">
+      <Filter>kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="dsound.cpp">
+      <Filter>kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="primarybuffer.cpp">
+      <Filter>kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="scriptmgr.cpp">
+      <Filter>scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundScriptLexer.cpp">
+      <Filter>scripts\parsing</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundScriptParser.cpp">
+      <Filter>scripts\parsing</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundScriptRecorder.cpp">
+      <Filter>scripts\parsing</Filter>
+    </ClCompile>
+    <ClCompile Include="CriticalSection.cpp">
+      <Filter>sync</Filter>
+    </ClCompile>
+    <ClCompile Include="filemgmt.cpp">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="RealFile.cpp">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="Stream.cpp">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="DecodeBuffer2.cpp">
+      <Filter>muffle2</Filter>
+    </ClCompile>
+    <ClCompile Include="Locker2.cpp">
+      <Filter>muffle2</Filter>
+    </ClCompile>
+    <ClCompile Include="Settings2.cpp">
+      <Filter>muffle2</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundBuffer2.cpp">
+      <Filter>muffle2</Filter>
+    </ClCompile>
+    <ClCompile Include="Synchronized2.cpp">
+      <Filter>muffle2\mainten</Filter>
+    </ClCompile>
+    <ClCompile Include="WeakToken2.cpp">
+      <Filter>muffle2\mainten</Filter>
+    </ClCompile>
+    <ClCompile Include="Work2.cpp">
+      <Filter>muffle2\worker</Filter>
+    </ClCompile>
+    <ClCompile Include="Worker2.cpp">
+      <Filter>muffle2\worker</Filter>
+    </ClCompile>
+    <ClCompile Include="Emitter2.cpp">
+      <Filter>muffle2\emitter</Filter>
+    </ClCompile>
+    <ClCompile Include="EmitterProxy2.cpp">
+      <Filter>muffle2\emitter</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayingSound2.cpp">
+      <Filter>muffle2\emitter</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayingSoundMgr2.cpp">
+      <Filter>muffle2\emitter</Filter>
+    </ClCompile>
+    <ClCompile Include="Kernel2.cpp">
+      <Filter>muffle2\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="MuffleEntry2.cpp">
+      <Filter>muffle2\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="MuffleImpl2.cpp">
+      <Filter>muffle2\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="Decoder2.cpp">
+      <Filter>muffle2\decoders</Filter>
+    </ClCompile>
+    <ClCompile Include="DecoderMgr2.cpp">
+      <Filter>muffle2\decoders</Filter>
+    </ClCompile>
+    <ClCompile Include="OggDecoder2.cpp">
+      <Filter>muffle2\decoders</Filter>
+    </ClCompile>
+    <ClCompile Include="WaveDecoder2.cpp">
+      <Filter>muffle2\decoders</Filter>
+    </ClCompile>
+    <ClCompile Include="BufferCtrl2.cpp">
+      <Filter>muffle2\globalparams</Filter>
+    </ClCompile>
+    <ClCompile Include="BufferCtrl2Impl.cpp">
+      <Filter>muffle2\globalparams</Filter>
+    </ClCompile>
+    <ClCompile Include="BufferCtrlMgr2.cpp">
+      <Filter>muffle2\globalparams</Filter>
+    </ClCompile>
+    <ClCompile Include="ThemeManager2.cpp">
+      <Filter>muffle2\themes</Filter>
+    </ClCompile>
+    <ClCompile Include="ThemeSession2.cpp">
+      <Filter>muffle2\themes</Filter>
+    </ClCompile>
+    <ClCompile Include="Fader2.cpp">
+      <Filter>muffle2\fader</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="muffle.sconscript">
+      <Filter>build</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="SoundScriptParserTokenTypes.txt">
+      <Filter>scripts\parsing</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="grammar.g">
+      <Filter>scripts\parsing</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

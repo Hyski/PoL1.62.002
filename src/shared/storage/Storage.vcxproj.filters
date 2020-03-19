@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{e44e2f34-e50d-42f3-846f-e9d3be6ae7db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Storage">
+      <UniqueIdentifier>{cc6bfe7c-02f3-4eaa-9ca1-22ab8c7e30d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="build">
+      <UniqueIdentifier>{0c1c0dc3-e4d9-4719-9f9a-801df2432018}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\Storage\Macros.h">
+      <Filter>include\Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Storage\PersistentBase.h">
+      <Filter>include\Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Storage\PersistentClass.h">
+      <Filter>include\Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Storage\Ptr.h">
+      <Filter>include\Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Storage\PtrJunction.h">
+      <Filter>include\Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Storage\ReadSlot.h">
+      <Filter>include\Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Storage\Registry.h">
+      <Filter>include\Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Storage\Repository.h">
+      <Filter>include\Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Storage\RepositoryIterator.h">
+      <Filter>include\Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Storage\Storage.h">
+      <Filter>include\Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Storage\TypedPtr.h">
+      <Filter>include\Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Storage\Version.h">
+      <Filter>include\Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Storage\WriteSlot.h">
+      <Filter>include\Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="precomp.h" />
+    <ClInclude Include="TypeTable.h" />
+    <ClInclude Include="Utils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="storage.sconscript">
+      <Filter>build</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="PersistentBase.cpp" />
+    <ClCompile Include="precomp.cpp" />
+    <ClCompile Include="Registry.cpp" />
+    <ClCompile Include="Repository.cpp" />
+    <ClCompile Include="Utils.cpp" />
+  </ItemGroup>
+</Project>
